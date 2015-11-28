@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+  .navbar-nav {
+    font-size: 12px;
+   line-height: 2;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+  .navbar-nav > li.navbar-right {
+    float: right !important;
+  }
+
+}
