@@ -5,7 +5,7 @@
     background-position: top
     background-size: 100% 700px
     background-repeat: no-repeat
-    height: 1263px
+    height: 1500px
     .top-center
       height: 1000px
       .logo
@@ -17,10 +17,11 @@
         margin-bottom: 0
         border-radius: 0
         border-bottom: 1px solid #ccc
-        font-weight: bold
+        font-weight: 500
         .navbar-collapse
           .navbar-nav
-            font-size: 0.8em
+            font-size: 0.7em
+            letter-spacing: 0.1em
             .nav-search
               display: inline-block
               background-image: url("../img/header-nav-sprites.png")
@@ -38,11 +39,15 @@
               margin-right: 10px
             .nav-basket
               background-image: url("../img/header-nav-sprites.png")
-              width: 30px
+              width: 29px
               height: 29px
               background-position: 30px 0px
               transform: translate(5px, 10px)
               margin-right: 17px
+            .search-link
+              font-style: italic
+            .basket-link
+              font-style: italic
             li
               a
                 padding-left: 7px
@@ -60,8 +65,7 @@
           padding: 0
           .banner-left
             margin-left: 0
-            padding-left: 0
-            padding-right: 0
+            padding: 0
             #slides
               .slidesjs-container
                 z-index: 1
@@ -75,13 +79,8 @@
                 li
                   display: inline-block
                   margin: 5px
-                  a
-                    //background-image: url("../img/dots.gif")
-
-
-
           .banner-right
-            padding-right: 25px
+            padding-right: 40px
             padding-left: 25px
 
             h6
@@ -90,14 +89,54 @@
               margin: 0
             .ego
               font-family: 'Marcellus', serif
-              font-size: 48px
+              font-size: 6em
+              line-height: 125px
               color: #999999
-            
+              margin-bottom: 0
+              // border-left: 10px solid #ccc
+            .ego-description
+              font-size: 14px
+              font-weight: bold
+              padding: 5px 0
+            .more-link
+              float: right
+              font-style: italic
+              text-decoration: none
+              color: #333
+              font-size: 12px
+            .more-icon
+              float: right
+              background-image: url("../img/arow-right.gif")
+              height: 29px
+              width: 29px
+              transform: translate(5px, -3px)
             .banner-text
+              font-size: 12px
+              padding: 10px 0
               text-align: justify
-      .slider
-        height: 300px
-        background-color: pink
+      .slider-wrapper
+        padding: 10px
+        background-color: #fff         
+        .slider
+          // height: 300px
+          // border: 1px solid #ccc
+          // padding: 10px
+          background-color: #fff
+          padding: 0
+          .slider-left
+            #slides2
+              .slidesjs-container
+                z-index: 1
+                position: relative
+              .slidesjs-pagination
+                position: absolute
+                top: 85%
+                right: 40%
+                margin: 0 auto
+                z-index: 2
+                li
+                  display: inline-block
+                  margin: 5px
       .delivery
         height: 400px
         background-color: #aaa
