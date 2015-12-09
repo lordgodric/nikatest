@@ -1,228 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Nikatest</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Main css -->
-    <link href="css/main.css" rel="stylesheet">
-    <!-- Navbar css -->
-    <link rel="stylesheet" href="css/navbar-centered.css" media="screen" title="no title" charset="utf-8">
-    <!-- Google font Marcellus -->
-    <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/slidejs.css">
-    
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="page-wrapper container-fluid ">
-      <div class="row">
-        <!-- top -->
-        <div class="top">
-          <div class="top-center container-fluid col-lg-10 col-lg-offset-1 ">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Nikatest</title>
+        <!-- Bootstrap -->
+        <link href="styles/bootstrap.min.css" rel="stylesheet">
+        <!-- Main css -->
+        <link href="css/main.css" rel="stylesheet">
+        <!-- Navbar css -->
+        <link rel="stylesheet" href="styles/navbar-centered.css" media="screen" title="no title" charset="utf-8">
+        <!-- Google font Marcellus -->
+        <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles/slidejs.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="page-wrapper container-fluid ">
             <div class="row">
-              <!-- logo -->
-              <div class="logo container-fluid ">
-                <img src="img/logo.png" alt="">
-              </div>
-              <!-- /.logo -->
-            </div>
-            <!-- nav -->
-            <div class="row">
-              <nav class="navbar navbar-default" role="navigation">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
-                    <li class="navbar-left nav-search"><a href="#"></a></li>
-                    <li class="navbar-left"><a class="search-link" href="#">Поиск</a></li>
-                    <i>●</i><li class="navbar-center"><a href="#">БРЕНД</a></li>
-                    <i>●</i><li class="navbar-center"><a href="#">ЗОЛОТЫЕ ЧАСЫ</a></li>
-                    <i>●</i><li class="navbar-center"><a href="#">СЕРЕБРЯННЫЕ ЧАСЫ</a></li>
-                    <li class="navbar-center nav-logo"><a href="#"></a></li>
-                    <li class="navbar-center"><a href="#">БРАСЛЕТЫ</a></li>
-                    <i>●</i><li class="navbar-center"><a href="#">АКСЕССУАРЫ</a></li>
-                    <i>●</i><li class="navbar-center"><a href="#">ГДЕ КУПИТЬ</a></li>
-                    <i>●</i><li class="navbar-right nav-basket"><a href="#"></a></li>
-                    <li class="navbar-right"><a class="basket-link" href="#">Корзина</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-            <!-- /.nav -->
-            <!-- banner -->
-            <div class="row">
-              <div class="banner-wrapper col-sm-12">
-                <div class="banner container-fluid col-sm-12">
-                  <div class="banner-left col-sm-8">
-                    <div id="slides">
-                      <img src="img/first-slider-clock.png" alt="">
-                      <img src="img/first-slider-clock.png" alt="">
-                      <img src="img/first-slider-clock.png" alt="">
+                <!-- top -верхня частина сайту -->
+                <div class="top">
+                    <div class="top-center container-fluid col-lg-10 col-lg-offset-1 ">
+                        <div class="row">
+                            <!-- logo -->
+                            <div class="logo container-fluid ">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                            <!-- /.logo -->
+                        </div>
+                        <!-- nav -->
+                        <div class="row">
+                            <!-- головна навігація -->
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="navbar-left nav-search"><a href="#"></a></li>
+                                        <li class="navbar-left"><a class="search-link" href="#">Поиск</a></li>
+                                        <i>●</i><li class="navbar-center"><a href="#">БРЕНД</a></li>
+                                        <i>●</i><li class="navbar-center"><a href="#">ЗОЛОТЫЕ ЧАСЫ</a></li>
+                                        <i>●</i><li class="navbar-center"><a href="#">СЕРЕБРЯННЫЕ ЧАСЫ</a></li>
+                                        <li class="navbar-center nav-logo"><a href="#"></a></li>
+                                        <li class="navbar-center"><a href="#">БРАСЛЕТЫ</a></li>
+                                        <i>●</i><li class="navbar-center"><a href="#">АКСЕССУАРЫ</a></li>
+                                        <i>●</i><li class="navbar-center"><a href="#">ГДЕ КУПИТЬ</a></li>
+                                        <i>●</i><li class="navbar-right nav-basket"><a href="#"></a></li>
+                                        <li class="navbar-right"><a class="basket-link" href="#">Корзина</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- /.nav -->
+                        <!-- banner -->
+                        <div class="row">
+                            <div class="banner-wrapper col-sm-12">
+                                <!-- перший слайдер (за допомогою slidejs) -->
+                                <div class="banner container-fluid col-sm-12">
+                                    <div class="banner-left col-sm-8">
+                                        <div id="slides">
+                                            <img src="img/first-slider-clock.png" alt="">
+                                            <img src="img/first-slider-clock.png" alt="">
+                                            <img src="img/first-slider-clock.png" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- текст до першого слайдеру -->
+                                    <div class="banner-right col-sm-4">
+                                        <h6>НОВИНКИ КОЛЕКЦИИ</h6>
+                                        <hr>
+                                        <p class="ego">EGO</p>
+                                        <p class="ego-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, dolore!</p>
+                                        <hr>
+                                        <p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste porro non possimus dolor excepturi quod est mollitia incidunt tempora laudantium in, voluptatum architecto minima odio accusantium, culpa tempore laboriosam earum
+                                        ipsam expedita!</p>
+                                        <a class="more-link" href="">Подробнее<i class="more-icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.banner -->
+                        <!-- slider -->
+                        <div class="row">
+                            <div class="slider-wrapper col-sm-12">
+                                <div class="slider-left col-sm-8">
+                                    <!-- другий слайдер (за допомогою bootsrap) -->
+                                    <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
+                                        <!-- icon -->
+                                        <img src="img/h-ico.png" class="h-ico center-block">
+                                        <!-- indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                        </ol>
+                                        <!-- wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <img src="img/second-slider-clock.jpg" alt="...">
+                                                <div class="carousel-caption">
+                                                    ...
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/second-slider-clock.jpg" alt="...">
+                                                <div class="carousel-caption">
+                                                    ...
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/second-slider-clock.jpg" alt="...">
+                                                <div class="carousel-caption">
+                                                    ...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- текст до другого слайдеру -->
+                                <div class="slider-right col-sm-4">
+                                    <img src="img/secondary-logo.png" class="secondary-logo img-responsive center-block">
+                                    <img src="img/goldandsilver.png" class="center-block">
+                                    <p class="text-watch-top">· ЧАСЫ ·</p>
+                                    <img src="img/jewerly.png" class="center-block">
+                                    <p class="text-watch-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iste dolorem earum, ad libero consequuntur nam. Aliquam!</p>
+                                    <img src="img/jewerly.png" class="center-block">
+                                    <p class="text-watch-bottom">2315</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.slider -->
+                        <!-- delivery -форма доставки для упрощення читання коду -уявно поділіть квадрат на 4 частини -->
+                        <!-- 1 2 -->
+                        <!-- 3 4 -->
+                        <div class="row">
+                            <div class="delivery container-fluid">
+                                <h4 class="text-uppercase delivery-text"><p>доставка и форма оплаты</p></h4>
+                                <div class="delivery-wrapper col-xs-12">
+                                    <!-- верхня частина форми 1 і 2 в квадраті -->
+                                    <div class="row top-delivery-block col-xs-12">
+                                        <!-- верхня ліва частина форми 1 в квадраті -->
+                                        <div class="top-left col-sm-6 col-xs-12">
+                                            <div class="row string"><p class="text-uppercase">Информация о доставке:</p></div>
+                                            <div class="row string">
+                                                <div class="col-xs-1"><div class="numbers-icon"></div></div>
+                                                <div class="col-xs-10">Доставка по москве осуществляется курьером в течении 1-2 рабочих дней</div>
+                                            </div>
+                                            <div class="row string">
+                                                <div class="col-xs-1"><div class="numbers-icon two"></div></div>
+                                                <div class="col-xs-10">По регионам доставка осуществляется службой СПСР-Экспресс.
+                                                Сроки доставки от 2-8 рабочих дней (без праздников и выходных)</div>
+                                            </div>
+                                            <div class="row string">
+                                                <div class="col-xs-1"><div class="numbers-icon three"></div></div>
+                                                <div class="col-xs-10">По вопросам условий доставки Вы всегда можете обратится к менеджерам
+                                                по телефону: +7 (495) 988-41-80. Вы также можете отправить запрос по электронной почте в любое время. Менеджер свяжется с Вами в ближайший рабочий день. С 10:00 до 19:00 в рабочие дни.</div>
+                                            </div>
+                                        </div>
+                                        <!-- верхня права частина форми 2 в квадраті -->
+                                        <div class="top-right col-sm-6 col-xs-12">
+                                            <div class="row string"><p class="text-uppercase">информация об оплате:</p></div>
+                                            <div class="row string">
+                                                <div class="col-xs-1"><div class="numbers-icon"></div></div>
+                                                <div class="col-xs-10">Переводом денежных средств
+                                                на расчетный счет Московского Кредитного Банка или Сбербанка России</div>
+                                            </div>
+                                            <div class="row string">
+                                                <div class="col-xs-1"><div class="numbers-icon two"></div></div>
+                                                <div class="col-xs-10">Наличными в нашем офисе по адресу: Москва, пр-т Андропова, д.13/32.*</div>
+                                            </div>
+                                            <div class="row string">
+                                                <div class="col-xs-1"><div class="numbers-icon three"></div></div>
+                                                <div class="col-xs-10">Кредитной картой Visa, Visa Electron, Maestro, Mastercard или
+                                                с помощью платёжных систем Яндек.Деньги, Деньги@Mail.ru, WebMoney, RuRu</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- нижня частина форми, 3 і 4 в квадраті -->
+                                    <div class="row bottom-delivery-block col-xs-12">
+                                        <!-- нижня ліва частина форми 3 в квадраті-->
+                                        <div class="bottom-left col-sm-6 col-xs-12">
+                                            <div class="row string"><p class="text-uppercase">Укажите желаемый адрес доставки</p></div>
+                                            
+                                            <!-- ліва частина - 3-ої частини -->
+                                            <div class="child-left col-sm-5 col-xs-12 ">
+                                                <form>
+                                                    <div class="row">
+                                                        <label for="city"><p class="text-uppercase">Город</p></label>
+                                                        <div class="input-group col-xs-12">
+                                                            <input type="text" class="form-control input" id="city" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="street"><p class="text-uppercase">Улица</p></label>
+                                                        <div class="input-group col-xs-12">
+                                                            <input type="text" class="form-control input" id="street" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <label for="phone"><p class="text-uppercase">Телефон для связи</p></label>
+                                                        <div class="input-group col-xs-12">
+                                                            <input type="text" class="form-control input" id="phone" >
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            
+                                            <!-- права частина - 3-ої частини -->
+                                            <div class="child-right col-xs-6">
+                                                <form class="">
+                                                    <div class="form-group col-xs-3 col-md-4">
+                                                        <label for="house" class="control-label"><p class="text-uppercase">Дом</p></label>
+                                                        <div class="input-group ">
+                                                            <input type="text" class="form-control input" id="house" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-xs-3 col-md-4">
+                                                        <label for="shell" class="control-label"><p class="text-uppercase">Корпус</p></label>
+                                                        <div class="input-group col-xs-12">
+                                                            <input type="text" class="form-control input" id="shell" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-xs-4 col-md-4">
+                                                        <label for="structure" class="control-label"><p class="text-uppercase">Строение</p></label>
+                                                        <div class="input-group col-xs-12">
+                                                            <input type="text" class="form-control input" id="structure" >
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        <div class="bottom-right col-sm-6 col-xs-12">
+                                            <div class="row string"><p class="text-uppercase">выберите удобный для вас способ оплаты</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.delivery -->
+                        <!-- checkout -->
+                        <div class="row">
+                            <div class="checkout container-fluid">
+                                checkout
+                            </div>
+                        </div>
+                        <!-- /.checkout -->
                     </div>
-                  </div>
-                  <div class="banner-right col-sm-4">
-                    <h6>НОВИНКИ КОЛЕКЦИИ</h6>
-                    <hr>
-                    <p class="ego">EGO</p>
-                    <p class="ego-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, dolore!</p>
-                    <hr>
-                    <p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur iste porro non possimus dolor excepturi quod est mollitia incidunt tempora laudantium in, voluptatum architecto minima odio accusantium, culpa tempore laboriosam earum
-                    ipsam expedita!</p>
-                    <a class="more-link" href="">Подробнее<i class="more-icon"></i></a>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <!-- /.banner -->
-            <!-- slider -->
-            <div class="row">
-              <div class="slider-wrapper col-sm-12">
-                <div class="slider-left col-sm-8">
-                  <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
-                    <!-- icon -->
-                    <img src="img/h-ico.png" class="h-ico center-block">
-                    <!-- indicators -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
-                    <!-- wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                      <div class="item active">
-                        <img src="img/second-slider-clock.jpg" alt="...">
-                        <div class="carousel-caption">
-                          ...
+                <!-- /.top -->
+                <!-- middle -->
+                <div class="middle container-fluid">
+                    middle
+                </div>
+                <!-- /.middle -->
+                <!-- bottom -->
+                <div class="bottom">
+                    <div class="bottom-center container-fluid col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <!-- watches -->
+                        <div class="row">
+                            <div class="watches container-fluid">
+                                watches
+                            </div>
                         </div>
-                      </div>
-                      <div class="item">
-                        <img src="img/second-slider-clock.jpg" alt="...">
-                        <div class="carousel-caption">
-                          ...
+                        <!-- /.watches -->
+                        <!-- news -->
+                        <div class="row">
+                            <div class="news container-fluid">
+                                news
+                            </div>
                         </div>
-                      </div>
-                      <div class="item">
-                        <img src="img/second-slider-clock.jpg" alt="...">
-                        <div class="carousel-caption">
-                          ...
+                        <!-- /.news -->
+                        <!-- filter -->
+                        <div class="row">
+                            <div class="filter container-fluid">
+                                filter
+                            </div>
                         </div>
-                      </div>
+                        <!-- /.filter -->
+                        <!-- footer-text -->
+                        <div class="row">
+                            <div class="footer-text container-fluid">
+                                footer-text
+                            </div>
+                        </div>
+                        <!-- /.footer-text -->
                     </div>
-                  </div>
                 </div>
-                <div class="slider-right col-sm-4">
-                  <img src="img/secondary-logo.png" class="secondary-logo img-responsive center-block">
-                  <img src="img/goldandsilver.png" class="center-block">
-                  <p class="text-watch-top">· ЧАСЫ ·</p>
-                  <img src="img/jewerly.png" class="center-block">
-                  <p class="text-watch-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iste dolorem earum, ad libero consequuntur nam. Aliquam!</p>
-                  <img src="img/jewerly.png" class="center-block">
-                  <p class="text-watch-bottom">2315</p>
+                <!-- /.bottom -->
+                <div class="footer col-xs-12">
+                    footer
                 </div>
-              </div>
             </div>
-            <!-- /.slider -->
-            <!-- delivery -->
-            <div class="row">
-              <div class="delivery container-fluid">
-                delivery
-              </div>
-            </div>
-            <!-- /.delivery -->
-            <!-- checkout -->
-            <div class="row">
-              <div class="checkout container-fluid">
-                checkout
-              </div>
-            </div>
-            <!-- /.checkout -->
-          </div>
+            <!-- /.row for page-wrapper -->
         </div>
-        <!-- /.top -->
-        <!-- middle -->
-        <div class="middle container-fluid">
-          middle
-        </div>
-        <!-- /.middle -->
-        <!-- bottom -->
-        <div class="bottom">
-          <div class="bottom-center container-fluid col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-            <!-- watches -->
-            <div class="row">
-              <div class="watches container-fluid">
-                watches
-              </div>
-            </div>
-            <!-- /.watches -->
-            <!-- news -->
-            <div class="row">
-              <div class="news container-fluid">
-                news
-              </div>
-            </div>
-            <!-- /.news -->
-            <!-- filter -->
-            <div class="row">
-              <div class="filter container-fluid">
-                filter
-              </div>
-            </div>
-            <!-- /.filter -->
-            <!-- footer-text -->
-            <div class="row">
-              <div class="footer-text container-fluid">
-                footer-text
-              </div>
-            </div>
-            <!-- /.footer-text -->
-          </div>
-        </div>
-        <!-- /.bottom -->
-        <div class="footer col-xs-12">
-          footer
-        </div>
-      </div>
-      <!-- /.row for page-wrapper -->
-    </div>
-    <!-- /.page-wrapper -->
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Start SlidesJS Required -->
-    <!-- SlidesJS Required: Link to jQuery -->
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <!-- End SlidesJS Required -->
-    <!-- SlidesJS Required: Link to jquery.slides.js -->
-    <script src="js/jquery.slides.min.js"></script>
-    <!-- End SlidesJS Required -->
-    <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
-    <script>
-    $(function() {
-    $('#slides').slidesjs({
-    width: 940,
-    height: 528,
-    navigation: false
-    });
-    });
-    </script>
-    <!-- End SlidesJS Required -->
-  </body>
+        <!-- /.page-wrapper -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Start SlidesJS Required -->
+        <!-- SlidesJS Required: Link to jQuery -->
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <!-- End SlidesJS Required -->
+        <!-- SlidesJS Required: Link to jquery.slides.js -->
+        <script src="js/jquery.slides.min.js"></script>
+        <!-- End SlidesJS Required -->
+        <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+        <script>
+        $(function() {
+        $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+        });
+        });
+        </script>
+        <!-- End SlidesJS Required -->
+    </body>
 </html>
