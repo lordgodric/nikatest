@@ -1,173 +1,236 @@
 .page-wrapper
-  height: 2000px
-  .top
-    background-image: url("../img/top-content-bg.gif")
-    background-position: top
-    background-size: 100% 700px
-    background-repeat: no-repeat
-    height: 1500px
-    .top-center
-      height: 1000px
-      .logo
-        text-align: center
-        padding: 10px
-        img
-          display: inline-block
-      .navbar
-        margin-bottom: 0
-        border-radius: 0
-        border-bottom: 1px solid #ccc
-        font-weight: 500
-        .navbar-collapse
-          .navbar-nav
-            font-size: 0.7em
-            letter-spacing: 0.1em
-            .nav-search
-              display: inline-block
-              background-image: url("../img/header-nav-sprites.png")
-              width: 29px
-              height: 29px
-              transform: translate(5px, 10px)
-              margin-left: 5px
-              margin-right: 10px
-            .nav-logo
-              background-image: url("../img/header-nav-sprites.png")
-              width: 29px
-              height: 29px
-              background-position: 60px 0px
-              transform: translate(5px, 10px)
-              margin-right: 10px
-            .nav-basket
-              background-image: url("../img/header-nav-sprites.png")
-              width: 29px
-              height: 29px
-              background-position: 30px 0px
-              transform: translate(5px, 10px)
-              margin-right: 17px
-            .search-link
-              font-style: italic
-            .basket-link
-              font-style: italic
-            li
-              a
-                padding-left: 7px
-                padding-right: 7px
-                color: #013a5a
-        .collapse
-          padding: 0
-      .banner-wrapper
-        padding: 10px
-        background-color: #fff
-        .banner
-          border: 1px solid #ccc
-          // padding: 10px
-          background-color: #fff
-          padding: 0
-          .banner-left
-            margin-left: 0
-            padding: 0
-            #slides
-              .slidesjs-container
-                z-index: 1
-                position: relative
-              .slidesjs-pagination
-                position: absolute
-                top: 85%
-                right: 40%
-                margin: 0 auto
-                z-index: 2
-                li
-                  display: inline-block
-                  margin: 5px
-          .banner-right
-            padding-right: 40px
-            padding-left: 25px
+    height: 2000px
 
-            h6
-              margin-top: 30px
-            hr
-              margin: 0
-            .ego
-              font-family: 'Marcellus', serif
-              font-size: 6em
-              line-height: 125px
-              color: #999999
-              margin-bottom: 0
-              // border-left: 10px solid #ccc
-            .ego-description
-              font-size: 14px
-              font-weight: bold
-              padding: 5px 0
-            .more-link
-              float: right
-              font-style: italic
-              text-decoration: none
-              color: #333
-              font-size: 12px
-            .more-icon
-              float: right
-              background-image: url("../img/arow-right.gif")
-              height: 29px
-              width: 29px
-              transform: translate(5px, -3px)
-            .banner-text
-              font-size: 12px
-              padding: 10px 0
-              text-align: justify
-      .slider-wrapper
-        padding: 10px
-        background-color: #fff         
-        .slider
-          // height: 300px
-          // border: 1px solid #ccc
-          // padding: 10px
-          background-color: #fff
-          padding: 0
-          .slider-left
-            #slides2
-              .slidesjs-container
-                z-index: 1
-                position: relative
-              .slidesjs-pagination
-                position: absolute
-                top: 85%
-                right: 40%
-                margin: 0 auto
-                z-index: 2
-                li
-                  display: inline-block
-                  margin: 5px
-      .delivery
-        height: 400px
-        background-color: #aaa
-      .checkout
-        height: 100px
-        background-color: pink
-  // middle
-  .middle
-    background-color: #C82647
-    height: 500px
-  // middle
-  .bottom
-    height: 1000px
-    background-image: url("../img/top-content-bg.gif")
-    background-position: bottom
-    background-size: 100%
-    background-repeat: no-repeat
-    .bottom-center
-      height: 1000px
-      background-color: lightblue
-      .watches
-        height: 200px
-        background-color: lightblue
-      .news
-        height: 300px
-        background-color: pink
-      .filter
-        height: 100px
-        background-color: orange
-      .footer-text
-        height: 400px
-        background-color: lightgreen
-  .footer
-    height: 50px
+    .top
+        background-image: url("../img/top-content-bg.gif")
+        background-position: top
+        background-size: 100% 700px
+        background-repeat: no-repeat
+        height: 1500px
+
+        .top-center
+            height: 1000px
+
+            .logo
+                text-align: center
+                padding: 10px
+
+                img
+                    display: inline-block
+
+            .navbar
+                margin-bottom: 0
+                border-radius: 0
+                border-bottom: 1px solid #ccc
+                font-weight: 500
+
+                .navbar-collapse
+                    .navbar-nav
+                        font-size: 0.7em
+                        letter-spacing: 0.1em
+
+                        .nav-search
+                            display: inline-block
+                            background-image: url("../img/header-nav-sprites.png")
+                            width: 29px
+                            height: 29px
+                            transform: translate(5px, 10px)
+                            margin-left: 5px
+                            margin-right: 10px
+
+                        .nav-logo
+                            background-image: url("../img/header-nav-sprites.png")
+                            width: 29px
+                            height: 29px
+                            background-position: 60px 0px
+                            transform: translate(5px, 10px)
+                            margin-right: 10px
+
+                        .nav-basket
+                            background-image: url("../img/header-nav-sprites.png")
+                            width: 30px
+                            height: 29px
+                            background-position: 30px 0px
+                            transform: translate(5px, 10px)
+                            margin-right: 17px
+
+                        .search-link
+                            font-style: italic
+
+                        .basket-link
+                            font-style: italic
+
+                        li
+                            a
+                                padding-left: 7px
+                                padding-right: 7px
+                                color: #013a5a
+
+                .collapse
+                    padding: 0
+
+            .banner-wrapper
+                padding: 10px
+                background-color: #fff
+
+                .banner
+                    border: 1px solid #ccc
+                    background-color: #fff
+                    padding: 0
+
+                    .banner-left
+                        margin-left: 0
+                        padding: 0
+
+                        #slides
+                            .slidesjs-container
+                                z-index: 1
+                                position: relative
+
+                            .slidesjs-pagination
+                                position: absolute
+                                top: 85%
+                                right: 40%
+                                margin: 0 auto
+                                z-index: 2
+
+                                li
+                                    display: inline-block
+                                    margin: 5px
+
+                    .banner-right
+                        padding-right: 40px
+                        padding-left: 25px
+
+                        h6
+                            margin-top: 30px
+
+                        hr
+                            margin: 0
+
+                        .ego
+                            font-family: "Marcellus", serif
+                            font-size: 6em
+                            line-height: 125px
+                            color: #999999
+                            margin-bottom: 0
+
+                        .ego-description
+                            font-size: 14px
+                            font-weight: bold
+                            padding: 5px 0
+
+                        .more-link
+                            float: right
+                            font-style: italic
+                            text-decoration: none
+                            color: #333
+                            font-size: 12px
+
+                        .more-icon
+                            float: right
+                            background-image: url("../img/arow-right.gif")
+                            height: 29px
+                            width: 29px
+                            transform: translate(5px, -3px)
+
+                        .banner-text
+                            font-size: 12px
+                            padding: 10px 0
+                            text-align: justify
+
+            .slider-wrapper
+                padding: 10px
+                background-color: #fff
+                border-bottom: 1px solid #ccc
+                padding-bottom: 25px
+                margin-bottom: 20px
+
+                .slider-left
+                    padding-left: 0
+
+                    .slide
+                        padding: 0
+                        position: relative
+                        z-index: 0
+                        
+                        .h-ico
+                            position: absolute
+                            z-index: 1
+                            margin: 0px 43%
+
+                        .carousel-indicators
+                            li
+                                background-color: #fff
+                                width: 16px
+                                height: 16px
+
+                            li:hover
+                                background-color: #ccc
+                                border: 2.5px solid #fff
+
+                            .active
+                                background-color: #ccc
+                                border: 2.5px solid #fff
+
+                .slider-right
+                    .secondary-logo
+                        margin-bottom: 10px
+
+                    .text-watch-top
+                        font-size: 68px
+                        text-align: center
+                        font-family: "Marcellus", serif
+
+                    .text-watch-middle
+                        text-align: center
+                        margin: 10px
+                        font-style: italic
+
+                    .text-watch-bottom
+                        font-size: 10px
+                        text-align: center
+
+            .delivery
+                height: 400px
+                background-color: #aaa
+
+            .checkout
+                height: 100px
+                background-color: pink
+
+    // middle
+    .middle
+        background-color: #C82647
+        height: 500px
+
+    // middle
+    .bottom
+        height: 1000px
+        background-image: url("../img/top-content-bg.gif")
+        background-position: bottom
+        background-size: 100%
+        background-repeat: no-repeat
+
+        .bottom-center
+            height: 1000px
+            background-color: lightblue
+
+            .watches
+                height: 200px
+                background-color: lightblue
+
+            .news
+                height: 300px
+                background-color: pink
+
+            .filter
+                height: 100px
+                background-color: orange
+
+            .footer-text
+                height: 400px
+                background-color: lightgreen
+
+    .footer
+        height: 50px
