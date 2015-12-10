@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".input-checkbox").click(function(){$(".input-checkbox").removeClass("checked"),$(this).addClass("checked")})});

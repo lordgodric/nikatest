@@ -5,7 +5,7 @@
     background-position: top;
     background-size: 100% 700px;
     background-repeat: no-repeat;
-    height: 1800px; }
+    height: 3000px; }
     .page-wrapper .top .top-center {
       height: 1000px; }
       .page-wrapper .top .top-center .logo {
@@ -152,6 +152,8 @@
       .page-wrapper .top .top-center .delivery {
         font-size: 11px;
         padding: 0; }
+        .page-wrapper .top .top-center .delivery .text-uppercase {
+          margin-bottom: 5px; }
         .page-wrapper .top .top-center .delivery .delivery-wrapper {
           background-color: #ececec; }
           .page-wrapper .top .top-center .delivery .delivery-wrapper .string {
@@ -170,6 +172,34 @@
             background-color: #f3f2f0;
             border: 1px solid #aaa;
             box-shadow: none; }
+          .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .form-group {
+            margin: 0; }
+          .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right #comment {
+            height: 106px; }
+          .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .btn-edit {
+            float: right;
+            margin-top: 24px;
+            background-color: #f3f2f0;
+            border: 1px solid #aaa;
+            border-radius: 0px;
+            height: 34px;
+            padding: 9px 30px;
+            font-size: 11px; }
+          .page-wrapper .top .top-center .delivery .delivery-wrapper .checkboxx .input-checkbox {
+            height: 34px;
+            width: 34px;
+            background-color: #f3f2f0;
+            border: 1px solid #aaa;
+            display: block; }
+          .page-wrapper .top .top-center .delivery .delivery-wrapper .checkboxx .checked {
+            background-image: url("../img/check-mark.png");
+            background-position: center;
+            background-repeat: no-repeat; }
+          .page-wrapper .top .top-center .delivery .delivery-wrapper label {
+            font-size: 9px;
+            font-weight: 500;
+            margin-bottom: 0;
+            margin-top: 20px; }
       .page-wrapper .top .top-center .checkout {
         height: 100px;
         background-color: pink; }

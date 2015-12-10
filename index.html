@@ -196,7 +196,7 @@
                                             <div class="row string"><p class="text-uppercase">Укажите желаемый адрес доставки</p></div>
                                             
                                             <!-- ліва частина - 3-ої частини -->
-                                            <div class="child-left col-sm-5 col-xs-12 ">
+                                            <div class="child-left col-xs-12 col-sm-6 ">
                                                 <form>
                                                     <div class="row">
                                                         <label for="city"><p class="text-uppercase">Город</p></label>
@@ -220,24 +220,39 @@
                                             </div>
                                             
                                             <!-- права частина - 3-ої частини -->
-                                            <div class="child-right col-xs-6">
+                                            <div class="child-right col-xs-12 col-sm-6">
                                                 <form class="">
-                                                    <div class="form-group col-xs-3 col-md-4">
-                                                        <label for="house" class="control-label"><p class="text-uppercase">Дом</p></label>
-                                                        <div class="input-group ">
-                                                            <input type="text" class="form-control input" id="house" >
+                                                    <div class="row">
+                                                        <div class="form-group col-xs-12 col-md-4">
+                                                            <label for="house" class="control-label"><p class="text-uppercase">Дом</p></label>
+                                                            <div class="input-group col-xs-12">
+                                                                <input type="text" class="form-control input" id="house" >
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-xs-12 col-md-4">
+                                                            <label for="shell" class="control-label"><p class="text-uppercase">Корпус</p></label>
+                                                            <div class="input-group col-xs-12">
+                                                                <input type="text" class="form-control input" id="shell" >
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group col-xs-12 col-md-4">
+                                                            <label for="structure" class="control-label"><p class="text-uppercase">Строение</p></label>
+                                                            <div class="input-group col-xs-12">
+                                                                <input type="text" class="form-control input" id="structure" >
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-xs-3 col-md-4">
-                                                        <label for="shell" class="control-label"><p class="text-uppercase">Корпус</p></label>
-                                                        <div class="input-group col-xs-12">
-                                                            <input type="text" class="form-control input" id="shell" >
+                                                    <div class="form-group col-xs-12 ">
+                                                        <div class="row ">
+                                                            <label for="cooment"><p class="text-uppercase">Ваши пожелания</p></label>
+                                                            <div class="input-group col-xs-12">
+                                                                <textarea class="form-control"  id="comment"></textarea>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-xs-4 col-md-4">
-                                                        <label for="structure" class="control-label"><p class="text-uppercase">Строение</p></label>
-                                                        <div class="input-group col-xs-12">
-                                                            <input type="text" class="form-control input" id="structure" >
+                                                    <div class="form-group col-xs-12 edit-form-group">
+                                                        <div class="row ">
+                                                            <button type="edit" class="btn btn-default btn-edit"><p class="text-uppercase">изменить</p></button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -247,6 +262,32 @@
                                         </div>
                                         <div class="bottom-right col-sm-6 col-xs-12">
                                             <div class="row string"><p class="text-uppercase">выберите удобный для вас способ оплаты</p></div>
+                                            <form>
+                                                <div class="row">
+                                                    <div class="checkboxx cash">
+                                                        <label class="" for="cash">
+                                                            <p class="text-uppercase">наличными</p>
+                                                        </label>
+                                                        <div class="input-checkbox" id="cash" type=""></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="checkboxx card">
+                                                        <label for="card">
+                                                            <p class="text-uppercase">картой</p>
+                                                        </label>
+                                                        <div class="input-checkbox" id="card"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="checkboxx transfer">
+                                                        <label for="transfer">
+                                                            <p class="text-uppercase">переводом</p>
+                                                        </label>
+                                                        <div class="input-checkbox" id="transfer"></div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -331,5 +372,7 @@
         });
         </script>
         <!-- End SlidesJS Required -->
+        <!-- Чекбокси які вокористані в формі реалізовані на jQuery оскільки, стандартні чекбокси неможливо зробити такими як в макеті -->
+        <script src="js/checkbox.js"></script>
     </body>
 </html>
