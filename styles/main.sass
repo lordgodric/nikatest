@@ -9,10 +9,10 @@ $bgForButton: #ececec
         background-position: top
         background-size: 100% 700px
         background-repeat: no-repeat
-        height: 4000px
+        height: 1700px
 
         .top-center
-            height: 4000px
+            // height: 2000px
 
             .logo
                 text-align: center
@@ -202,7 +202,11 @@ $bgForButton: #ececec
                 font-size: 11px
                 padding: 0
                 margin-bottom: 20px
-
+                
+                .header-text
+                    p
+                        font-family: 'Cinzel', serif
+                        font-size: 20px
                 .text-uppercase
                     margin-bottom: 5px
 
@@ -292,12 +296,24 @@ $bgForButton: #ececec
                         margin-bottom: 0
                         margin-top: 20px
 
+            .maps-header
+                .storeNear
+                    p
+                        font-family: 'Cinzel', serif
+                        font-size: 20px
+
+            @media (max-width: 768px) 
+                .maps-header
+                    .storeNear, .yourCity, .toggle
+                        text-align: center
+                        
+                    
+
+
             @import _checkout
 
     // middle
-    .middle
-        background-color: #000
-        height: 500px
+    @import _middle
 
     .bottom
         height: 1000px
