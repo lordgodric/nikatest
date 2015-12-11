@@ -1,4 +1,5 @@
 $bgForInputs: #f3f2f0
+$bgForButton: #ececec
 
 .page-wrapper
     height: 2000px
@@ -8,10 +9,10 @@ $bgForInputs: #f3f2f0
         background-position: top
         background-size: 100% 700px
         background-repeat: no-repeat
-        height: 3000px
+        height: 4000px
 
         .top-center
-            height: 1000px
+            height: 4000px
 
             .logo
                 text-align: center
@@ -177,6 +178,8 @@ $bgForInputs: #f3f2f0
                                 border: 2.5px solid #fff
 
                 .slider-right
+                    .full-width-img
+                        width: 100%
                     .secondary-logo
                         margin-bottom: 10px
                         margin-top: 10px
@@ -198,6 +201,7 @@ $bgForInputs: #f3f2f0
             .delivery
                 font-size: 11px
                 padding: 0
+                margin-bottom: 20px
 
                 .text-uppercase
                     margin-bottom: 5px
@@ -227,9 +231,34 @@ $bgForInputs: #f3f2f0
                             border: 1px solid #aaa
                             box-shadow: none
 
-                    .child-right
                         .form-group
                             margin: 0
+
+                    .bottom-delivery-block
+                        .bottom-right
+                            .child-left-bottom-right
+                                .form-group
+                                    margin: 0
+
+                            .rulles
+                                margin-top: 25px
+                                
+                                .doc-icon
+                                    height: 21px
+                                    width: 17px
+                                    background-image: url("../img/doc-icon.png")
+                                    float: left
+                                    margin: 0px 5px 0px 0px
+
+                                div
+                                    display: inline-block
+                                    margin-bottom: 10px
+
+                                    a
+                                        color: #000
+
+                                        .text
+                                            text-decoration: underline
 
                         #comment
                             height: 106px
@@ -237,7 +266,7 @@ $bgForInputs: #f3f2f0
                         .btn-edit
                             float: right
                             margin-top: 24px
-                            background-color: $bgForInputs
+                            background-color: $bgForButton
                             border: 1px solid #aaa
                             border-radius: 0px
                             height: 34px
@@ -263,13 +292,11 @@ $bgForInputs: #f3f2f0
                         margin-bottom: 0
                         margin-top: 20px
 
-            .checkout
-                height: 100px
-                background-color: pink
+            @import _checkout
 
     // middle
     .middle
-        background-color: #C82647
+        background-color: #000
         height: 500px
 
     .bottom

@@ -5,9 +5,9 @@
     background-position: top;
     background-size: 100% 700px;
     background-repeat: no-repeat;
-    height: 3000px; }
+    height: 4000px; }
     .page-wrapper .top .top-center {
-      height: 1000px; }
+      height: 4000px; }
       .page-wrapper .top .top-center .logo {
         text-align: center;
         padding: 10px; }
@@ -135,6 +135,8 @@
             .page-wrapper .top .top-center .slider-wrapper .slider-left .slide .carousel-indicators .active {
               background-color: #ccc;
               border: 2.5px solid #fff; }
+        .page-wrapper .top .top-center .slider-wrapper .slider-right .full-width-img {
+          width: 100%; }
         .page-wrapper .top .top-center .slider-wrapper .slider-right .secondary-logo {
           margin-bottom: 10px;
           margin-top: 10px; }
@@ -151,7 +153,8 @@
           text-align: center; }
       .page-wrapper .top .top-center .delivery {
         font-size: 11px;
-        padding: 0; }
+        padding: 0;
+        margin-bottom: 20px; }
         .page-wrapper .top .top-center .delivery .text-uppercase {
           margin-bottom: 5px; }
         .page-wrapper .top .top-center .delivery .delivery-wrapper {
@@ -172,14 +175,31 @@
             background-color: #f3f2f0;
             border: 1px solid #aaa;
             box-shadow: none; }
-          .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .form-group {
+          .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .form-group, .page-wrapper .top .top-center .delivery .delivery-wrapper .child-left .form-group {
             margin: 0; }
-          .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right #comment {
+          .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .child-left-bottom-right .form-group {
+            margin: 0; }
+          .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .rulles {
+            margin-top: 25px; }
+            .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .rulles .doc-icon {
+              height: 21px;
+              width: 17px;
+              background-image: url("../img/doc-icon.png");
+              float: left;
+              margin: 0px 5px 0px 0px; }
+            .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .rulles div {
+              display: inline-block;
+              margin-bottom: 10px; }
+              .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .rulles div a {
+                color: #000; }
+                .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .rulles div a .text {
+                  text-decoration: underline; }
+          .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block #comment {
             height: 106px; }
-          .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .btn-edit {
+          .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .btn-edit {
             float: right;
             margin-top: 24px;
-            background-color: #f3f2f0;
+            background-color: #ececec;
             border: 1px solid #aaa;
             border-radius: 0px;
             height: 34px;
@@ -201,10 +221,24 @@
             margin-bottom: 0;
             margin-top: 20px; }
       .page-wrapper .top .top-center .checkout {
-        height: 100px;
-        background-color: pink; }
+        height: 150px;
+        width: 100%;
+        min-width: 150px;
+        margin: 0;
+        text-align: center; }
+        .page-wrapper .top .top-center .checkout img {
+          width: calc((100% - 190px)/2);
+          height: 1px; }
+        .page-wrapper .top .top-center .checkout .btn-submit {
+          background-color: #ececec;
+          border: 1px solid #aaa;
+          border-radius: 0px;
+          height: 34px;
+          padding: 9px 10px;
+          font-size: 11px;
+          min-width: 170px; }
   .page-wrapper .middle {
-    background-color: #C82647;
+    background-color: #000;
     height: 500px; }
   .page-wrapper .bottom {
     height: 1000px;

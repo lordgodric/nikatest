@@ -68,7 +68,7 @@
                         <!-- /.nav -->
                         <!-- banner -->
                         <div class="row">
-                            <div class="banner-wrapper col-sm-12">
+                            <div class=" banner-wrapper col-sm-12">
                                 <!-- перший слайдер (за допомогою slidejs) -->
                                 <div class="banner container-fluid col-sm-12">
                                     <div class="banner-left col-sm-8">
@@ -95,7 +95,7 @@
                         <!-- /.banner -->
                         <!-- slider -->
                         <div class="row">
-                            <div class="slider-wrapper col-sm-12">
+                            <div class="slider-wrapper container-fluid col-sm-12">
                                 <div class="slider-left col-sm-8">
                                     <!-- другий слайдер (за допомогою bootsrap) -->
                                     <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
@@ -133,11 +133,11 @@
                                 <!-- текст до другого слайдеру -->
                                 <div class="slider-right col-sm-4">
                                     <img src="img/secondary-logo.png" class="secondary-logo img-responsive center-block">
-                                    <img src="img/goldandsilver.png" class="center-block">
+                                    <img src="img/goldandsilver.png" class="center-block full-width-img">
                                     <p class="text-watch-top">· ЧАСЫ ·</p>
-                                    <img src="img/jewerly.png" class="center-block">
+                                    <img src="img/jewerly.png" class="center-block full-width-img">
                                     <p class="text-watch-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iste dolorem earum, ad libero consequuntur nam. Aliquam!</p>
-                                    <img src="img/jewerly.png" class="center-block">
+                                    <img src="img/jewerly.png" class="center-block full-width-img">
                                     <p class="text-watch-bottom">2315</p>
                                 </div>
                             </div>
@@ -199,21 +199,27 @@
                                             <div class="child-left col-xs-12 col-sm-6 ">
                                                 <form>
                                                     <div class="row">
-                                                        <label for="city"><p class="text-uppercase">Город</p></label>
-                                                        <div class="input-group col-xs-12">
-                                                            <input type="text" class="form-control input" id="city" >
+                                                        <div class="form-group col-xs-12 ">
+                                                            <label for="city"><p class="text-uppercase">Город</p></label>
+                                                            <div class="input-group col-xs-12">
+                                                                <input type="text" class="form-control input" id="city" >
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <label for="street"><p class="text-uppercase">Улица</p></label>
-                                                        <div class="input-group col-xs-12">
-                                                            <input type="text" class="form-control input" id="street" >
+                                                        <div class="form-group col-xs-12 ">
+                                                            <label for="street"><p class="text-uppercase">Улица</p></label>
+                                                            <div class="input-group col-xs-12">
+                                                                <input type="text" class="form-control input" id="street" >
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <label for="phone"><p class="text-uppercase">Телефон для связи</p></label>
-                                                        <div class="input-group col-xs-12">
-                                                            <input type="text" class="form-control input" id="phone" >
+                                                        <div class="form-group col-xs-12 ">
+                                                            <label for="phone"><p class="text-uppercase">Телефон для связи</p></label>
+                                                            <div class="input-group col-xs-12">
+                                                                <input type="text" class="form-control input" id="phone" >
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -221,7 +227,7 @@
                                             
                                             <!-- права частина - 3-ої частини -->
                                             <div class="child-right col-xs-12 col-sm-6">
-                                                <form class="">
+                                                <form>
                                                     <div class="row">
                                                         <div class="form-group col-xs-12 col-md-4">
                                                             <label for="house" class="control-label"><p class="text-uppercase">Дом</p></label>
@@ -261,33 +267,58 @@
                                             
                                         </div>
                                         <div class="bottom-right col-sm-6 col-xs-12">
-                                            <div class="row string"><p class="text-uppercase">выберите удобный для вас способ оплаты</p></div>
-                                            <form>
-                                                <div class="row">
-                                                    <div class="checkboxx cash">
-                                                        <label class="" for="cash">
-                                                            <p class="text-uppercase">наличными</p>
-                                                        </label>
-                                                        <div class="input-checkbox" id="cash" type=""></div>
+                                            <!-- Добавив цей клас для того щоб в мобільному вигляді було симетрично -->
+                                            <div class="child-left-bottom-right col-xs-12">
+                                                <!-- УВАГА! оскільки у checkbox не вдалося змінити вигляд - я використав jQuery який добавляю до обраного елементу класс checked  -->
+                                                <div class="row string"><p class="text-uppercase">выберите удобный для вас способ оплаты</p></div>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="form-group form-group-bottom-right col-xs-10">
+                                                            <div class="checkboxx cash">
+                                                                <label class="" for="cash">
+                                                                    <p class="text-uppercase">наличными</p>
+                                                                </label>
+                                                                <div class="input-checkbox" id="cash" type=""></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="checkboxx card">
-                                                        <label for="card">
-                                                            <p class="text-uppercase">картой</p>
-                                                        </label>
-                                                        <div class="input-checkbox" id="card"></div>
+                                                    <div class="row">
+                                                        <div class="form-group form-group-bottom-right col-xs-12 ">
+                                                            <div class="checkboxx card">
+                                                                <label for="card">
+                                                                    <p class="text-uppercase">картой</p>
+                                                                </label>
+                                                                <div class="input-checkbox" id="card"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="checkboxx transfer">
-                                                        <label for="transfer">
-                                                            <p class="text-uppercase">переводом</p>
-                                                        </label>
-                                                        <div class="input-checkbox" id="transfer"></div>
+                                                    <div class="row">
+                                                        <div class="form-group form-group-bottom-right col-xs-12 ">
+                                                            <div class="checkboxx transfer">
+                                                                <label for="transfer">
+                                                                    <p class="text-uppercase">переводом</p>
+                                                                </label>
+                                                                <div class="input-checkbox" id="transfer"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </form>
+                                                    <div class="row rulles">
+                                                        <div class="col-xs-12 col-sm-12 one-rulles">
+                                                            <a href="#" >
+                                                                <div class="doc-icon"></div>
+                                                                <div class="text">Правила возврата денежных средств, товаров / услуг</div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 one-rulles">
+                                                            <a href="#">
+                                                                <div class="doc-icon"></div>
+                                                                <div class="text">Договор оферты</div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -297,8 +328,9 @@
                         <!-- checkout -->
                         <div class="row">
                             <div class="checkout container-fluid">
-                                checkout
-                            </div>
+                                <img src="../img/line-submit.png">
+                                    <button type="submit" class="btn btn-default btn-submit "><p class="text-uppercase">оформить заказ</p></button>
+                                <img src="../img/line-submit.png">
                         </div>
                         <!-- /.checkout -->
                     </div>
