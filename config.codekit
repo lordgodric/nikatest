@@ -22,6 +22,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/city-arrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34808,
+		"inputAbbreviatedPath": "\/img\/city-arrow.png",
+		"outputAbbreviatedPath": "\/img\/city-arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/doc-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -29,6 +40,17 @@
 		"initialSize": 227,
 		"inputAbbreviatedPath": "\/img\/doc-icon.png",
 		"outputAbbreviatedPath": "\/img\/doc-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/down-arrowhead.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15022,
+		"inputAbbreviatedPath": "\/img\/down-arrowhead.png",
+		"outputAbbreviatedPath": "\/img\/down-arrowhead.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -194,6 +216,17 @@
 		"initialSize": 4343,
 		"inputAbbreviatedPath": "\/img\/secondary-logo.png",
 		"outputAbbreviatedPath": "\/img\/secondary-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/up-arrowhead.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 209,
+		"inputAbbreviatedPath": "\/img\/up-arrowhead.png",
+		"outputAbbreviatedPath": "\/img\/up-arrowhead.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

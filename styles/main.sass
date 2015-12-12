@@ -2,7 +2,6 @@ $bgForInputs: #f3f2f0
 $bgForButton: #ececec
 
 .page-wrapper
-    height: 2000px
 
     .top
         background-image: url("../img/top-content-bg.gif")
@@ -243,6 +242,8 @@ $bgForButton: #ececec
                             .child-left-bottom-right
                                 .form-group
                                     margin: 0
+                                    .input-checkbox
+                                        cursor: pointer
 
                             .rulles
                                 margin-top: 25px
@@ -301,12 +302,36 @@ $bgForButton: #ececec
                     p
                         font-family: 'Cinzel', serif
                         font-size: 20px
+                .toggle
+                    cursor: pointer
+
+                .yourCity
+                    .choseCityBtn
+                        border: none
+                        box-shadow: none
+                        background-color: #fff
+                    .open
+                        .btn
+                            background-color: #fff
+                        .btn:active
+                            background-color: #fff  
+
+
 
             @media (max-width: 768px) 
                 .maps-header
                     .storeNear, .yourCity, .toggle
                         text-align: center
-                        
+
+                    .toggle
+                        cursor: pointer
+
+                    .storeNear
+                        p
+                            font-family: 'Cinzel', serif
+                            font-size: 20px
+                    
+
                     
 
 

@@ -8,22 +8,26 @@
         <title>Nikatest</title>
         <!-- Bootstrap -->
         <link href="styles/bootstrap.min.css" rel="stylesheet">
-        <!-- Main css -->
-        <link href="css/main.css" rel="stylesheet">
-        <!-- Navbar css -->
-        <link rel="stylesheet" href="styles/navbar-centered.css" media="screen" title="no title" charset="utf-8">
-        <!-- Google font Marcellus -->
-        <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="styles/slidejs.css">
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <!-- Main css -->
+        <link href="css/main.css" rel="stylesheet">
+        <!-- Navbar centered css -->
+        <link rel="stylesheet" href="styles/navbar-centered.css" media="screen" title="no title" charset="utf-8">
+        <!-- Google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+        <!-- slidejs -->
+        <link rel="stylesheet" href="styles/slidejs.css">
+        <!-- google api -->
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        
     </head>
     <body>
         <div class="page-wrapper container-fluid ">
@@ -136,9 +140,9 @@
                                     <img src="img/secondary-logo.png" class="secondary-logo img-responsive center-block">
                                     <img src="img/goldandsilver.png" class="center-block full-width-img">
                                     <p class="text-watch-top">· ЧАСЫ ·</p>
-                                    <img src="img/jewerly.png" class="center-block full-width-img">
+                                    <img src="img/jewerly.png" class="center-block ">
                                     <p class="text-watch-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iste dolorem earum, ad libero consequuntur nam. Aliquam!</p>
-                                    <img src="img/jewerly.png" class="center-block full-width-img">
+                                    <img src="img/jewerly.png" class="center-block ">
                                     <p class="text-watch-bottom">2315</p>
                                 </div>
                             </div>
@@ -338,8 +342,22 @@
                         <div class="row">
                             <div class="maps-header container-fluid">
                                 <div class="header-text storeNear"><p class="text-uppercase col-xs-12 col-sm-4">магазины рядом</p></div>
-                                <div class="yourCity col-xs-12 text-center col-sm-4">Ваш город</div>
-                                <div class="toggle col-xs-12 text-right col-sm-4">Свернуть</div>
+                                <div class="yourCity col-xs-12 text-center col-sm-4">
+                                    <!-- Single button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle choseCityBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Ваш город <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Москва</a></li>
+                                            <li><a href="#">Санкт-Петербург</a></li>
+                                            <li><a href="#">Казань</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="toggle col-xs-12 text-right col-sm-4">
+                                    <span class="toggle-map">Свернуть </span><img src="../img/up-arrowhead.png" class="hide-img">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -347,9 +365,9 @@
                 </div>
                 <!-- /.top -->
                 <!-- middle -->
-                    <div class="middle container-fluid col-xs-12">
-                            <div id="googleMap" style="width:100%;height:450px;"></div>
-                    </div>
+                <div class="middle container-fluid col-xs-12">
+                    <div id="googleMap" style="width:100%;height:450px;"></div>
+                </div>
                 <!-- /.middle -->
                 <!-- bottom -->
                 <div class="bottom">
