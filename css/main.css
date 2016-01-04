@@ -230,6 +230,25 @@
     border: none;
     box-shadow: none;
     background-color: #fff; }
+    .page-wrapper .top .top-center .maps-header .yourCity .choseCityBtn .rightArrow {
+      height: 7px;
+      width: 4px;
+      background-image: url("../img/city-icon.png");
+      display: inline-block;
+      margin-left: 10px; }
+    .page-wrapper .top .top-center .maps-header .yourCity .choseCityBtn .cityList li a {
+      cursor: pointer; }
+  .page-wrapper .top .top-center .maps-header .yourCity .favoritesCity {
+    display: inline-block;
+    padding-top: 5px; }
+  .page-wrapper .top .top-center .maps-header .yourCity .closeArrow {
+    height: 7px;
+    width: 7px;
+    background-image: url("../img/city-icon.png");
+    display: none;
+    margin-top: 14px;
+    background-position: 7px;
+    cursor: pointer; }
   .page-wrapper .top .top-center .maps-header .yourCity .open .btn {
     background-color: #fff; }
   .page-wrapper .top .top-center .maps-header .yourCity .open .btn:active {
