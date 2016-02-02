@@ -399,8 +399,8 @@
         .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .choseForWhom, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .choseCaseMetal, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .choseColor, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .choseInsert {
           display: inline-block;
           background-color: #F3F2F0;
-          border: none;
-          box-shadow: none; }
+          box-shadow: none;
+          border: none; }
         .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .alreadyChosedForWhom, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .alreadyChosedForCaseMetal, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .alreadyChosedForColor, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .alreadyChosedForInsert {
           display: inline-block;
           transform: translate(0px, 5px); }
@@ -426,35 +426,33 @@
           display: inline-block; }
     .page-wrapper .bottom .bottom-center .footer-text {
       color: #fff;
-      padding-top: 30px; }
+      padding-top: 20px;
+      text-align: center;
+      padding-bottom: 40px; }
       .page-wrapper .bottom .bottom-center .footer-text .footer-p {
         padding: 5vh 30vh; }
-      .page-wrapper .bottom .bottom-center .footer-text ul {
-        padding-left: 0;
-        text-align: center;
-        list-style: none; }
-        .page-wrapper .bottom .bottom-center .footer-text ul .icon-vk {
-          background-image: url("../img/social.png");
-          width: 24px;
-          height: 24px; }
-        .page-wrapper .bottom .bottom-center .footer-text ul .icon-facebook {
-          background-image: url("../img/social.png");
-          background-position: 72px 0px;
-          width: 24px;
-          height: 24px; }
-        .page-wrapper .bottom .bottom-center .footer-text ul .icon-twitter {
-          background-image: url("../img/social.png");
-          background-position: 48px 0px;
-          width: 24px;
-          height: 24px; }
-        .page-wrapper .bottom .bottom-center .footer-text ul .icon-4 {
-          background-image: url("../img/social.png");
-          background-position: 24px 0px;
-          width: 24px;
-          height: 24px; }
-        .page-wrapper .bottom .bottom-center .footer-text ul li {
-          display: inline-block;
-          margin: 24px; }
+      .page-wrapper .bottom .bottom-center .footer-text .icon-vk {
+        background-image: url("../img/social.png");
+        width: 24px;
+        height: 24px; }
+      .page-wrapper .bottom .bottom-center .footer-text .icon-facebook {
+        background-image: url("../img/social.png");
+        background-position: 72px 0px;
+        width: 24px;
+        height: 24px; }
+      .page-wrapper .bottom .bottom-center .footer-text .icon-twitter {
+        background-image: url("../img/social.png");
+        background-position: 48px 0px;
+        width: 24px;
+        height: 24px; }
+      .page-wrapper .bottom .bottom-center .footer-text .icon-4 {
+        background-image: url("../img/social.png");
+        background-position: 24px 0px;
+        width: 24px;
+        height: 24px; }
+      .page-wrapper .bottom .bottom-center .footer-text a {
+        display: inline-block;
+        margin: 24px; }
     .page-wrapper .bottom .bottom-center .contact {
       color: #fff; }
       .page-wrapper .bottom .bottom-center .contact .phone .under-logo-text {
@@ -473,10 +471,18 @@
             text-align: left;
             list-style: none; }
             .page-wrapper .bottom .bottom-center .contact .links .links-list ul a {
-              text-decoration: underline; }
+              text-decoration: underline;
+              color: #fff; }
               .page-wrapper .bottom .bottom-center .contact .links .links-list ul a li {
                 color: #fff;
-                padding-left: 0;
-                font-size: 12px; }
+                padding-left: 0; }
 .page-wrapper .footer p {
-  margin: 20px; }
+  display: inline-block;
+  text-align: center; }
+.page-wrapper .footer span {
+  display: inline-block; }
+  .page-wrapper .footer span i {
+    display: inline-block;
+    background-image: url("../img/letter.png");
+    height: 29px;
+    width: 29px; }

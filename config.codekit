@@ -220,6 +220,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/letter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27968,
+		"inputAbbreviatedPath": "\/img\/letter.png",
+		"outputAbbreviatedPath": "\/img\/letter.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/line-submit.png": {
 		"fileType": 32768,
 		"ignore": 0,

@@ -25,7 +25,7 @@ function initialize() {
   icon: iconBlue
   });
   marker1.setMap(map);
-  
+
   var marker2=new google.maps.Marker({
   position:posMarker2,
   icon: iconBlue

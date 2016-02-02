@@ -27,7 +27,7 @@
   <!-- slidejs -->
   <link rel="stylesheet" href="styles/slidejs.css">
   <!-- google api -->
-  <!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
 
 </head>
 
@@ -236,9 +236,8 @@
                       <form>
                         <div class="row">
                           <div class="form-group col-xs-12 ">
-                            <label for="city">
-                              <p class="text-uppercase">Город</p>
-                            </label>
+                            <label for="city"></label>
+                                <p class="text-uppercase" >Город</p>
                             <div class="input-group col-xs-12">
                               <input type="text" class="form-control input" id="city">
                             </div>
@@ -246,9 +245,8 @@
                         </div>
                         <div class="row">
                           <div class="form-group col-xs-12 ">
-                            <label for="street">
-                              <p class="text-uppercase">Улица</p>
-                            </label>
+                            <label for="street"></label>
+                                <p class="text-uppercase">Улица</p>
                             <div class="input-group col-xs-12">
                               <input type="text" class="form-control input" id="street">
                             </div>
@@ -256,9 +254,8 @@
                         </div>
                         <div class="row">
                           <div class="form-group col-xs-12 ">
-                            <label for="phone">
-                              <p class="text-uppercase">Телефон для связи</p>
-                            </label>
+                            <label for="phone"></label>
+                                <p class="text-uppercase">Телефон для связи</p>
                             <div class="input-group col-xs-12">
                               <input type="text" class="form-control input" id="phone">
                             </div>
@@ -272,25 +269,22 @@
                       <form>
                         <div class="row">
                           <div class="form-group col-xs-12 col-md-4">
-                            <label for="house" class="control-label">
-                              <p class="text-uppercase">Дом</p>
-                            </label>
+                            <label for="house" class="control-label"></label>
+                                <p class="text-uppercase">Дом</p>
                             <div class="input-group col-xs-12">
                               <input type="text" class="form-control input" id="house">
                             </div>
                           </div>
                           <div class="form-group col-xs-12 col-md-4">
-                            <label for="shell" class="control-label">
-                              <p class="text-uppercase">Корпус</p>
-                            </label>
+                            <label for="shell" class="control-label"></label>
+                                <p class="text-uppercase">Корпус</p>
                             <div class="input-group col-xs-12">
                               <input type="text" class="form-control input" id="shell">
                             </div>
                           </div>
                           <div class="form-group col-xs-12 col-md-4">
-                            <label for="structure" class="control-label">
-                              <p class="text-uppercase">Строение</p>
-                            </label>
+                            <label for="structure" class="control-label"></label>
+                                <p class="text-uppercase">Строение</p>
                             <div class="input-group col-xs-12">
                               <input type="text" class="form-control input" id="structure">
                             </div>
@@ -298,9 +292,8 @@
                         </div>
                         <div class="form-group col-xs-12 ">
                           <div class="row ">
-                            <label for="cooment">
-                              <p class="text-uppercase">Ваши пожелания</p>
-                            </label>
+                            <label for="cooment"></label>
+                                <span class="text-uppercase">Ваши пожелания</span>
                             <div class="input-group col-xs-12">
                               <textarea class="form-control" id="comment"></textarea>
                             </div>
@@ -309,7 +302,7 @@
                         <div class="form-group col-xs-12 edit-form-group">
                           <div class="row ">
                             <button type="button" class="btn btn-default btn-edit">
-                              <p class="text-uppercase">изменить</p>
+                              <span class="text-uppercase">изменить</span>
                             </button>
                           </div>
                         </div>
@@ -329,19 +322,17 @@
                         <div class="row">
                           <div class="form-group form-group-bottom-right col-xs-10">
                             <div class="checkboxx cash">
-                              <label class="" for="cash">
-                                <p class="text-uppercase">наличными</p>
-                              </label>
-                              <div class="input-checkbox" id="cash" type=""></div>
+                              <label class="" for="cash"></label>
+                                  <p class="text-uppercase">наличными</p>
+                              <div class="input-checkbox" id="cash"></div>
                             </div>
                           </div>
                         </div>
                         <div class="row">
                           <div class="form-group form-group-bottom-right col-xs-12 ">
                             <div class="checkboxx card">
-                              <label for="card">
-                                <p class="text-uppercase">картой</p>
-                              </label>
+                              <label for="card"></label>
+                                  <p class="text-uppercase">картой</p>
                               <div class="input-checkbox" id="card"></div>
                             </div>
                           </div>
@@ -349,9 +340,8 @@
                         <div class="row">
                           <div class="form-group form-group-bottom-right col-xs-12 ">
                             <div class="checkboxx transfer">
-                              <label for="transfer">
-                                <p class="text-uppercase">переводом</p>
-                              </label>
+                              <label for="transfer"></label>
+                                  <p class="text-uppercase">переводом</p>
                               <div class="input-checkbox" id="transfer"></div>
                             </div>
                           </div>
@@ -384,7 +374,7 @@
             <div class="checkout container-fluid">
               <img src="img/line-submit.png" alt="submit line">
               <button type="submit" class="btn btn-default btn-submit ">
-                <p class="text-uppercase">оформить заказ</p>
+                <span class="text-uppercase">оформить заказ</span>
               </button>
               <img src="img/line-submit.png" alt="submit line">
             </div>
@@ -400,7 +390,7 @@
                 <div class="btn-group">
                   <button type="button" class="btn btn-default dropdown-toggle choseCityBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Ваш город
-                    <div class="rightArrow"></div>
+                    <span class="rightArrow"></span>
                   </button>
                   <ul class="dropdown-menu cityList">
                     <li><a>Москва</a></li>
@@ -412,7 +402,8 @@
                 </div>
               </div>
               <div class="toggle col-xs-12 text-right col-sm-4">
-                <span class="toggle-map">Свернуть </span><img src="img/up-arrowhead.png" class="hide-img">
+                <span class="toggle-map">Свернуть </span>
+                <img src="img/up-arrowhead.png" class="hide-img" alt="arrowup">
               </div>
             </div>
           </div>
@@ -467,13 +458,13 @@
                     <p class="news-place text-uppercase "><strong>Lorem ipsum dolor sit amet.</strong></p>
                     <p class="news-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem qui, accusantium laudantium.</p>
                     <ul>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>[457]</strong></li>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>[11]</strong></li>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>в закладки</strong></li>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>ссылка</strong></li>
                     </ul>
                   </div>
@@ -482,13 +473,13 @@
                     <p class="news-place text-uppercase "><strong>Lorem ipsum dolor sit amet.</strong></p>
                     <p class="news-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem qui, accusantium laudantium.</p>
                     <ul>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>[457]</strong></li>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>[11]</strong></li>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>в закладки</strong></li>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>ссылка</strong></li>
                     </ul>
                   </div>
@@ -497,13 +488,13 @@
                     <p class="news-place text-uppercase "><strong>Lorem ipsum dolor sit amet.</strong></p>
                     <p class="news-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem qui, accusantium laudantiumb.</p>
                     <ul>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>[457]</strong></li>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>[11]</strong></li>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>в закладки</strong></li>
-                      <i></i>
+                      <li><i></i></li>
                       <li><strong>ссылка</strong></li>
                     </ul>
                   </div>
@@ -538,7 +529,7 @@
                 <div class="btn-group forWhom">
                   <button type="button" class="btn btn-default dropdown-toggle choseForWhom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Для кого
-                    <div class="rightArrowForWhom"></div>
+                    <span class="rightArrowForWhom"></span>
                   </button>
                   <ul class="dropdown-menu forWhomList">
                     <li><a>Для нее</a></li>
@@ -553,7 +544,7 @@
                 <div class="btn-group forCaseMetalbtn-group">
                   <button type="button" class="btn btn-default dropdown-toggle choseCaseMetal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Металл корпуса
-                    <div class="rightArrowForCaseMetal"></div>
+                    <span class="rightArrowForCaseMetal"></span>
                   </button>
                   <ul class="dropdown-menu forCaseMetal">
                     <li><a>Золото</a></li>
@@ -568,7 +559,7 @@
                 <div class="btn-group forColorbtn-group">
                   <button type="button" class="btn btn-default dropdown-toggle choseColor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Цвет
-                    <div class="rightArrowForColor"></div>
+                    <span class="rightArrowForColor"></span>
                   </button>
                   <ul class="dropdown-menu forColor">
                     <li><a>Желтое</a></li>
@@ -584,7 +575,7 @@
                 <div class="btn-group forInsertbtn-group">
                   <button type="button" class="btn btn-default dropdown-toggle choseInsert" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Вставки
-                    <div class="rightArrowForInsert"></div>
+                    <span class="rightArrowForInsert"></span>
                   </button>
                   <ul class="dropdown-menu forInsert">
                     <li><a>Есть</a></li>
@@ -609,20 +600,10 @@
                   <p class="text-center footer-p "><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laudantium voluptas aliquid earum reprehenderit, debitis repellendus nostrum fugiat nobis maiores velit fugit dignissimos numquam magnam id, incidunt voluptates! Iste, dolorum!</span><span>Illo dolorum cumque quibusdam, fugit sequi earum magni, modi ea mollitia, facere, quod veritatis consequatur? Accusantium ea quo itaque adipisci exercitationem a recusandae provident corporis officiis, consequatur incidunt reiciendis ab?</span></p>
                 </div>
                 <div class="row ">
-                  <ul>
-                    <a href=" ">
-                      <li class="icon-vk "></li>
-                    </a>
-                    <a href=" ">
-                      <li class="icon-facebook "></li>
-                    </a>
-                    <a href=" ">
-                      <li class="icon-twitter "></li>
-                    </a>
-                    <a href=" ">
-                      <li class="icon-4 "></li>
-                    </a>
-                  </ul>
+                    <a href="#" class="icon-vk " ></a>
+                    <a href="#" class="icon-facebook"></a>
+                    <a href="#" class="icon-twitter"></a>
+                    <a href="#" class="icon-4"></a>
                 </div>
               </div>
               <div class="contact container-fluid ">
@@ -685,35 +666,39 @@
         <!-- /.bottom -->
         <div class="footer col-xs-12 ">
           <p class="text-center"> © Торговый дом «НИКА», 2003—2013 </p>
+          <span class="text-right">
+              <em>Написать</em>
+              <i class="letter"></i>
+          </span>
         </div>
     </div>
     <!-- /.row for page-wrapper -->
   </div>
   <!-- /.page-wrapper -->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Start SlidesJS Required -->
-  <!-- SlidesJS Required: Link to jQuery -->
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <!-- End SlidesJS Required -->
-  <!-- SlidesJS Required: Link to jquery.slides.js -->
-  <script src="js/jquery.slides.min.js"></script>
-  <!-- End SlidesJS Required -->
-  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
-  <script>
-    $(function() {
-    $('#slides').slidesjs({
-    width: 940,
-    height: 528,
-    navigation: false
-    });
-    });
-  </script>
-  <!-- End SlidesJS Required -->
-  <!-- Чекбокси які вокористані в формі реалізовані на jQuery оскільки, стандартні чекбокси неможливо зробити такими як в макеті -->
-  <script src="js/checkbox.js"></script>
-  <script src="js/googleMap.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Start SlidesJS Required -->
+   <!-- SlidesJS Required: Link to jQuery -->
+   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+   <!-- End SlidesJS Required -->
+   <!-- SlidesJS Required: Link to jquery.slides.js -->
+   <script src="js/jquery.slides.min.js"></script>
+   <!-- End SlidesJS Required -->
+   <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+   <script>
+     $(function() {
+       $('#slides').slidesjs({
+         width: 940,
+         height: 528,
+         navigation: false
+       });
+     });
+   </script>
+   <!-- End SlidesJS Required -->
+   <!-- Чекбокси які вокористані в формі реалізовані на jQuery оскільки, стандартні чекбокси неможливо зробити такими як в макеті -->
+   <script src="js/checkbox.js"></script>
+   <script src="js/googleMap.js"></script>
 </body>
 </html>
