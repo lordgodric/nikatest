@@ -438,6 +438,64 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/noUiSlider.8.2.1\/nouislider.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/noUiSlider.8.2.1\/nouislider.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/noUiSlider.8.2.1\/nouislider.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/noUiSlider.8.2.1\/nouislider.js",
+		"outputAbbreviatedPath": "\/noUiSlider.8.2.1\/min\/nouislider-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/noUiSlider.8.2.1\/nouislider.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/noUiSlider.8.2.1\/nouislider.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/noUiSlider.8.2.1\/nouislider.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/noUiSlider.8.2.1\/nouislider.min.js",
+		"outputAbbreviatedPath": "\/noUiSlider.8.2.1\/min\/nouislider.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/noUiSlider.8.2.1\/nouislider.pips.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/noUiSlider.8.2.1\/nouislider.pips.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/noUiSlider.8.2.1\/nouislider.tooltips.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/noUiSlider.8.2.1\/nouislider.tooltips.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/styles\/_checkout.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
