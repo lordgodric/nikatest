@@ -183,6 +183,8 @@
         border: 1px solid #aaa; }
       .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .form-group, .page-wrapper .top .top-center .delivery .delivery-wrapper .child-left .form-group {
         margin: 0; }
+        .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .form-group #comment, .page-wrapper .top .top-center .delivery .delivery-wrapper .child-left .form-group #comment {
+          height: 134px; }
       .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .child-left-bottom-right .form-group {
         margin: 0; }
         .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .child-left-bottom-right .form-group .input-checkbox {
@@ -202,8 +204,6 @@
             color: #000; }
             .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .rulles div a .text {
               text-decoration: underline; }
-      .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block #comment {
-        height: 106px; }
       .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .btn-edit {
         font-size: 11px;
         background-color: #ececec;
@@ -295,7 +295,7 @@
   background-image: url("../img/top-content-bg.gif");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100% 700px;
+  background-size: 100% 900px;
   min-height: 3350px; }
   .page-wrapper .bottom .bottom-center {
     min-height: 1000px; }
@@ -314,7 +314,9 @@
       .page-wrapper .bottom .bottom-center .watches .info {
         display: inline-block; }
     .page-wrapper .bottom .bottom-center .news {
-      padding: 20px; }
+      padding: 20px;
+      background-color: #fff;
+      margin-bottom: 20px; }
       .page-wrapper .bottom .bottom-center .news .specification {
         font-family: "Cinzel", serif;
         font-size: 20px; }
@@ -452,7 +454,7 @@
         height: 24px; }
       .page-wrapper .bottom .bottom-center .footer-text a {
         display: inline-block;
-        margin: 24px; }
+        margin: 15px; }
     .page-wrapper .bottom .bottom-center .contact {
       color: #fff; }
       .page-wrapper .bottom .bottom-center .contact .phone .under-logo-text {
@@ -480,9 +482,23 @@
   display: inline-block;
   text-align: center; }
 .page-wrapper .footer span {
+  text-align: right;
+  cursor: pointer;
   display: inline-block; }
-  .page-wrapper .footer span i {
-    display: inline-block;
-    background-image: url("../img/letter.png");
-    height: 29px;
-    width: 29px; }
+  .page-wrapper .footer span em {
+    display: inline-block; }
+  .page-wrapper .footer span .dropdown {
+    display: inline-block; }
+    .page-wrapper .footer span .dropdown i {
+      display: inline-block;
+      background-image: url("../img/letter.png");
+      height: 29px;
+      width: 29px;
+      transform: translate(0px, 2px); }
+    .page-wrapper .footer span .dropdown .dropdown-menu {
+      top: -400px;
+      left: -300px;
+      height: 400px;
+      min-width: 300px;
+      background-color: #aea9a0;
+      padding: 20px; }

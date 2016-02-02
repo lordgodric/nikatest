@@ -247,6 +247,8 @@ $bgForButton: #ececec
 
                         .form-group
                             margin: 0
+                            #comment
+                                height: 134px
 
                     .bottom-delivery-block
                         .bottom-right
@@ -275,9 +277,6 @@ $bgForButton: #ececec
 
                                         .text
                                             text-decoration: underline
-
-                        #comment
-                            height: 106px
 
                         .btn-edit
                             font-size: 11px
@@ -376,7 +375,7 @@ $bgForButton: #ececec
         background-image: url("../img/top-content-bg.gif")
         background-position: bottom
         background-repeat: no-repeat
-        background-size: 100% 700px
+        background-size: 100% 900px
         min-height: 3350px
         // height: 2000px
 
@@ -403,6 +402,8 @@ $bgForButton: #ececec
             // NOTE: розділ новин
             .news
                 padding: 20px
+                background-color: #fff
+                margin-bottom: 20px
                 .specification
                     font-family: 'Cinzel', serif
                     font-size: 20px
@@ -569,7 +570,7 @@ $bgForButton: #ececec
                     height: 24px
                 a
                     display: inline-block
-                    margin: 24px
+                    margin: 15px
 
             // NOTE: розділ контактів
             .contact
@@ -604,10 +605,24 @@ $bgForButton: #ececec
             display: inline-block
             text-align: center
         span
+            text-align: right
+            cursor: pointer
             display: inline-block
-            p
-            i
+
+            em
                 display: inline-block
-                background-image: url("../img/letter.png")
-                height: 29px
-                width: 29px
+            .dropdown
+                display: inline-block
+                i
+                    display: inline-block
+                    background-image: url("../img/letter.png")
+                    height: 29px
+                    width: 29px
+                    transform: translate(0px, 2px)
+                .dropdown-menu
+                    top: -400px
+                    left: -300px
+                    height: 400px
+                    min-width: 300px
+                    background-color: #aea9a0
+                    padding: 20px

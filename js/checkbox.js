@@ -1,19 +1,12 @@
 $(document).ready(function() {
 
-	// function evalSlider(){
-	// 	var sliderValue = document.getElementById('rating').value;
-	// 	document.getElementById('sliderVal').innerHTML = sliderValue;
-	// }
-
-	
-
 	// Чекбокс
 	$(".input-checkbox").click(function(){
-		// Видалимо всі обрання із елементів input-checkbox
-		$(".input-checkbox").removeClass("checked");
-		// Добавимо обраному елементу клас checked
-       	$(this).addClass("checked");
-    });
+			// Видалимо всі обрання із елементів input-checkbox
+			$(".input-checkbox").removeClass("checked");
+			// Добавимо обраному елементу клас checked
+	       	$(this).addClass("checked");
+	    });
 
 	// Перемикання кнопки "Свернуть" на "Розвернуть" і змінна іконки
 	$(".toggle").click(function(){
@@ -82,6 +75,8 @@ $(document).ready(function() {
         $(".closeArrowForInsert").css('display', 'none');							// приховуваня стрілки
     });
 
-
-
+		// Закрити віко dropdown-menu
+		$(".dropdown-menu .closeDrowpdownMenu").click(function() {
+    		$('.in,.open').removeClass('in open');
+		});
 });
