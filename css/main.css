@@ -291,7 +291,10 @@
 .page-wrapper .middle {
   padding: 0; }
 .page-wrapper .bottom {
-  background-color: orange; }
+  background-image: url("../img/top-content-bg.gif");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 40%; }
   .page-wrapper .bottom .bottom-center .otheDials {
     font-family: "Cinzel", serif;
     font-size: 20px;
