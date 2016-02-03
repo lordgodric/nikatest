@@ -79,4 +79,10 @@ $(document).ready(function() {
 		$(".dropdown-menu .closeDrowpdownMenu").click(function() {
     		$('.in,.open').removeClass('in open');
 		});
+
+		// Відкрити додаткове вікно для кожного годинника (під картою)
+		// $(".info").hide();
+		$(".oneWatches").click(function(){
+			$(this).parent().next().toggle()
+		});
 });

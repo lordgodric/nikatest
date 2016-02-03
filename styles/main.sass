@@ -1,6 +1,7 @@
 $bgForInputs: #f3f2f0
 $bgForButton: #ececec
 
+
 .page-wrapper
 
     .top
@@ -248,7 +249,12 @@ $bgForButton: #ececec
                         .form-group
                             margin: 0
                             #comment
-                                height: 134px
+                                height: 114px
+                            #structure
+                                margin-bottom: 15px
+                            #comment
+                                margin-top: 7px
+
 
                     .bottom-delivery-block
                         .bottom-right
@@ -371,18 +377,14 @@ $bgForButton: #ececec
     // middle
     @import _middle
 
+    // bottom
     .bottom
         background-image: url("../img/top-content-bg.gif")
         background-position: bottom
         background-repeat: no-repeat
         background-size: 100% 40%
-        // background-color: orange
-        // background-max-size: 100% 2000px
-        // min-height: 3350px
-        // height: 2000px
 
         .bottom-center
-            // min-height: 1000px
 
             .otheDials
                 font-family: 'Cinzel', serif
@@ -396,10 +398,18 @@ $bgForButton: #ececec
             .watches
                 background-color: #fff
                 text-align: center
-                img
+                .watchesWrapper
                     display: inline-block
-                .info
-                    display: inline-block
+                    .imageWrapper
+                        display: inline-block
+                        background-color: #f3f2f0
+                        width: 150px
+                        padding: 20px 0
+                        // img
+                    .info
+                        display: inline-block
+                        background-color: #a0a9ae
+                        width: 150px
 
             // NOTE: розділ новин
             .news
@@ -470,14 +480,14 @@ $bgForButton: #ececec
                     margin: 0 auto
                     height: 471px
 
-            // NOTE: розділ вибору годинників
+            // NOTE: блок вибору годинників через параметри
             .filter
                 background-color: #F3F2F0
                 padding-top: 20px
                 padding-bottom: 20px
                 .filter-header
                     font-family: 'Cinzel', serif
-                    font-size: 20px
+                    font-size: 18px
                     ul
                         padding-top: 10%
                         list-style: none
@@ -486,6 +496,7 @@ $bgForButton: #ececec
                             a
                                 color: #80807F
                                 text-decoration: none
+                                font-size: 18px
                                 &:hover
                                     color: black
 
@@ -546,11 +557,11 @@ $bgForButton: #ececec
             // NOTE: текст в футері
             .footer-text
                 color: #fff
-                padding-top: 20px
+                padding-top: 40px
                 text-align: center
                 padding-bottom: 40px
                 .footer-p
-                    padding: 5vw
+                    padding: 3vw
                 .icon-vk
                     background-image: url("../img/social.png")
                     width: 24px
@@ -577,6 +588,7 @@ $bgForButton: #ececec
             // NOTE: розділ контактів
             .contact
                 color: #fff
+                margin-bottom: 40px
                 .phone
                     .under-logo-text
                         margin-top: 10px
@@ -584,12 +596,12 @@ $bgForButton: #ececec
                         font-size: 2em
                         margin-top: 10px
                 .links
+
                     text-align: center
                     .links-list
                         display: inline-block
                         min-width: 140px
                         vertical-align: top
-                        // margin: 45px 30px
                         ul
                             padding-left: 0
                             text-align: left
@@ -600,6 +612,8 @@ $bgForButton: #ececec
                                 li
                                     color: #fff
                                     padding-left: 0
+
+
 
     // NOTE: футер
     .footer
