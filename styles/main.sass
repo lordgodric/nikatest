@@ -8,7 +8,7 @@ $bgForButton: #ececec
         background-position: top
         background-repeat: no-repeat
         background-size: 100% 700px
-        min-height: 500px
+        // min-height: 500px
         // height: 1480px
 
         .top-center
@@ -372,15 +372,17 @@ $bgForButton: #ececec
     @import _middle
 
     .bottom
-        background-image: url("../img/top-content-bg.gif")
-        background-position: bottom
-        background-repeat: no-repeat
-        background-size: 100% 900px
-        min-height: 3350px
+        // background-image: url("../img/top-content-bg.gif")
+        // background-position: bottom
+        // background-repeat: no-repeat
+        // background-size: 100% 800px
+        background-color: orange
+        // background-max-size: 100% 2000px
+        // min-height: 3350px
         // height: 2000px
 
         .bottom-center
-            min-height: 1000px
+            // min-height: 1000px
 
             .otheDials
                 font-family: 'Cinzel', serif
@@ -548,7 +550,7 @@ $bgForButton: #ececec
                 text-align: center
                 padding-bottom: 40px
                 .footer-p
-                    padding: 5vh 30vh
+                    padding: 5vw
                 .icon-vk
                     background-image: url("../img/social.png")
                     width: 24px
@@ -601,28 +603,74 @@ $bgForButton: #ececec
 
     // NOTE: футер
     .footer
+        // height: 50px
         p
             display: inline-block
-            text-align: center
+            padding-top: 15px
         span
             text-align: right
             cursor: pointer
             display: inline-block
-
             em
                 display: inline-block
             .dropdown
                 display: inline-block
-                i
+                h4
+                    margin-bottom: 20px
+                .letter
                     display: inline-block
                     background-image: url("../img/letter.png")
                     height: 29px
                     width: 29px
-                    transform: translate(0px, 2px)
+                    transform: translate(0px, 10px)
                 .dropdown-menu
-                    top: -400px
+                    top: -450px
                     left: -300px
-                    height: 400px
+                    height: 450px
                     min-width: 300px
                     background-color: #aea9a0
-                    padding: 20px
+                    padding: 25px
+                    font-size: 12px
+                    .form-group
+                        padding: 0px
+                        label
+                            font-size: 10px
+                        input
+                            width: 100%
+                            margin-bottom: 10px
+                .col-xs-12
+                    padding: 0
+                    .btn-default
+                        margin-top: 20px
+                        background-color: #aea9a0
+                        &:active
+                            outline: none !important
+                            box-shadow: none !important
+                        &:first-child
+                            border: none
+                            font-style: italic
+                            margin-top: 10px
+                            padding-left: 0
+                            &:hover
+                                background-color: #aea9a0
+                                color: #fff
+                                .closeDropDownMenuIcon
+                                    background-image: url("../img/hoverCloseDrowpdownMenu.png")
+
+                        &:last-child
+                            border-radius: 0
+                            border-color: #fff
+                            color: #fff
+                        &:hover
+                            background-color: #fff
+                            border-color: #000
+                            color: #545451
+                        .closeDropDownMenuIcon
+                            display: inline-block
+                            background-image: url("../img/closeDrowpdownMenu.png")
+                            height: 29px
+                            width: 29px
+                            background-position: 29px 0px
+                            transform: translate(0px, 10px)
+                            $bgForInputs: #f3f2f0
+                            $bgForButton: #ececec

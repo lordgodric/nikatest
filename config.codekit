@@ -99,6 +99,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/closeDrowpdownMenu.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 659,
+		"inputAbbreviatedPath": "\/img\/closeDrowpdownMenu.png",
+		"outputAbbreviatedPath": "\/img\/closeDrowpdownMenu.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/doc-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -187,6 +198,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/hoverCloseDrowpdownMenu.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 659,
+		"inputAbbreviatedPath": "\/img\/hoverCloseDrowpdownMenu.png",
+		"outputAbbreviatedPath": "\/img\/hoverCloseDrowpdownMenu.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icon-blue.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -260,6 +282,17 @@
 		"initialSize": 431432,
 		"inputAbbreviatedPath": "\/img\/news1.png",
 		"outputAbbreviatedPath": "\/img\/news1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/news2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 369097,
+		"inputAbbreviatedPath": "\/img\/news2.png",
+		"outputAbbreviatedPath": "\/img\/news2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
