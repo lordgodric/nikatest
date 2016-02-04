@@ -66,6 +66,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/active-single-news.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1634,
+		"inputAbbreviatedPath": "\/img\/active-single-news.png",
+		"outputAbbreviatedPath": "\/img\/active-single-news.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/check-mark.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -290,7 +301,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 369097,
+		"initialSize": 383514,
 		"inputAbbreviatedPath": "\/img\/news2.png",
 		"outputAbbreviatedPath": "\/img\/news2.png",
 		"outputPathIsOutsideProject": 0,
@@ -315,6 +326,17 @@
 		"initialSize": 1394,
 		"inputAbbreviatedPath": "\/img\/pagination.png",
 		"outputAbbreviatedPath": "\/img\/pagination.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/right-arrow-single-news.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 219,
+		"inputAbbreviatedPath": "\/img\/right-arrow-single-news.png",
+		"outputAbbreviatedPath": "\/img\/right-arrow-single-news.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -348,6 +370,17 @@
 		"initialSize": 1270,
 		"inputAbbreviatedPath": "\/img\/single-news.png",
 		"outputAbbreviatedPath": "\/img\/single-news.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/small-jewerly.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1854,
+		"inputAbbreviatedPath": "\/img\/small-jewerly.png",
+		"outputAbbreviatedPath": "\/img\/small-jewerly.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

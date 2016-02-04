@@ -382,7 +382,7 @@ $bgForButton: #ececec
         background-image: url("../img/top-content-bg.gif")
         background-position: bottom
         background-repeat: no-repeat
-        background-size: 100% 40%
+        background-size: 100% 50%
 
         .bottom-center
 
@@ -400,21 +400,84 @@ $bgForButton: #ececec
                 text-align: center
                 .watchesWrapper
                     display: inline-block
+                    margin-right: 10px
                     .imageWrapper
                         display: inline-block
+                        position: relative
                         background-color: #f3f2f0
-                        width: 150px
                         padding: 20px 0
-                        // img
+                        margin-top: 15px
+                        width: 150px
+                        // для кнопки "в корзину" ввів це значення
+                        .select-dial
+                            display: inline-block
+                            position: absolute
+                            top: 180px
+                            font-size: 0.8em
+                            background-color: #a0a9ae
+                            color: #fff
+                            border-color: #fff
+                            border-radius: 0
+                            width: 100px
+                            &:hover
+                                background-color: #fff
+                                color: #a0a9ae
+                                border-color: #000
+
                     .info
                         display: inline-block
+                        position: relative
                         background-color: #a0a9ae
+                        padding-top: 20px
+                        margin-left: 10px
                         width: 150px
+                        height: 265px
+                        vertical-align: middle
+                        h5
+                            font-family: "Marcellus", serif
+                        img
+                            width: 80%
+                        .main-text
+                            font-size: 0.7em
+                            margin: 20px 10px
+                        .in-basket
+                            font-size: 0.7em
+                            background-color: #a0a9ae
+                            color: #fff
+                            border-color: #fff
+                            border-radius: 0
+                            &:hover
+                                background-color: #fff
+                                color: #a0a9ae
+                                border-color: #000
+                        .under-button-text
+                            font-size: 0.7em
+                            font-weight: bold
+                        .arrow-left
+                            position: absolute
+                            top: 45%
+                            left: -10px
+                            border-top: 10px solid transparent
+                            border-bottom: 10px solid transparent
+                            border-right: 10px solid #a0a9ae
+                            width: 0
+                            height: 0
+                        .arrow-right
+                            position: absolute
+                            top: 45%
+                            right: -10px
+                            border-top: 10px solid transparent
+                            border-bottom: 10px solid transparent
+                            border-left: 10px solid #a0a9ae
+                            width: 0
+                            height: 0
+                            // @extend .arrow-left
+
 
             // NOTE: розділ новин
             .news
-                padding: 20px
                 background-color: #fff
+                padding: 20px
                 margin-bottom: 20px
                 .specification
                     font-family: 'Cinzel', serif
@@ -428,57 +491,91 @@ $bgForButton: #ececec
                         margin-bottom: 10px
                     .single-text-block:nth-child(3)
                         margin-top: 10px
+
                 .single-text-block
-                    background-color: #F3F2F0
+                    background-color: #f3f2f0
                     padding-top: 10px
                     padding-left: 10px
+                    border-left: 10px solid #aea9a0
+
                     ul
                         font-size: 0.7em
                         padding-bottom: 10px
                         padding-left: 0
                         list-style: none
-                        i
-                            display: inline-block
-                        i:nth-child(1)
-                            background-image: url("../img/single-news.png")
-                            width: 17px
-                            height: 16px
-                            transform: translate(0px, 5px)
-                        i:nth-child(3)
-                            background-image: url("../img/single-news.png")
-                            background-position: 185px 0px
-                            width: 20px
-                            height: 16px
-                            transform: translate(0px, 5px)
-                        i:nth-child(5)
-                            background-image: url("../img/single-news.png")
-                            background-position: 135px 0px
-                            width: 17px
-                            height: 16px
-                            transform: translate(0px, 5px)
-                        i:nth-child(7)
-                            background-image: url("../img/single-news.png")
-                            background-position: 52px 0px
-                            width: 17px
-                            height: 16px
-                            transform: translate(0px, 5px)
                         li
                             display: inline-block
                             margin-right: 10px
+                            i
+                                display: inline-block
+                                margin-right: -10px
+                        li:nth-child(1)
+                            i
+                                background-image: url("../img/single-news.png")
+                                width: 17px
+                                height: 16px
+                                transform: translate(0px, 5px)
+                        li:nth-child(3)
+                            i
+                                background-position: 186px 0px
+                                background-image: url("../img/single-news.png")
+                                width: 20px
+                                height: 16px
+                                transform: translate(0px, 5px)
+                        li:nth-child(5)
+                            i
+                                background-position: 135px 0px
+                                background-image: url("../img/single-news.png")
+                                width: 17px
+                                height: 16px
+                                transform: translate(0px, 5px)
+                        li:nth-child(7)
+                            i
+                                background-position: 52px 0px
+                                background-image: url("../img/single-news.png")
+                                width: 17px
+                                height: 16px
+                                transform: translate(0px, 5px)
                     .news-date
+                        font-size: 0.8em
                         color: #AEA9A0
                         margin-bottom: 0
                     .news-text
                         font-size: 0.8em
+                        color: #94908a
+                        line-height: 2em
+                    .news-place
+                        font-size: 0.8em
                     &:hover
-                        background-color: #ccc
+                        background-color: #aea9a0
                         cursor: pointer
+                        .news-date
+                            color: #fff
+                        .news-text
+                            color: #545451
+                        ul
+                            li:nth-child(1)
+                                i
+                                    background-image: url("../img/active-single-news.png")
+                            li:nth-child(3)
+                                i
+                                    background-image: url("../img/active-single-news.png")
+                            li:nth-child(5)
+                                i
+                                    background-image: url("../img/active-single-news.png")
+                            li:nth-child(7)
+                                i
+                                    background-image: url("../img/active-single-news.png")
+                            li:last-child
+                                i
+                                    background-image: url("../img/right-arrow-single-news.png")
+                                    height: 15px
+                                    width: 8px
                 .news-image
                     background-image: url("../img/news1.png")
                     background-position: center
                     background-repeat: no-repeat
-                    margin: 0 auto
-                    height: 471px
+                    height: 450px
 
             // NOTE: блок вибору годинників через параметри
             .filter
@@ -494,9 +591,9 @@ $bgForButton: #ececec
                         li
                             display: inline-block
                             a
+                                font-size: 18px
                                 color: #80807F
                                 text-decoration: none
-                                font-size: 18px
                                 &:hover
                                     color: black
 
@@ -558,8 +655,8 @@ $bgForButton: #ececec
             .footer-text
                 color: #fff
                 padding-top: 40px
-                text-align: center
                 padding-bottom: 40px
+                text-align: center
                 .footer-p
                     padding: 3vw
                 .icon-vk
@@ -596,8 +693,8 @@ $bgForButton: #ececec
                         font-size: 2em
                         margin-top: 10px
                 .links
-
                     text-align: center
+
                     .links-list
                         display: inline-block
                         min-width: 140px
@@ -607,8 +704,8 @@ $bgForButton: #ececec
                             text-align: left
                             list-style: none
                             a
-                                text-decoration: underline
                                 color: #fff
+                                text-decoration: underline
                                 li
                                     color: #fff
                                     padding-left: 0
@@ -622,9 +719,9 @@ $bgForButton: #ececec
             display: inline-block
             padding-top: 15px
         span
-            text-align: right
-            cursor: pointer
             display: inline-block
+            cursor: pointer
+            text-align: right
             em
                 display: inline-block
             .dropdown
@@ -634,37 +731,37 @@ $bgForButton: #ececec
                 .letter
                     display: inline-block
                     background-image: url("../img/letter.png")
-                    height: 29px
                     width: 29px
+                    height: 29px
                     transform: translate(0px, 10px)
                 .dropdown-menu
                     top: -450px
                     left: -300px
-                    height: 450px
-                    min-width: 300px
+                    font-size: 12px
                     background-color: #aea9a0
                     padding: 25px
-                    font-size: 12px
+                    height: 450px
+                    min-width: 300px
                     .form-group
                         padding: 0px
                         label
                             font-size: 10px
                         input
-                            width: 100%
                             margin-bottom: 10px
+                            width: 100%
                 .col-xs-12
                     padding: 0
                     .btn-default
-                        margin-top: 20px
                         background-color: #aea9a0
+                        margin-top: 20px
                         &:active
-                            outline: none !important
                             box-shadow: none !important
+                            outline: none !important
                         &:first-child
-                            border: none
                             font-style: italic
-                            margin-top: 10px
                             padding-left: 0
+                            margin-top: 10px
+                            border: none
                             &:hover
                                 background-color: #aea9a0
                                 color: #fff
@@ -672,19 +769,19 @@ $bgForButton: #ececec
                                     background-image: url("../img/hoverCloseDrowpdownMenu.png")
 
                         &:last-child
-                            border-radius: 0
-                            border-color: #fff
                             color: #fff
+                            border-color: #fff
+                            border-radius: 0
                         &:hover
                             background-color: #fff
-                            border-color: #000
                             color: #545451
+                            border-color: #000
                         .closeDropDownMenuIcon
                             display: inline-block
                             background-image: url("../img/closeDrowpdownMenu.png")
-                            height: 29px
-                            width: 29px
                             background-position: 29px 0px
+                            width: 29px
+                            height: 29px
                             transform: translate(0px, 10px)
                             $bgForInputs: #f3f2f0
                             $bgForButton: #ececec
