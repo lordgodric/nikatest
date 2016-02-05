@@ -260,7 +260,7 @@
       margin-bottom: 10px; }
     .page-wrapper .top .top-center .slider-wrapper .slider-right .text-watch-top {
       font-family: "Marcellus", serif;
-      font-size: 68px;
+      font-size: 6vmax;
       text-align: center; }
     .page-wrapper .top .top-center .slider-wrapper .slider-right .text-watch-middle {
       font-style: italic;
@@ -645,11 +645,7 @@
         display: inline-block; }
   .page-wrapper .bottom .bottom-center .footer-text {
     color: #fff;
-    padding-top: 40px;
-    padding-bottom: 40px;
     text-align: center; }
-    .page-wrapper .bottom .bottom-center .footer-text .footer-p {
-      padding: 3vw; }
     .page-wrapper .bottom .bottom-center .footer-text .icon-vk {
       background-image: url("../img/social.png");
       width: 24px;
@@ -696,29 +692,30 @@
             .page-wrapper .bottom .bottom-center .contact .links .links-list ul a li {
               color: #fff;
               padding-left: 0; }
-.page-wrapper .footer {
-  position: relative; }
-  .page-wrapper .footer p {
+
+.footer {
+  background-color: #fff; }
+  .footer p {
     display: inline-block;
     padding-top: 10px; }
-  .page-wrapper .footer .letter-wrapper {
+  .footer .letter-wrapper {
     padding-top: -25px;
     display: inline-block;
     cursor: pointer;
     text-align: right; }
-    .page-wrapper .footer .letter-wrapper em {
+    .footer .letter-wrapper em {
       display: inline-block; }
-    .page-wrapper .footer .letter-wrapper .dropdown {
+    .footer .letter-wrapper .dropdown {
       display: inline-block; }
-      .page-wrapper .footer .letter-wrapper .dropdown h4 {
+      .footer .letter-wrapper .dropdown h4 {
         margin-bottom: 10px; }
-      .page-wrapper .footer .letter-wrapper .dropdown .letter {
+      .footer .letter-wrapper .dropdown .letter {
         display: inline-block;
         background-image: url("../img/letter.png");
         width: 29px;
         height: 29px;
         transform: translate(0px, 10px); }
-      .page-wrapper .footer .letter-wrapper .dropdown .dropdown-menu {
+      .footer .letter-wrapper .dropdown .dropdown-menu {
         top: -450px;
         left: -250px;
         font-size: 12px;
@@ -726,40 +723,40 @@
         padding: 25px;
         height: 450px;
         width: 350px; }
-        .page-wrapper .footer .letter-wrapper .dropdown .dropdown-menu .form-group {
+        .footer .letter-wrapper .dropdown .dropdown-menu .form-group {
           padding: 0px; }
-          .page-wrapper .footer .letter-wrapper .dropdown .dropdown-menu .form-group label {
+          .footer .letter-wrapper .dropdown .dropdown-menu .form-group label {
             font-size: 10px; }
-          .page-wrapper .footer .letter-wrapper .dropdown .dropdown-menu .form-group input {
+          .footer .letter-wrapper .dropdown .dropdown-menu .form-group input {
             margin-bottom: 20px;
             width: 100%; }
-      .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 {
+      .footer .letter-wrapper .dropdown .col-xs-12 {
         padding: 0; }
-        .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default {
+        .footer .letter-wrapper .dropdown .col-xs-12 .btn-default {
           background-color: #aea9a0;
           margin-top: 20px; }
-          .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:active {
+          .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:active {
             box-shadow: none !important;
             outline: none !important; }
-          .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:first-child {
+          .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:first-child {
             font-style: italic;
             padding-left: 0;
             margin-top: 10px;
             border: none; }
-            .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:first-child:hover {
+            .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:first-child:hover {
               background-color: #aea9a0;
               color: #fff; }
-              .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:first-child:hover .closeDropDownMenuIcon {
+              .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:first-child:hover .closeDropDownMenuIcon {
                 background-image: url("../img/hoverCloseDrowpdownMenu.png"); }
-          .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:last-child {
+          .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:last-child {
             color: #fff;
             border-color: #fff;
             border-radius: 0; }
-          .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:hover {
+          .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:hover {
             background-color: #fff;
             color: #545451;
             border-color: #000; }
-          .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default .closeDropDownMenuIcon {
+          .footer .letter-wrapper .dropdown .col-xs-12 .btn-default .closeDropDownMenuIcon {
             display: inline-block;
             background-image: url("../img/closeDrowpdownMenu.png");
             background-position: 29px 0px;

@@ -15,7 +15,8 @@ $(document).ready(function() {
             $(".active-window-for-gold-watches").hide();
         });
     });
-     
+    
+    // Аналогічно до золотих годинників
     $(".silver-watches, .active-window-for-silver-watches").mouseover(function(){
         $(".active-window-for-gold-watches").hide();
         $(".active-window-for-silver-watches").show();
@@ -61,45 +62,45 @@ $(document).ready(function() {
         $(".closeArrow").css('display', 'none');										// приховуваня стрілки
     });
 
-		// Вибір "Для кого"
+	// Вибір "Для кого"
     $(".forWhomList").children().click(function(){                  // клік на дочірнюму елементу списка
         $(".alreadyChosedForWhom").text($(this).text())             // добавимо значення обраного елемента
         $(".closeArrowForWhom").css('display', 'inline-block');     // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
     });
-		// Видалення елемента із поля "Для кого"
+	// Видалення елемента із поля "Для кого"
     $(".closeArrowForWhom").click(function(){                       // клік по стрілці видаллення елемента із обраного
         $(".alreadyChosedForWhom").empty();                         // очищення значення обраного елемента
         $(".closeArrowForWhom").css('display', 'none');				// приховуваня стрілки
     });
 
-		// Вибір "Металу корпусу"
+	// Вибір "Металу корпусу"
     $(".forCaseMetal").children().click(function(){                      // клік на дочірнюму елементу списка
         $(".alreadyChosedForCaseMetal").text($(this).text())             // добавимо значення обраного елемента
         $(".closeArrowForCaseMetal").css('display', 'inline-block');     // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
     });
-		// Видалення елемента із поля "Матал корпусу"
+	// Видалення елемента із поля "Матал корпусу"
     $(".closeArrowForCaseMetal").click(function(){                       // клік по стрілці видаллення елемента із обраного
         $(".alreadyChosedForCaseMetal").empty();                         // очищення значення обраного елемента
         $(".closeArrowForCaseMetal").css('display', 'none');			 // приховуваня стрілки
     });
 
-		// Вибір "Кольору"
+	// Вибір "Кольору"
     $(".forColor").children().click(function(){                      	 // клік на дочірнюму елементу списка
         $(".alreadyChosedForColor").text($(this).text())                 // добавимо значення обраного елемента
         $(".closeArrowForColor").css('display', 'inline-block');         // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
     });
-		// Видалення елемента із поля "Кольору"
+	// Видалення елемента із поля "Кольору"
     $(".closeArrowForColor").click(function(){                           // клік по стрілці видаллення елемента із обраного
         $(".alreadyChosedForColor").empty();                             // очищення значення обраного елемента
         $(".closeArrowForColor").css('display', 'none');			     // приховуваня стрілки
     });
 
-		// Вибір "Вставок"
+	// Вибір "Вставок"
     $(".forInsert").children().click(function(){                      	 // клік на дочірнюму елементу списка
         $(".alreadyChosedForInsert").text($(this).text())                // добавимо значення обраного елемента
         $(".closeArrowForInsert").css('display', 'inline-block');        // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
     });
-		// Видалення елемента із поля "Вставок"
+	// Видалення елемента із поля "Вставок"
     $(".closeArrowForInsert").click(function(){                          // клік по стрілці видаллення елемента із обраного
         $(".alreadyChosedForInsert").empty();                            // очищення значення обраного елемента
         $(".closeArrowForInsert").css('display', 'none');			     // приховуваня стрілки
@@ -107,64 +108,58 @@ $(document).ready(function() {
 
 
 
-		// Закрити вікно dropdown-menu в футер що знаходиться в футері
-		$(".dropdown-menu .closeDrowpdownMenu").click(function() {
-    		$('.in,.open').removeClass('in open');
-		});
+
+	// Відкрити додаткове вікно для кожного годинника (під картою)
+    // Ховаємо всі обгортки блоку інформації
+	$(".info").hide();
+
+    // Ховаємо всі кнопки які розміщення поверх зображення годинників
+	$(".select-dial").hide();
+
+    // Клік на годдинику
+	$(".oneWatches").mouseover(function(){
+
+        // знову закриємо всі обгорти для блоку інформації
+        // тим самим ми робимо так що якщо вже відкрита якась обгортка
+        // то вона таким чином закриється і залишиться лише одна + теж саме із кнопками на зображенні
+        $(".info").hide();
+        $(".select-dial").hide();
+
+        // зміна для обгортки для зображення годинників + розгортання і згортанню обгортки блоку інформації
+		var selectedImageWrapper = $(this).parent().next().toggle();
+
+        // розгортання і згортання обгортки блоку інформації для останнього контейнера годинників
+        $(this).parent().prev().toggle();
+
+        // перемикає показ кнопки на зображенню з годинниками
+		$(this).next().toggle();
+		
+        var selectedWatchesWrapper = selectedImageWrapper.parent();  							// обрана обгортка для зображення та вікна інформації
+		var lastSelectedWatchesWrapper = $(".watchesWrapper").last(); 						    // остання обгортка зі списку всих обгорток
+       
+        // порівняння обранної обгортки із останньою
+        // якщо вони рівні то робимо для неї щоб обгортка інформації і зображення мінялися місцями
+		if (selectedWatchesWrapper.get(0) == lastSelectedWatchesWrapper.get(0)) {               
+
+            // змінна для останньої обгортки для зображення з годинниками
+            var watchesWrapper = $(lastSelectedWatchesWrapper).children(":first");
+
+            // змінна для останньої обгортки для додаткової інформації
+            var watchesInfoWrapper = $(lastSelectedWatchesWrapper).children(":last")
+
+            // змінна місцями 2-ох останніх обгорток
+            $(watchesInfoWrapper).insertBefore($(watchesWrapper))
+
+            // зміни в стилях для динамічних 2-ох останніх обгорток
+            $(lastSelectedWatchesWrapper).children(":last").css("margin-left", "0px")
+            $(lastSelectedWatchesWrapper).children(":first").css("margin-right", "15px")
+			$(lastSelectedWatchesWrapper).children(":first").css("margin-left", "0px")
+		}
+	});
 
 
 
-		// Відкрити додаткове вікно для кожного годинника (під картою)
-        // Ховаємо всі обгортки блоку інформації
-		$(".info").hide();
-
-        // Ховаємо всі кнопки які розміщення поверх зображення годинників
-		$(".select-dial").hide();
-
-        // Клік на годдинику
-		$(".oneWatches").mouseover(function(){
-
-            // знову закриємо всі обгорти для блоку інформації
-            // тим самим ми робимо так що якщо вже відкрита якась обгортка
-            // то вона таким чином закриється і залишиться лише одна + теж саме із кнопками на зображенні
-            $(".info").hide();
-            $(".select-dial").hide();
-
-            // зміна для обгортки для зображення годинників + розгортання і згортанню обгортки блоку інформації
-			var selectedImageWrapper = $(this).parent().next().toggle();
-
-            // розгортання і згортання обгортки блоку інформації для останнього контейнера годинників
-            $(this).parent().prev().toggle();
-
-            // перемикає показ кнопки на зображенню з годинниками
-			$(this).next().toggle();
-			
-            var selectedWatchesWrapper = selectedImageWrapper.parent();  							// обрана обгортка для зображення та вікна інформації
-			var lastSelectedWatchesWrapper = $(".watchesWrapper").last(); 						    // остання обгортка зі списку всих обгорток
-           
-            // порівняння обранної обгортки із останньою
-            // якщо вони рівні то робимо для неї щоб обгортка інформації і зображення мінялися місцями
-			if (selectedWatchesWrapper.get(0) == lastSelectedWatchesWrapper.get(0)) {               
-
-                // змінна для останньої обгортки для зображення з годинниками
-                var watchesWrapper = $(lastSelectedWatchesWrapper).children(":first");
-
-                // змінна для останньої обгортки для додаткової інформації
-                var watchesInfoWrapper = $(lastSelectedWatchesWrapper).children(":last")
-
-                // змінна місцями 2-ох останніх обгорток
-                $(watchesInfoWrapper).insertBefore($(watchesWrapper))
-
-                // зміни в стилях для динамічних 2-ох останніх обгорток
-                $(lastSelectedWatchesWrapper).children(":last").css("margin-left", "0px")
-                $(lastSelectedWatchesWrapper).children(":first").css("margin-right", "15px")
-				$(lastSelectedWatchesWrapper).children(":first").css("margin-left", "0px")
-			}
-		});
-
-
-
-	// Змінна картинки при hover на блок новини
+	// Змінна картинки новини при hover на блок новини
 	$(".single-text-block:nth-child(1)").hover(function(){
 			$(".news-image").css("background-image", "url(\"../img/news1.png\")");
 	});
@@ -177,5 +172,9 @@ $(document).ready(function() {
 
     
 
+    // Закрити вікно dropdown-menu в футер що знаходиться в футері при натисканні на кнопку "Закрити"
+    $(".dropdown-menu .closeDrowpdownMenu").click(function() {
+        $('.in,.open').removeClass('in open');
+    });
     
 });
