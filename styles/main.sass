@@ -27,13 +27,14 @@ $bgForButton: #ececec
                 margin-bottom: 0
                 border-bottom: 1px solid #ccc
                 border-radius: 0
+                background-color: #fff
 
                 .navbar-collapse
                     .navbar-nav
                         font-size: 0.7em
                         letter-spacing: 0.1em
                         min-width: 100%
-
+                        position: relative
                         .nav-search
                             display: inline-block
                             background-image: url("../img/header-nav-sprites.png")
@@ -41,7 +42,7 @@ $bgForButton: #ececec
                             margin-right: 10px
                             width: 29px
                             height: 29px
-                            transform: translate(5px, 10px)
+                            transform: translate(5px, 1.5em)
 
                         .nav-logo
                             background-image: url("../img/header-nav-sprites.png")
@@ -49,7 +50,7 @@ $bgForButton: #ececec
                             margin-right: 10px
                             width: 29px
                             height: 29px
-                            transform: translate(5px, 10px)
+                            transform: translate(5px, 1em)
 
                         .nav-basket
                             background-image: url("../img/header-nav-sprites.png")
@@ -57,7 +58,7 @@ $bgForButton: #ececec
                             margin-right: 17px
                             width: 30px
                             height: 29px
-                            transform: translate(5px, 10px)
+                            transform: translate(5px, 1.5em)
 
                         .search-link
                             font-style: italic
@@ -67,29 +68,43 @@ $bgForButton: #ececec
 
                         li
                             a
+                                font-size: 0.9vw
                                 color: #013a5a
-                                padding-left: 7px
-                                padding-right: 7px
+                                padding: 20px 0.4vw
+                                
+
 
                 // NOTE: клас для розвернутого меню (тобто для мобільного вигляду)
                 .in
+
                     .navbar-nav
                         text-align: center
                         margin: 0
+                        
+
                         .nav-search, .nav-logo, .nav-basket,
                             display: none
+                        li
+                            a
+                                font-size: 3vw
                         i
                             display: none
 
                 .collapse
                     padding: 0
+
                 .collapsing
                     padding: 0
+
                     .navbar-nav
                         text-align: center
                         margin: 0
+
                         .nav-search, .nav-logo, .nav-basket,
                             display: none
+                        li
+                            a
+                                font-size: 3vw
                         i
                             display: none
 
@@ -97,6 +112,120 @@ $bgForButton: #ececec
             .banner-wrapper
                 background-color: #fff
                 padding: 10px
+                position: relative 
+
+                .active-window-for-gold-watches
+                    display: block
+                    position: absolute
+                    padding: 20px 5px
+                    // z-index=21 тому що у слайдера стоїть значення 20
+                    z-index: 21 
+                    background-color: #ececec
+                    width: 100%
+                    left: 0px
+                    top: 0px
+                    .active-window
+                        .header-wrapper
+                            font-family: 'Cinzel', serif
+                            font-size: 18px
+                            ul
+                                padding-top: 10%
+                                list-style: none
+                                padding-left: 0px
+                                li
+                                    display: inline-block
+                                    a
+                                        font-size: 18px
+                                        color: #000
+                                        text-decoration: none
+                                        &:hover
+                                            color: #969695
+                        .watches-list
+                            ul
+                                list-style-type: none
+                                padding: 1em 0 
+                                li
+                                    display: inline-block
+                                    margin-right: 10px
+                                    a
+                                        color: #969695
+                                        text-decoration: none
+                                        &:hover
+                                            color: #000
+                        .form-group
+                            margin-top: 2vw
+                            // position: absolute
+
+                            label
+                                font-size: 0.7em
+                                color: #969695
+                            input
+                                background-color: #f3f2f0
+                                // box-shadow: none
+                            i
+                                background-image: url("../img/arow-right.gif")
+                                width: 29px
+                                height: 29px
+                                display: inline-block
+                                transform: translate(0px, 10px)
+                                cursor: pointer
+
+
+                .active-window-for-silver-watches
+                    display: block
+                    position: absolute
+                    padding: 20px 5px
+                    // z-index=21 тому що у слайдера стоїть значення 20
+                    z-index: 21 
+                    background-color: #ececec
+                    width: 100%
+                    left: 0px
+                    top: 0px
+                    .active-window
+                        .header-wrapper
+                            font-family: 'Cinzel', serif
+                            font-size: 18px
+                            ul
+                                padding-top: 10%
+                                list-style: none
+                                padding-left: 0px
+                                li
+                                    display: inline-block
+                                    a
+                                        font-size: 18px
+                                        color: #000 
+                                        text-decoration: none
+                                        &:hover
+                                            color: #969695
+                        .watches-list
+                            ul
+                                list-style-type: none
+                                padding: 1em 0 
+                                li
+                                    display: inline-block
+                                    margin-right: 10px
+                                    a
+                                        color: #969695
+                                        text-decoration: none
+                                        &:hover
+                                            color: #000
+                        .form-group
+                            margin-top: 2vw
+                            label
+                                font-size: 0.7em
+                                color: #969695
+                            input
+                                background-color: #f3f2f0
+                                // box-shadow: none
+                            i
+                                background-image: url("../img/arow-right.gif")
+                                width: 29px
+                                height: 29px
+                                display: inline-block
+                                transform: translate(0px, 10px)
+                                cursor: pointer
+
+
 
                 .banner
                     background-color: #fff
@@ -125,25 +254,27 @@ $bgForButton: #ececec
 
                     .banner-right
                         padding-left: 25px
-                        padding-right: 40px
+                        padding-right: 25px
 
                         h6
                             margin-top: 30px
 
                         hr
                             margin: 0
+                        
+                        .ego-wrapper
+                            .ego
+                                font-family: "Marcellus", serif
+                                font-size: 6vmax
+                                color: #999999
+                                margin-bottom: 0
+                                line-height: 125px
 
-                        .ego
-                            font-family: "Marcellus", serif
-                            font-size: 6em
-                            color: #999999
-                            margin-bottom: 0
-                            line-height: 125px
-
-                        .ego-description
-                            font-size: 14px
-                            font-weight: bold
-                            padding: 5px 0
+                            .ego-description
+                                font-size: 3vmin
+                                font-weight: bold
+                                padding: 5px 0
+                                color: #404040
 
                         .more-link
                             font-size: 12px
@@ -359,8 +490,7 @@ $bgForButton: #ececec
                             background-image: url("../img/city-icon.png")
                             background-position: 7px
                             cursor: pointer
-                            margin-top: 12px
-                            margin-left: 8px
+                            margin: 12px 0px 0px 8px
                             width: 7px
                             height: 7px
 
@@ -547,7 +677,6 @@ $bgForButton: #ececec
                                 width: 17px
                                 height: 16px
                                 transform: translate(0px, 5px)
-                                background-
                     .news-date
                         font-size: 0.8em
                         color: #AEA9A0
@@ -610,6 +739,7 @@ $bgForButton: #ececec
                     ul
                         padding-top: 10%
                         list-style: none
+                        padding-left: 0px
                         li
                             display: inline-block
                             a
@@ -732,15 +862,15 @@ $bgForButton: #ececec
                                     color: #fff
                                     padding-left: 0
 
-
-
     // NOTE: футер
     .footer
-        // height: 50px
+        position: relative
         p
             display: inline-block
-            padding-top: 15px
-        span
+            padding-top: 10px
+            // left: -20px
+        .letter-wrapper
+            padding-top: -25px
             display: inline-block
             cursor: pointer
             text-align: right
@@ -749,7 +879,7 @@ $bgForButton: #ececec
             .dropdown
                 display: inline-block
                 h4
-                    margin-bottom: 20px
+                    margin-bottom: 10px
                 .letter
                     display: inline-block
                     background-image: url("../img/letter.png")
@@ -758,7 +888,7 @@ $bgForButton: #ececec
                     transform: translate(0px, 10px)
                 .dropdown-menu
                     top: -450px
-                    left: -300px
+                    left: -250px
                     font-size: 12px
                     background-color: #aea9a0
                     padding: 25px
@@ -769,7 +899,7 @@ $bgForButton: #ececec
                         label
                             font-size: 10px
                         input
-                            margin-bottom: 10px
+                            margin-bottom: 20px
                             width: 100%
                 .col-xs-12
                     padding: 0

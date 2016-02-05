@@ -1,4 +1,30 @@
 $(document).ready(function() {
+    
+    $(".active-window-for-gold-watches").hide();
+    $(".active-window-for-silver-watches").hide();
+
+    // При наведенні мишки на кнопку із золотими годинниками або уже відкритого вікна з ним 
+    $(".gold-watches, .active-window-for-gold-watches").mouseover(function(){
+        // Закриємо вікно із срібними годинниками
+        $(".active-window-for-silver-watches").hide();
+        // Відкриємо із золотими годинниками
+        $(".active-window-for-gold-watches").show();
+        // При виведенні мишки із вікна із золотими годинниками 
+        $(".active-window-for-gold-watches").mouseout(function(event) {
+            // Сховаємо вікно із золотими годинниками 
+            $(".active-window-for-gold-watches").hide();
+        });
+    });
+     
+    $(".silver-watches, .active-window-for-silver-watches").mouseover(function(){
+        $(".active-window-for-gold-watches").hide();
+        $(".active-window-for-silver-watches").show();
+        $(".active-window-for-silver-watches").mouseout(function(event) {
+            $(".active-window-for-silver-watches").hide();
+        });
+        
+    });
+
 
 	// Чекбокс
 	$(".input-checkbox").click(function(){
@@ -81,7 +107,7 @@ $(document).ready(function() {
 
 
 
-		// Закрити віко dropdown-menu
+		// Закрити вікно dropdown-menu в футер що знаходиться в футері
 		$(".dropdown-menu .closeDrowpdownMenu").click(function() {
     		$('.in,.open').removeClass('in open');
 		});
@@ -96,7 +122,13 @@ $(document).ready(function() {
 		$(".select-dial").hide();
 
         // Клік на годдинику
-		$(".oneWatches").click(function(){
+		$(".oneWatches").mouseover(function(){
+
+            // знову закриємо всі обгорти для блоку інформації
+            // тим самим ми робимо так що якщо вже відкрита якась обгортка
+            // то вона таким чином закриється і залишиться лише одна + теж саме із кнопками на зображенні
+            $(".info").hide();
+            $(".select-dial").hide();
 
             // зміна для обгортки для зображення годинників + розгортання і згортанню обгортки блоку інформації
 			var selectedImageWrapper = $(this).parent().next().toggle();
@@ -114,7 +146,6 @@ $(document).ready(function() {
             // якщо вони рівні то робимо для неї щоб обгортка інформації і зображення мінялися місцями
 			if (selectedWatchesWrapper.get(0) == lastSelectedWatchesWrapper.get(0)) {               
 
-                
                 // змінна для останньої обгортки для зображення з годинниками
                 var watchesWrapper = $(lastSelectedWatchesWrapper).children(":first");
 
@@ -143,4 +174,8 @@ $(document).ready(function() {
 	$(".single-text-block:nth-child(3)").hover(function(){
 			$(".news-image").css("background-image", "url(\"../img/news1.png\")");
 	});
+
+    
+
+    
 });
