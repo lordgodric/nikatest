@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Nikatest</title>
     <!-- Bootstrap -->
-    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -15,17 +15,18 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Main css -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="styles/css/main.css" rel="stylesheet">
     <!-- Navbar centered css -->
-    <link rel="stylesheet" href="styles/navbar-centered.css">
+    <link href="styles/css/navbar-centered.css" rel="stylesheet" >
     <!-- Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
-    <!-- slidejs -->
-    <link rel="stylesheet" href="styles/slidejs.css">
-    <!-- google api -->
+    <!-- Slidejs -->
+    <link href="styles/css/slidejs.css" rel="stylesheet" >
+    <!-- Google api -->
     <script src="http://maps.googleapis.com/maps/api/js"></script>
+    
   </head>
   <body>
     <div class="page-wrapper container-fluid ">
@@ -205,19 +206,19 @@
                     <!-- wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                       <div class="item active">
-                        <img src="img/second-slider-clock.jpg" alt="...">
+                        <img src="img/second-slider-clock.jpg" alt="second-slider-clock">
                         <div class="carousel-caption">
                           ...
                         </div>
                       </div>
                       <div class="item">
-                        <img src="img/second-slider-clock.jpg" alt="...">
+                        <img src="img/second-slider-clock.jpg" alt="second-slider-clock">
                         <div class="carousel-caption">
                           ...
                         </div>
                       </div>
                       <div class="item">
-                        <img src="img/second-slider-clock.jpg" alt="...">
+                        <img src="img/second-slider-clock.jpg" alt="second-slider-clock">
                         <div class="carousel-caption">
                           ...
                         </div>
@@ -717,6 +718,10 @@
                   </div>
                 </div>
                 <div class="col-sm-3 price-slider">
+                    
+                   <div id="slider"></div>
+                   
+
                 </div>
               </div>
             </div>
@@ -839,23 +844,23 @@
     <!-- End SlidesJS Required -->
     <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
     <script>
-    $(function() {
-    $('#slides').slidesjs({
-    width: 940,
-    height: 528,
-    navigation: false
-    });
-    });
+      $(function() {
+      $('#slides').slidesjs({
+      width: 940,
+      height: 528,
+      navigation: false
+      });
+      });
     </script>
     <!-- End SlidesJS Required -->
-    <script type="text/javascript">
-    $('.dropdown-menu').click(function(e) {
-    e.stopPropagation();
-    });
-    </script>
     <!-- Робить так щоб dropdown-menu не закривалась по кліку по ній -->
+    <script type="text/javascript">
+      $('.dropdown-menu').click(function(e) {
+      e.stopPropagation();
+      });
+    </script>
     <!-- Чекбокси які вокористані в формі реалізовані на jQuery оскільки, стандартні чекбокси неможливо(я так думаю) зробити такими як в макеті -->
-    <script src="js/checkbox.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/googleMap.js"></script>
   </body>
 </html>

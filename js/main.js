@@ -53,7 +53,7 @@ $(document).ready(function() {
 
     // Вибір міста зі списку
     $(".cityList").children().click(function(){                     // клік на дочірнюму елементу списка
-        $(".favoritesCity").text($(this).text())                    // добавимо значення обраного елемента
+        $(".favoritesCity").text($(this).text());                    // добавимо значення обраного елемента
         $(".closeArrow").css('display', 'inline-block');            // воводимо стрілку видалення міста із обраного (по замовчуванню воно прихована)
     });
     // Видалення міста із обраного
@@ -64,7 +64,7 @@ $(document).ready(function() {
 
 	// Вибір "Для кого"
     $(".forWhomList").children().click(function(){                  // клік на дочірнюму елементу списка
-        $(".alreadyChosedForWhom").text($(this).text())             // добавимо значення обраного елемента
+        $(".alreadyChosedForWhom").text($(this).text());             // добавимо значення обраного елемента
         $(".closeArrowForWhom").css('display', 'inline-block');     // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
     });
 	// Видалення елемента із поля "Для кого"
@@ -75,7 +75,7 @@ $(document).ready(function() {
 
 	// Вибір "Металу корпусу"
     $(".forCaseMetal").children().click(function(){                      // клік на дочірнюму елементу списка
-        $(".alreadyChosedForCaseMetal").text($(this).text())             // добавимо значення обраного елемента
+        $(".alreadyChosedForCaseMetal").text($(this).text());             // добавимо значення обраного елемента
         $(".closeArrowForCaseMetal").css('display', 'inline-block');     // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
     });
 	// Видалення елемента із поля "Матал корпусу"
@@ -86,7 +86,7 @@ $(document).ready(function() {
 
 	// Вибір "Кольору"
     $(".forColor").children().click(function(){                      	 // клік на дочірнюму елементу списка
-        $(".alreadyChosedForColor").text($(this).text())                 // добавимо значення обраного елемента
+        $(".alreadyChosedForColor").text($(this).text());                 // добавимо значення обраного елемента
         $(".closeArrowForColor").css('display', 'inline-block');         // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
     });
 	// Видалення елемента із поля "Кольору"
@@ -97,7 +97,7 @@ $(document).ready(function() {
 
 	// Вибір "Вставок"
     $(".forInsert").children().click(function(){                      	 // клік на дочірнюму елементу списка
-        $(".alreadyChosedForInsert").text($(this).text())                // добавимо значення обраного елемента
+        $(".alreadyChosedForInsert").text($(this).text());                // добавимо значення обраного елемента
         $(".closeArrowForInsert").css('display', 'inline-block');        // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
     });
 	// Видалення елемента із поля "Вставок"
