@@ -65,9 +65,9 @@ $bgForButton: #ececec
 
                         li
                             a
-                                font-size: 0.9vw
+                                font-size: 0.7em
                                 color: #013a5a
-                                padding: 20px 0.4vw
+                                padding: 20px 0.3em
                                 
 
 
@@ -83,8 +83,8 @@ $bgForButton: #ececec
                             display: none
                         li
                             a
-                                font-size: 3vw
-                                padding: 2vw 0px
+                                font-size: 0.7em
+                                padding: 0.5em 0px
                         i
                             display: none
 
@@ -102,8 +102,8 @@ $bgForButton: #ececec
                             display: none
                         li
                             a
-                                font-size: 3vw
-                                padding: 2vw 0px
+                                font-size: 0.7em
+                                padding: 0.5em 0px
 
                         i
                             display: none
@@ -265,13 +265,13 @@ $bgForButton: #ececec
                         .ego-wrapper
                             .ego
                                 font-family: "Marcellus", serif
-                                font-size: 6vmax
+                                font-size: 5em
                                 color: #999999
                                 margin-bottom: 0
                                 line-height: 125px
 
                             .ego-description
-                                font-size: 3vmin
+                                font-size: 1em
                                 font-weight: bold
                                 padding: 5px 0
                                 color: #404040
@@ -310,6 +310,9 @@ $bgForButton: #ececec
                         padding: 0
                         z-index: 0
 
+                        img
+                            width: 100%
+
                         .h-ico
                             position: absolute
                             margin: 0px 43%
@@ -339,7 +342,7 @@ $bgForButton: #ececec
 
                     .text-watch-top
                         font-family: "Marcellus", serif
-                        font-size: 6vmax
+                        font-size: 3em
                         text-align: center
 
                     .text-watch-middle
@@ -419,6 +422,7 @@ $bgForButton: #ececec
                                 div
                                     display: inline-block
                                     margin-bottom: 10px
+                                    margin-right: 10px
 
                                     a
                                         color: #000
@@ -548,7 +552,7 @@ $bgForButton: #ececec
                         background-color: #f3f2f0
                         padding: 20px 0
                         margin-top: 15px
-                        width: 150px
+                        width: 140px
                         // для кнопки "в корзину" ввів це значення
                         .select-dial
                             display: inline-block
@@ -571,7 +575,7 @@ $bgForButton: #ececec
                         background-color: #a0a9ae
                         padding-top: 20px
                         margin-left: 10px
-                        width: 150px
+                        width: 140px
                         height: 265px
                         vertical-align: middle
                         h5
@@ -695,7 +699,8 @@ $bgForButton: #ececec
                         border-left: 10px solid #aea9a0
                         position: absolute
                         top: 81%
-                        left: -4px
+                        left: -2px
+
                     &:hover
                         background-color: #aea9a0
                         cursor: pointer
@@ -722,6 +727,9 @@ $bgForButton: #ececec
                                     height: 15px
                                     width: 8px
                                     transform: translate(0px, 5px)
+                                    position: absolute
+                                    right: 25px
+                                    bottom: 15px
                 .news-image
                     background-image: url("../../img/news1.png")
                     background-position: center
@@ -809,7 +817,8 @@ $bgForButton: #ececec
                 padding: 5vw
                 text-align: center
                 .footer-p
-                    padding: 1vw
+                    padding: 1em
+                    color: #94a1a7
                 .icon-vk
                     background-image: url("../../img/social.png")
                     width: 24px
@@ -832,6 +841,8 @@ $bgForButton: #ececec
                 a
                     display: inline-block
                     margin: 15px
+                    &:hover
+
 
             // NOTE: розділ контактів
             .contact
@@ -845,8 +856,9 @@ $bgForButton: #ececec
                         margin-top: 10px
                 .links
                     text-align: center
-
+                    
                     .links-list
+
                         display: inline-block
                         min-width: 120px
                         vertical-align: top
@@ -855,8 +867,10 @@ $bgForButton: #ececec
                             text-align: left
                             list-style: none
                             a
-                                color: #fff
+                                color: #b8bbbc
                                 text-decoration: underline
+                                &:hover
+                                    color: #fff
                                 li
                                     color: #fff
                                     padding-left: 0
@@ -867,12 +881,14 @@ $bgForButton: #ececec
         p
             display: inline-block
             padding-top: 10px
-            left: -2vw
+            left: -2em
+            color: #00233f
         .letter-wrapper
             padding-top: 0px
             display: inline-block
             cursor: pointer
             text-align: right
+            color: #c4c0b8
             .dropdown
                 display: inline-block
                 em
