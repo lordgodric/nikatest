@@ -240,9 +240,10 @@ btn {
         .page-wrapper .top .top-center .banner-wrapper .banner .banner-left #slides .slidesjs-pagination {
           position: absolute;
           top: 85%;
-          right: 40%;
+          right: 50%;
           margin: 0 auto;
-          z-index: 2; }
+          z-index: 2;
+          margin-right: -37px; }
           .page-wrapper .top .top-center .banner-wrapper .banner .banner-left #slides .slidesjs-pagination li {
             display: inline-block;
             margin: 5px; }
