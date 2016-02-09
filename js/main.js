@@ -169,6 +169,7 @@ $(document).ready(function() {
             $(lastSelectedWatchesWrapper).children(":last").css("margin-left", "0px")
             $(lastSelectedWatchesWrapper).children(":first").css("margin-right", "15px")
             $(lastSelectedWatchesWrapper).children(":first").css("margin-left", "0px")
+            $(lastSelectedWatchesWrapper).children(":last").css("margin-right", "0px")
         }
     });
 

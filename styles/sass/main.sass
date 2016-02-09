@@ -29,7 +29,6 @@ $bgForButton: #ececec
                 border-bottom: 1px solid #ccc
                 border-radius: 0
                 background-color: #fff
-
                 .navbar-collapse
                     .navbar-nav
                         font-size: 0.5em
@@ -62,15 +61,18 @@ $bgForButton: #ececec
                             font-style: italic
                             display: inline-block
                             padding: 18px 0
+                            font-family: 'Droid Serif', serif
+                            letter-spacing: 2px
                         .basket-link
                             font-style: italic
                             display: inline-block
                             padding: 18px 0
+                            letter-spacing: 2px
+                            font-family: 'Droid Serif', serif
                         .navbar-center
-                            // padding: 18px 0px
                             margin: 18px 0
-                            // margin: 0px
                             display: inline-block
+                            
                             a
                                 padding: 0px 4px
                             i
@@ -304,13 +306,13 @@ $bgForButton: #ececec
                         .ego-wrapper
                             .ego
                                 font-family: "Marcellus", serif
-                                font-size: 5em
+                                font-size: 500%
                                 color: #999999
                                 margin-bottom: 0
                                 line-height: 125px
 
                             .ego-description
-                                font-size: 1em
+                                font-size: 120%
                                 font-weight: bold
                                 padding: 5px 0
                                 color: #404040
@@ -322,6 +324,8 @@ $bgForButton: #ececec
                             float: right
                             text-decoration: none
                             margin-bottom: 30px
+                            font-family: 'Droid Serif', serif
+                            letter-spacing: 2px
                             &:hover
                                 color: #000
 
@@ -395,6 +399,9 @@ $bgForButton: #ececec
                         font-style: italic
                         margin: 10px
                         text-align: center
+                        font-family: 'Droid Serif', serif
+                        letter-spacing: 2px
+                        color: #545451
 
                     .text-watch-bottom
                         font-size: 10px
@@ -474,6 +481,8 @@ $bgForButton: #ececec
 
                                         .text
                                             text-decoration: underline
+                                            &:hover
+                                                text-decoration: none
 
                         .btn-edit
                             font-size: 11px
@@ -514,6 +523,9 @@ $bgForButton: #ececec
                         font-size: 20px
                 .toggle
                     cursor: pointer
+                    font-family: 'Droid Serif', serif
+                    font-style: italic
+                    letter-spacing: 2px
 
                 .yourCity
                     height: 2em
@@ -600,12 +612,12 @@ $bgForButton: #ececec
                         background-color: #f3f2f0
                         padding: 20px 0
                         margin-top: 15px
-                        width: 140px
+                        width: 150px
                         // для кнопки "в корзину" ввів це значення
                         .select-dial
                             display: inline-block
                             position: absolute
-                            top: 180px
+                            top: 197px
                             font-size: 0.8em
                             background-color: #a0a9ae
                             color: #fff
@@ -623,7 +635,7 @@ $bgForButton: #ececec
                         background-color: #a0a9ae
                         padding-top: 20px
                         margin-left: 10px
-                        width: 140px
+                        width: 150px
                         height: 265px
                         vertical-align: middle
                         h5
@@ -789,13 +801,16 @@ $bgForButton: #ececec
                 background-color: #F3F2F0
                 padding-top: 20px
                 padding-bottom: 20px
+                
                 .filter-header
                     font-family: 'Cinzel', serif
                     font-size: 18px
+                    display: block
+                    height: 100px
                     ul
-                        padding-top: 10%
                         list-style: none
                         padding-left: 0px
+                        margin-top: 45px
                         li
                             display: inline-block
                             a
@@ -814,6 +829,7 @@ $bgForButton: #ececec
                             background-color: #F3F2F0
                             box-shadow: none
                             border: none
+                            
                         .alreadyChosedForWhom
                             display: inline-block
                             transform: translate(0px, 5px)
@@ -954,22 +970,27 @@ $bgForButton: #ececec
             display: inline-block
             cursor: pointer
             text-align: right
-            color: #c4c0b8
             .dropdown
                 display: inline-block
-                
+                em
+                    display: inline-block
+                    position: relative
+                    top: -3px
+                    color: #aea9a0
+                    letter-spacing: 2px
+                    font-family: 'Droid Serif', serif
                 h4
                     margin-bottom: 10px
+                    font-family: "Marcellus", serif
+                    font-size: 200%
+                    color: #000
                 .letter
                     display: inline-block
                     background-image: url("../../img/letter.png")
                     width: 29px
                     height: 29px
                     transform: translate(0px, 7px)
-                    em
-                        display: inline-block
-                        position: relative
-                        top: -3px
+
                 .dropdown-menu
                     top: -450px
                     left: -250px
@@ -990,6 +1011,8 @@ $bgForButton: #ececec
                     .btn-default
                         background-color: #aea9a0
                         margin-top: 20px
+                        letter-spacing: 2px
+                        font-family: 'Droid Serif', serif   
                         &:active
                             box-shadow: none !important
                             outline: none !important
@@ -1012,6 +1035,7 @@ $bgForButton: #ececec
                             background-color: #fff
                             color: #545451
                             border-color: #000
+                       
                         .closeDropDownMenuIcon
                             display: inline-block
                             background-image: url("../../img/closeDrowpdownMenu.png")
@@ -1021,3 +1045,4 @@ $bgForButton: #ececec
                             transform: translate(0px, 10px)
                             $bgForInputs: #f3f2f0
                             $bgForButton: #ececec
+                            

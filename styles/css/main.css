@@ -44,11 +44,15 @@
       .page-wrapper .top .top-center .navbar .navbar-collapse .navbar-nav .search-link {
         font-style: italic;
         display: inline-block;
-        padding: 18px 0; }
+        padding: 18px 0;
+        font-family: "Droid Serif", serif;
+        letter-spacing: 2px; }
       .page-wrapper .top .top-center .navbar .navbar-collapse .navbar-nav .basket-link {
         font-style: italic;
         display: inline-block;
-        padding: 18px 0; }
+        padding: 18px 0;
+        letter-spacing: 2px;
+        font-family: "Droid Serif", serif; }
       .page-wrapper .top .top-center .navbar .navbar-collapse .navbar-nav .navbar-center {
         margin: 18px 0;
         display: inline-block; }
@@ -236,12 +240,12 @@
           margin: 0; }
         .page-wrapper .top .top-center .banner-wrapper .banner .banner-right .ego-wrapper .ego {
           font-family: "Marcellus", serif;
-          font-size: 5em;
+          font-size: 500%;
           color: #999999;
           margin-bottom: 0;
           line-height: 125px; }
         .page-wrapper .top .top-center .banner-wrapper .banner .banner-right .ego-wrapper .ego-description {
-          font-size: 1em;
+          font-size: 120%;
           font-weight: bold;
           padding: 5px 0;
           color: #404040; }
@@ -251,7 +255,9 @@
           color: #333;
           float: right;
           text-decoration: none;
-          margin-bottom: 30px; }
+          margin-bottom: 30px;
+          font-family: "Droid Serif", serif;
+          letter-spacing: 2px; }
           .page-wrapper .top .top-center .banner-wrapper .banner .banner-right .more-link:hover {
             color: #000; }
         .page-wrapper .top .top-center .banner-wrapper .banner .banner-right .more-icon {
@@ -307,7 +313,10 @@
     .page-wrapper .top .top-center .slider-wrapper .slider-right .text-watch-middle {
       font-style: italic;
       margin: 10px;
-      text-align: center; }
+      text-align: center;
+      font-family: "Droid Serif", serif;
+      letter-spacing: 2px;
+      color: #545451; }
     .page-wrapper .top .top-center .slider-wrapper .slider-right .text-watch-bottom {
       font-size: 10px;
       text-align: center; }
@@ -366,6 +375,8 @@
             color: #000; }
             .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .rulles div a .text {
               text-decoration: underline; }
+              .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .rulles div a .text:hover {
+                text-decoration: none; }
       .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .btn-edit {
         font-size: 11px;
         background-color: #ececec;
@@ -397,7 +408,10 @@
     font-family: "Cinzel", serif;
     font-size: 20px; }
   .page-wrapper .top .top-center .maps-header .toggle {
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: "Droid Serif", serif;
+    font-style: italic;
+    letter-spacing: 2px; }
   .page-wrapper .top .top-center .maps-header .yourCity {
     height: 2em; }
     .page-wrapper .top .top-center .maps-header .yourCity .btn-group {
@@ -484,11 +498,11 @@
         background-color: #f3f2f0;
         padding: 20px 0;
         margin-top: 15px;
-        width: 140px; }
+        width: 150px; }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .imageWrapper .select-dial {
           display: inline-block;
           position: absolute;
-          top: 180px;
+          top: 197px;
           font-size: 0.8em;
           background-color: #a0a9ae;
           color: #fff;
@@ -505,7 +519,7 @@
         background-color: #a0a9ae;
         padding-top: 20px;
         margin-left: 10px;
-        width: 140px;
+        width: 150px;
         height: 265px;
         vertical-align: middle; }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info h5 {
@@ -654,11 +668,13 @@
     padding-bottom: 20px; }
     .page-wrapper .bottom .bottom-center .filter .filter-header {
       font-family: "Cinzel", serif;
-      font-size: 18px; }
+      font-size: 18px;
+      display: block;
+      height: 100px; }
       .page-wrapper .bottom .bottom-center .filter .filter-header ul {
-        padding-top: 10%;
         list-style: none;
-        padding-left: 0px; }
+        padding-left: 0px;
+        margin-top: 45px; }
         .page-wrapper .bottom .bottom-center .filter .filter-header ul li {
           display: inline-block; }
           .page-wrapper .bottom .bottom-center .filter .filter-header ul li a {
@@ -778,22 +794,27 @@
     padding-top: 0px;
     display: inline-block;
     cursor: pointer;
-    text-align: right;
-    color: #c4c0b8; }
+    text-align: right; }
     .page-wrapper .footer .letter-wrapper .dropdown {
       display: inline-block; }
+      .page-wrapper .footer .letter-wrapper .dropdown em {
+        display: inline-block;
+        position: relative;
+        top: -3px;
+        color: #aea9a0;
+        letter-spacing: 2px;
+        font-family: "Droid Serif", serif; }
       .page-wrapper .footer .letter-wrapper .dropdown h4 {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        font-family: "Marcellus", serif;
+        font-size: 200%;
+        color: #000; }
       .page-wrapper .footer .letter-wrapper .dropdown .letter {
         display: inline-block;
         background-image: url("../../img/letter.png");
         width: 29px;
         height: 29px;
         transform: translate(0px, 7px); }
-        .page-wrapper .footer .letter-wrapper .dropdown .letter em {
-          display: inline-block;
-          position: relative;
-          top: -3px; }
       .page-wrapper .footer .letter-wrapper .dropdown .dropdown-menu {
         top: -450px;
         left: -250px;
@@ -813,7 +834,9 @@
         padding: 0; }
         .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default {
           background-color: #aea9a0;
-          margin-top: 20px; }
+          margin-top: 20px;
+          letter-spacing: 2px;
+          font-family: "Droid Serif", serif; }
           .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:active {
             box-shadow: none !important;
             outline: none !important; }
