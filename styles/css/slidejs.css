@@ -40,7 +40,7 @@ body {
       width: 15px;
       height: 15px;
       padding-top: 13px;
-      background-image: url(../img/dots.gif);
+      background-image: url(../../img/dots.gif);
       background-position: 15px 0;
       float: left;
       overflow: hidden;

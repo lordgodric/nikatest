@@ -1,6 +1,7 @@
 $bgForInputs: #f3f2f0
 $bgForButton: #ececec
 
+// @import '_responsive'
 
 .page-wrapper
 
@@ -28,9 +29,8 @@ $bgForButton: #ececec
 
                 .navbar-collapse
                     .navbar-nav
-                        font-size: 0.7em
-                        letter-spacing: 0.1em
-                        min-width: 100%
+                        font-size: 0.5em
+                        
                         position: relative
                         .nav-search
                             display: inline-block
@@ -39,35 +39,49 @@ $bgForButton: #ececec
                             margin-right: 10px
                             width: 29px
                             height: 29px
-                            transform: translate(5px, 1.5em)
-
+                            margin: 15px 1em
                         .nav-logo
                             background-image: url("../../img/header-nav-sprites.png")
                             background-position: 60px 0px
                             margin-right: 10px
                             width: 29px
                             height: 29px
-                            transform: translate(5px, 1em)
-
+                            margin: 15px 1em
                         .nav-basket
                             background-image: url("../../img/header-nav-sprites.png")
                             background-position: 30px 0px
                             margin-right: 17px
                             width: 30px
                             height: 29px
-                            transform: translate(5px, 1.5em)
-
+                            margin: 15px 1em
                         .search-link
                             font-style: italic
-
+                            display: inline-block
+                            padding: 18px 0
                         .basket-link
                             font-style: italic
+                            display: inline-block
+                            padding: 18px 0
+                        .navbar-center
+                            // padding: 18px 0px
+                            margin: 18px 0
+                            // margin: 0px
+                            display: inline-block
+                            a
+                                padding: 0 3px
+                            i
+                                margin: 3px 0
+                                display: inline-block
 
                         li
+                            
                             a
-                                font-size: 0.7em
+                                display: inline
+                                font-size: 10px
                                 color: #013a5a
-                                padding: 20px 0.3em
+                                // padding: 2px
+                                &:hover
+                                    text-decoration: underline
                                 
 
 
@@ -82,9 +96,9 @@ $bgForButton: #ececec
                         .nav-search, .nav-logo, .nav-basket,
                             display: none
                         li
+                            padding: 5px
                             a
-                                font-size: 0.7em
-                                padding: 0.5em 0px
+                                font-size: 1.5em
                         i
                             display: none
 
@@ -101,9 +115,9 @@ $bgForButton: #ececec
                         .nav-search, .nav-logo, .nav-basket,
                             display: none
                         li
+                            padding: 5px
                             a
-                                font-size: 0.7em
-                                padding: 0.5em 0px
+                                font-size: 1.5em
 
                         i
                             display: none
@@ -282,16 +296,19 @@ $bgForButton: #ececec
                             color: #333
                             float: right
                             text-decoration: none
+                            margin-bottom: 30px
                             &:hover
                                 color: #000
+
 
                         .more-icon
                             background-image: url("../../img/arow-right.gif")
                             float: right
                             width: 29px
                             height: 29px
-                            transform: translate(5px, -6px)
+                            margin: -5px 5px
                             &:hover
+                                color: #000
 
 
                         .banner-text
@@ -501,7 +518,7 @@ $bgForButton: #ececec
                             background-image: url("../../img/city-icon.png")
                             background-position: 7px
                             cursor: pointer
-                            margin: 12px 0px 0px 8px
+                            margin: 12px 0 0 8px
                             width: 7px
                             height: 7px
 
@@ -874,6 +891,11 @@ $bgForButton: #ececec
                     .phone-number
                         font-size: 2em
                         margin-top: 10px
+                        a
+                            color: #fff
+                            text-decoration: none
+                            &:hover
+                                color: orange
                 .links
                     text-align: center
                     
@@ -911,10 +933,7 @@ $bgForButton: #ececec
             color: #c4c0b8
             .dropdown
                 display: inline-block
-                em
-                    display: inline-block
-                    position: relative
-                    top: -3px
+                
                 h4
                     margin-bottom: 10px
                 .letter
@@ -923,6 +942,10 @@ $bgForButton: #ececec
                     width: 29px
                     height: 29px
                     transform: translate(0px, 7px)
+                    em
+                        display: inline-block
+                        position: relative
+                        top: -3px
                 .dropdown-menu
                     top: -450px
                     left: -250px
