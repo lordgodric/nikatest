@@ -56,6 +56,9 @@ $(document).ready(function() {
         $(".favoritesCity").text($(this).text());                    // добавимо значення обраного елемента
         $(".closeArrow").css('display', 'inline-block');            // воводимо стрілку видалення міста із обраного (по замовчуванню воно прихована)
     });
+    $(".cityList").children().click(function(event) {
+        $(".btn-group").removeClass('open');
+    });
     // Видалення міста із обраного
     $(".closeArrow").click(function(){                              // клік по стрілці видаллення міста із обраного
         $(".favoritesCity").empty();                                // очищення значення обраного міста
@@ -66,6 +69,9 @@ $(document).ready(function() {
     $(".forWhomList").children().click(function(){                  // клік на дочірнюму елементу списка
         $(".alreadyChosedForWhom").text($(this).text());             // добавимо значення обраного елемента
         $(".closeArrowForWhom").css('display', 'inline-block');     // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
+    });
+    $(".forWhomList").children().click(function(event) {
+        $(".forWhom").removeClass('open');
     });
     // Видалення елемента із поля "Для кого"
     $(".closeArrowForWhom").click(function(){                       // клік по стрілці видаллення елемента із обраного
@@ -78,6 +84,9 @@ $(document).ready(function() {
         $(".alreadyChosedForCaseMetal").text($(this).text());             // добавимо значення обраного елемента
         $(".closeArrowForCaseMetal").css('display', 'inline-block');     // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
     });
+    $(".forCaseMetal").children().click(function(event) {
+        $(".forCaseMetalbtn-group").removeClass('open');
+    });
     // Видалення елемента із поля "Матал корпусу"
     $(".closeArrowForCaseMetal").click(function(){                       // клік по стрілці видаллення елемента із обраного
         $(".alreadyChosedForCaseMetal").empty();                         // очищення значення обраного елемента
@@ -89,6 +98,9 @@ $(document).ready(function() {
         $(".alreadyChosedForColor").text($(this).text());                 // добавимо значення обраного елемента
         $(".closeArrowForColor").css('display', 'inline-block');         // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
     });
+    $(".forColor").children().click(function(event) {
+        $(".forColorbtn-group").removeClass('open');
+    });
     // Видалення елемента із поля "Кольору"
     $(".closeArrowForColor").click(function(){                           // клік по стрілці видаллення елемента із обраного
         $(".alreadyChosedForColor").empty();                             // очищення значення обраного елемента
@@ -99,6 +111,9 @@ $(document).ready(function() {
     $(".forInsert").children().click(function(){                         // клік на дочірнюму елементу списка
         $(".alreadyChosedForInsert").text($(this).text());                // добавимо значення обраного елемента
         $(".closeArrowForInsert").css('display', 'inline-block');        // воводимо стрілку видалення елемента із обраного (по замовчуванню воно прихована)
+    });
+    $(".forInsert").children().click(function(event) {
+        $(".forInsertbtn-group").removeClass('open');
     });
     // Видалення елемента із поля "Вставок"
     $(".closeArrowForInsert").click(function(){                          // клік по стрілці видаллення елемента із обраного
