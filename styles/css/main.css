@@ -218,12 +218,14 @@
           color: #333;
           float: right;
           text-decoration: none; }
+          .page-wrapper .top .top-center .banner-wrapper .banner .banner-right .more-link:hover {
+            color: #000; }
         .page-wrapper .top .top-center .banner-wrapper .banner .banner-right .more-icon {
           background-image: url("../../img/arow-right.gif");
           float: right;
           width: 29px;
           height: 29px;
-          transform: translate(5px, -3px); }
+          transform: translate(5px, -6px); }
         .page-wrapper .top .top-center .banner-wrapper .banner .banner-right .banner-text {
           font-size: 12px;
           padding: 10px 0;
@@ -337,6 +339,9 @@
         border-radius: 0px;
         float: right;
         height: 34px; }
+        .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .btn-edit:hover {
+          background-color: #fff;
+          border-color: #000; }
       .page-wrapper .top .top-center .delivery .delivery-wrapper .checkboxx .input-checkbox {
         display: block;
         background-color: #f3f2f0;
@@ -413,6 +418,9 @@
       position: absolute;
       left: 41%;
       top: 7px; }
+      .page-wrapper .top .top-center .checkout .btn-submit:hover {
+        border: 1px solid #000;
+        background-color: #fff; }
 .page-wrapper .middle {
   padding: 0; }
 .page-wrapper .bottom {
@@ -663,21 +671,31 @@
       background-image: url("../../img/social.png");
       width: 24px;
       height: 24px; }
-    .page-wrapper .bottom .bottom-center .footer-text .icon-facebook {
+      .page-wrapper .bottom .bottom-center .footer-text .icon-vk:hover {
+        background-image: url("../../img/social-active.png");
+        width: 24px;
+        height: 24px; }
+    .page-wrapper .bottom .bottom-center .footer-text .icon-facebook, .page-wrapper .bottom .bottom-center .footer-text .icon-facebook:hover {
       background-image: url("../../img/social.png");
       background-position: 72px 0px;
       width: 24px;
       height: 24px; }
-    .page-wrapper .bottom .bottom-center .footer-text .icon-twitter {
+      .page-wrapper .bottom .bottom-center .footer-text .icon-facebook:hover {
+        background-image: url("../../img/social-active.png"); }
+    .page-wrapper .bottom .bottom-center .footer-text .icon-twitter, .page-wrapper .bottom .bottom-center .footer-text .icon-twitter:hover {
       background-image: url("../../img/social.png");
       background-position: 48px 0px;
       width: 24px;
       height: 24px; }
-    .page-wrapper .bottom .bottom-center .footer-text .icon-4 {
+      .page-wrapper .bottom .bottom-center .footer-text .icon-twitter:hover {
+        background-image: url("../../img/social-active.png"); }
+    .page-wrapper .bottom .bottom-center .footer-text .icon-4, .page-wrapper .bottom .bottom-center .footer-text .icon-4:hover {
       background-image: url("../../img/social.png");
       background-position: 24px 0px;
       width: 24px;
       height: 24px; }
+      .page-wrapper .bottom .bottom-center .footer-text .icon-4:hover {
+        background-image: url("../../img/social-active.png"); }
     .page-wrapper .bottom .bottom-center .footer-text a {
       display: inline-block;
       margin: 15px; }

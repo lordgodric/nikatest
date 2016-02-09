@@ -282,13 +282,17 @@ $bgForButton: #ececec
                             color: #333
                             float: right
                             text-decoration: none
+                            &:hover
+                                color: #000
 
                         .more-icon
                             background-image: url("../../img/arow-right.gif")
                             float: right
                             width: 29px
                             height: 29px
-                            transform: translate(5px, -3px)
+                            transform: translate(5px, -6px)
+                            &:hover
+
 
                         .banner-text
                             font-size: 12px
@@ -439,6 +443,9 @@ $bgForButton: #ececec
                             border-radius: 0px
                             float: right
                             height: 34px
+                            &:hover
+                                background-color: #fff
+                                border-color: #000
 
                     .checkboxx
                         .input-checkbox
@@ -823,25 +830,38 @@ $bgForButton: #ececec
                     background-image: url("../../img/social.png")
                     width: 24px
                     height: 24px
+                    &:hover
+                        background-image: url("../../img/social-active.png")
+                        width: 24px
+                        height: 24px
                 .icon-facebook
                     background-image: url("../../img/social.png")
                     background-position: 72px 0px
                     width: 24px
                     height: 24px
+                    &:hover
+                        @extend .icon-facebook
+                        background-image: url("../../img/social-active.png")
                 .icon-twitter
                     background-image: url("../../img/social.png")
                     background-position: 48px 0px
                     width: 24px
                     height: 24px
+                    &:hover
+                        @extend .icon-twitter
+                        background-image: url("../../img/social-active.png")
                 .icon-4
                     background-image: url("../../img/social.png")
                     background-position: 24px 0px
                     width: 24px
                     height: 24px
+                    &:hover
+                        @extend .icon-4
+                        background-image: url("../../img/social-active.png")
                 a
                     display: inline-block
                     margin: 15px
-                    &:hover
+                    
 
 
             // NOTE: розділ контактів
