@@ -322,11 +322,11 @@
       .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .form-group, .page-wrapper .top .top-center .delivery .delivery-wrapper .child-left .form-group {
         margin: 0; }
         .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .form-group #comment, .page-wrapper .top .top-center .delivery .delivery-wrapper .child-left .form-group #comment {
-          height: 114px; }
+          height: 114px;
+          margin-top: 7px;
+          resize: none; }
         .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .form-group #structure, .page-wrapper .top .top-center .delivery .delivery-wrapper .child-left .form-group #structure {
           margin-bottom: 15px; }
-        .page-wrapper .top .top-center .delivery .delivery-wrapper .child-right .form-group #comment, .page-wrapper .top .top-center .delivery .delivery-wrapper .child-left .form-group #comment {
-          margin-top: 7px; }
       .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .child-left-bottom-right .form-group {
         margin: 0; }
         .page-wrapper .top .top-center .delivery .delivery-wrapper .bottom-delivery-block .bottom-right .child-left-bottom-right .form-group .input-checkbox {
