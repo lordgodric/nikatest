@@ -177,13 +177,13 @@ $(document).ready(function() {
 
     // Змінна картинки новини при hover на блок новини
     $(".single-text-block:nth-child(1)").hover(function(){
-            $(".news-image").css("background-image", "url(\"../img/news1.png\")");
+        $('.newsImage').attr("src", "../../img/news1.png");
     });
     $(".single-text-block:nth-child(2)").hover(function(){
-            $(".news-image").css("background-image", "url(\"../img/news2.png\")");
+        $('.newsImage').attr("src", "../../img/news2.png");
     });
     $(".single-text-block:nth-child(3)").hover(function(){
-            $(".news-image").css("background-image", "url(\"../img/news1.png\")");
+        $('.newsImage').attr("src", "../../img/news1.png");
     });
 
     

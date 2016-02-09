@@ -1,3 +1,16 @@
+.dropdown-menu {
+  cursor: pointer; }
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
+btn {
+  padding: 0; }
+
+@media screen and (max-width: 900px) {
+  .navbar-nav li a {
+    font-size: 20px; } }
 .page-wrapper .top {
   background-image: url("../../img/top-content-bg.gif");
   background-position: top;
@@ -15,7 +28,6 @@
     border-radius: 0;
     background-color: #fff; }
     .page-wrapper .top .top-center .navbar .navbar-collapse .navbar-nav {
-      font-size: 0.5em;
       position: relative;
       text-align: center;
       width: 100%; }
@@ -65,8 +77,11 @@
           margin: 10px 1em; }
       .page-wrapper .top .top-center .navbar .navbar-collapse .navbar-nav li a {
         display: inline;
-        font-size: 10px;
+        font-size: 80%;
         color: #013a5a; }
+        @media screen and (max-width: 800px) {
+          .page-wrapper .top .top-center .navbar .navbar-collapse .navbar-nav li a {
+            font-size: 70%; } }
         .page-wrapper .top .top-center .navbar .navbar-collapse .navbar-nav li a:hover {
           text-decoration: underline; }
       .page-wrapper .top .top-center .navbar .navbar-collapse .navbar-nav .center-menu {
@@ -381,7 +396,7 @@
         font-size: 11px;
         background-color: #ececec;
         padding: 9px 30px;
-        margin-top: 24px;
+        margin: 20px 0 20px;
         border: 1px solid #aaa;
         border-radius: 0px;
         float: right;
@@ -834,9 +849,7 @@
         padding: 0; }
         .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default {
           background-color: #aea9a0;
-          margin-top: 20px;
-          letter-spacing: 2px;
-          font-family: "Droid Serif", serif; }
+          margin-top: 20px; }
           .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:active {
             box-shadow: none !important;
             outline: none !important; }
@@ -844,7 +857,9 @@
             font-style: italic;
             padding-left: 0;
             margin-top: 10px;
-            border: none; }
+            border: none;
+            font-family: "Droid Serif", serif;
+            letter-spacing: 2px; }
             .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:first-child:hover {
               background-color: #aea9a0;
               color: #fff; }
@@ -853,7 +868,8 @@
           .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:last-child {
             color: #fff;
             border-color: #fff;
-            border-radius: 0; }
+            border-radius: 0;
+            letter-spacing: 1px; }
           .page-wrapper .footer .letter-wrapper .dropdown .col-xs-12 .btn-default:hover {
             background-color: #fff;
             color: #545451;

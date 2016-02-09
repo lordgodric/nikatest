@@ -1,9 +1,8 @@
 $bgForInputs: #f3f2f0
 $bgForButton: #ececec
 
-// @import 'responsive'
-
-
+@import 'tools'
+@import 'responsive'
 
 
 .page-wrapper
@@ -31,10 +30,11 @@ $bgForButton: #ececec
                 background-color: #fff
                 .navbar-collapse
                     .navbar-nav
-                        font-size: 0.5em
+                        // font-size: 0.5em
                         position: relative
                         text-align: center
                         width: 100%
+
                         .nav-search
                             display: inline-block
                             background-image: url("../../img/header-nav-sprites.png")
@@ -85,9 +85,14 @@ $bgForButton: #ececec
                             
                             a
                                 display: inline
-                                font-size: 10px
+                                font-size: 80%
                                 color: #013a5a
                                 // padding: 2px
+                                @media screen and (max-width: 800px)
+                                    font-size: 70%
+                                
+                                
+                                
                                 &:hover
                                     text-decoration: underline
                         .center-menu
@@ -488,7 +493,7 @@ $bgForButton: #ececec
                             font-size: 11px
                             background-color: $bgForButton
                             padding: 9px 30px
-                            margin-top: 24px
+                            margin: 20px 0 20px
                             border: 1px solid #aaa
                             border-radius: 0px
                             float: right
@@ -692,8 +697,11 @@ $bgForButton: #ececec
                         margin: 0 auto
                 .news-text-block-wrapper
                     padding: 0
+
                     .single-text-block:nth-child(1)
                         margin-bottom: 10px
+                        
+                            
                     .single-text-block:nth-child(3)
                         margin-top: 10px
 
@@ -829,7 +837,7 @@ $bgForButton: #ececec
                             background-color: #F3F2F0
                             box-shadow: none
                             border: none
-                            
+
                         .alreadyChosedForWhom
                             display: inline-block
                             transform: translate(0px, 5px)
@@ -1011,8 +1019,7 @@ $bgForButton: #ececec
                     .btn-default
                         background-color: #aea9a0
                         margin-top: 20px
-                        letter-spacing: 2px
-                        font-family: 'Droid Serif', serif   
+                        
                         &:active
                             box-shadow: none !important
                             outline: none !important
@@ -1021,6 +1028,9 @@ $bgForButton: #ececec
                             padding-left: 0
                             margin-top: 10px
                             border: none
+                            font-family: 'Droid Serif', serif
+                            letter-spacing: 2px
+
                             &:hover
                                 background-color: #aea9a0
                                 color: #fff
@@ -1031,6 +1041,7 @@ $bgForButton: #ececec
                             color: #fff
                             border-color: #fff
                             border-radius: 0
+                            letter-spacing: 1px
                         &:hover
                             background-color: #fff
                             color: #545451
@@ -1043,6 +1054,6 @@ $bgForButton: #ececec
                             width: 29px
                             height: 29px
                             transform: translate(0px, 10px)
-                            $bgForInputs: #f3f2f0
-                            $bgForButton: #ececec
+                        
+                            
                             
