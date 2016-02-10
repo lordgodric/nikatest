@@ -21,7 +21,7 @@ $(document).ready(function() {
         // Відкриємо із золотими годинниками
         $(".active-window-for-gold-watches").show();
         // При виведенні мишки із вікна із золотими годинниками 
-        $(".active-window-for-gold-watches").mouseout(function(event) {
+        $(".active-window-for-gold-watches").add('.gold-watches').mouseout(function(event) {
             // Сховаємо вікно із золотими годинниками 
             $(".active-window-for-gold-watches").hide();
         });

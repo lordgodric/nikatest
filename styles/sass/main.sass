@@ -636,6 +636,8 @@ $bgForButton: #ececec
                         margin-top: 15px
                         width: 200px
                         // для кнопки "в корзину" ввів це значення
+                        @media screen and (max-width: 900px)
+                            width: 150px
                         .select-dial
                             display: block
                             position: absolute
@@ -648,6 +650,11 @@ $bgForButton: #ececec
                             width: 100px
                             left: 100px
                             margin-left: -50px
+                            @media screen and (max-width: 900px)
+                                width: 100px
+                                left: 50px
+                                margin-left: -25px
+                                bottom: 25px
                             &:hover
                                 background-color: #fff
                                 color: #a0a9ae
@@ -664,6 +671,9 @@ $bgForButton: #ececec
                         height: 265px
                         vertical-align: middle
                         position: relative
+                        // border: none
+                        @media screen and (max-width: 900px)
+                            width: 150px
                         h5
                             font-family: "Marcellus", serif
                         img
@@ -681,8 +691,15 @@ $bgForButton: #ececec
                             width: 100px
                             left: 100px
                             margin-left: -50px
-                            bottom: 30px
+                            bottom: 35px
                             display: inline-block
+                            @media screen and (max-width: 900px)
+                                width: 100px
+                                left: 50px
+                                margin-left: -25px
+                                bottom: 28px
+
+
                             &:hover
                                 background-color: #fff
                                 color: #a0a9ae
@@ -692,11 +709,15 @@ $bgForButton: #ececec
                             font-weight: bold
                             position: absolute
                             bottom: 0px
-                            left: 50px
+                            margin-left: 40px
+                            @media screen and (max-width: 900px)
+                                width: 100px
+                                left: 50px
+                                margin-left: -25px
                         .arrow-left
                             position: absolute
                             top: 45%
-                            left: -10px
+                            left: -9px
                             border-top: 10px solid transparent
                             border-bottom: 10px solid transparent
                             border-right: 10px solid #a0a9ae
@@ -705,7 +726,7 @@ $bgForButton: #ececec
                         .arrow-right
                             position: absolute
                             top: 45%
-                            right: -10px
+                            right: -9px
                             border-top: 10px solid transparent
                             border-bottom: 10px solid transparent
                             border-left: 10px solid #a0a9ae
@@ -979,8 +1000,10 @@ $bgForButton: #ececec
                     .under-logo-text
                         margin-top: 10px
                     .phone-number
-                        font-size: 2em
+                        font-size: 28px
                         margin-top: 10px
+                        @media screen and (max-width: 400px)
+                            font-size: 20px
                         a
                             color: #fff
                             text-decoration: none
@@ -1010,12 +1033,18 @@ $bgForButton: #ececec
     // NOTE: футер
     .footer
         background-color: #fff
+        // position: relative
         p
             display: inline-block
             padding-top: 10px
             left: -2em
             color: #00233f
+            // position: absolute
+            // @media screen and (min-width: 992px)
+            
+
         .letter-wrapper
+            // position: absolute
             padding-top: 0px
             display: inline-block
             cursor: pointer
@@ -1043,12 +1072,12 @@ $bgForButton: #ececec
 
                 .dropdown-menu
                     top: -450px
-                    left: -250px
+                    left: -160px
                     font-size: 12px
                     background-color: #aea9a0
                     padding: 25px
                     height: 450px
-                    width: 350px
+                    width: 300px
                     .form-group
                         padding: 0px
                         label

@@ -11,7 +11,94 @@ btn {
 
 @media screen and (max-width: 900px) {
   .navbar-nav li a {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .watches {
+    background-color: #fff;
+    text-align: center; }
+    .watches .watchesWrapper {
+      display: inline-block;
+      margin-right: 10px; }
+    .watches .imageWrapper {
+      position: relative;
+      display: inline-block;
+      background-color: #f3f2f0;
+      padding: 20px 0;
+      margin-top: 15px;
+      width: 150px; }
+      .watches .imageWrapper .select-dial {
+        display: block;
+        position: absolute;
+        bottom: 30px;
+        font-size: 0.8em;
+        background-color: #a0a9ae;
+        color: #fff;
+        border-color: #fff;
+        border-radius: 0;
+        width: 100px;
+        left: 100px;
+        margin-left: -50px; }
+        .watches .imageWrapper .select-dial:hover {
+          background-color: #fff;
+          color: #a0a9ae;
+          border-color: #000; }
+    .watches .info {
+      display: inline-block;
+      position: relative;
+      background-color: #a0a9ae;
+      padding-top: 20px;
+      margin-left: 10px;
+      width: 150px;
+      height: 265px;
+      vertical-align: middle;
+      position: relative; }
+      .watches .info h5 {
+        font-family: "Marcellus", serif; }
+      .watches .info img {
+        width: 80%; }
+      .watches .info .main-text {
+        font-size: 0.7em;
+        margin: 20px 10px; }
+      .watches .info .in-basket {
+        position: absolute;
+        font-size: 0.7em;
+        background-color: #a0a9ae;
+        color: #fff;
+        border-color: #fff;
+        border-radius: 0;
+        width: 100px;
+        left: 100px;
+        margin-left: -50px;
+        bottom: 30px;
+        display: inline-block; }
+      .watches .info:hover {
+        background-color: #fff;
+        color: #a0a9ae;
+        border-color: #000; }
+      .watches .info .under-button-text {
+        font-size: 0.7em;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0px;
+        margin-left: 40px; }
+      .watches .info .arrow-left {
+        position: absolute;
+        top: 45%;
+        left: -9px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #a0a9ae;
+        width: 0;
+        height: 0; }
+      .watches .info .arrow-right {
+        position: absolute;
+        top: 45%;
+        right: -9px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #a0a9ae;
+        width: 0;
+        height: 0; } }
 .page-wrapper .top {
   background-image: url("../../img/top-content-bg.gif");
   background-position: top;
@@ -530,6 +617,9 @@ btn {
         padding: 20px 0;
         margin-top: 15px;
         width: 200px; }
+        @media screen and (max-width: 900px) {
+          .page-wrapper .bottom .bottom-center .watches .watchesWrapper .imageWrapper {
+            width: 150px; } }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .imageWrapper .select-dial {
           display: block;
           position: absolute;
@@ -542,6 +632,12 @@ btn {
           width: 100px;
           left: 100px;
           margin-left: -50px; }
+          @media screen and (max-width: 900px) {
+            .page-wrapper .bottom .bottom-center .watches .watchesWrapper .imageWrapper .select-dial {
+              width: 100px;
+              left: 50px;
+              margin-left: -25px;
+              bottom: 25px; } }
           .page-wrapper .bottom .bottom-center .watches .watchesWrapper .imageWrapper .select-dial:hover {
             background-color: #fff;
             color: #a0a9ae;
@@ -556,6 +652,9 @@ btn {
         height: 265px;
         vertical-align: middle;
         position: relative; }
+        @media screen and (max-width: 900px) {
+          .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info {
+            width: 150px; } }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info h5 {
           font-family: "Marcellus", serif; }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info img {
@@ -573,8 +672,14 @@ btn {
           width: 100px;
           left: 100px;
           margin-left: -50px;
-          bottom: 30px;
+          bottom: 35px;
           display: inline-block; }
+          @media screen and (max-width: 900px) {
+            .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info .in-basket {
+              width: 100px;
+              left: 50px;
+              margin-left: -25px;
+              bottom: 28px; } }
           .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info .in-basket:hover {
             background-color: #fff;
             color: #a0a9ae;
@@ -584,11 +689,16 @@ btn {
           font-weight: bold;
           position: absolute;
           bottom: 0px;
-          left: 50px; }
+          margin-left: 40px; }
+          @media screen and (max-width: 900px) {
+            .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info .under-button-text {
+              width: 100px;
+              left: 50px;
+              margin-left: -25px; } }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info .arrow-left {
           position: absolute;
           top: 45%;
-          left: -10px;
+          left: -9px;
           border-top: 10px solid transparent;
           border-bottom: 10px solid transparent;
           border-right: 10px solid #a0a9ae;
@@ -597,7 +707,7 @@ btn {
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info .arrow-right {
           position: absolute;
           top: 45%;
-          right: -10px;
+          right: -9px;
           border-top: 10px solid transparent;
           border-bottom: 10px solid transparent;
           border-left: 10px solid #a0a9ae;
@@ -810,8 +920,11 @@ btn {
     .page-wrapper .bottom .bottom-center .contact .phone .under-logo-text {
       margin-top: 10px; }
     .page-wrapper .bottom .bottom-center .contact .phone .phone-number {
-      font-size: 2em;
+      font-size: 28px;
       margin-top: 10px; }
+      @media screen and (max-width: 400px) {
+        .page-wrapper .bottom .bottom-center .contact .phone .phone-number {
+          font-size: 20px; } }
       .page-wrapper .bottom .bottom-center .contact .phone .phone-number a {
         color: #fff;
         text-decoration: none; }
@@ -869,12 +982,12 @@ btn {
         transform: translate(0px, 7px); }
       .page-wrapper .footer .letter-wrapper .dropdown .dropdown-menu {
         top: -450px;
-        left: -250px;
+        left: -160px;
         font-size: 12px;
         background-color: #aea9a0;
         padding: 25px;
         height: 450px;
-        width: 350px; }
+        width: 300px; }
         .page-wrapper .footer .letter-wrapper .dropdown .dropdown-menu .form-group {
           padding: 0px; }
           .page-wrapper .footer .letter-wrapper .dropdown .dropdown-menu .form-group label {
