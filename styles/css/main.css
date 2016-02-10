@@ -524,22 +524,24 @@ btn {
       display: inline-block;
       margin-right: 10px; }
       .page-wrapper .bottom .bottom-center .watches .watchesWrapper .imageWrapper {
-        display: inline-block;
         position: relative;
+        display: inline-block;
         background-color: #f3f2f0;
         padding: 20px 0;
         margin-top: 15px;
-        width: 150px; }
+        width: 200px; }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .imageWrapper .select-dial {
-          display: inline-block;
+          display: block;
           position: absolute;
-          top: 197px;
+          bottom: 30px;
           font-size: 0.8em;
           background-color: #a0a9ae;
           color: #fff;
           border-color: #fff;
           border-radius: 0;
-          width: 100px; }
+          width: 100px;
+          left: 100px;
+          margin-left: -50px; }
           .page-wrapper .bottom .bottom-center .watches .watchesWrapper .imageWrapper .select-dial:hover {
             background-color: #fff;
             color: #a0a9ae;
@@ -550,9 +552,10 @@ btn {
         background-color: #a0a9ae;
         padding-top: 20px;
         margin-left: 10px;
-        width: 150px;
+        width: 200px;
         height: 265px;
-        vertical-align: middle; }
+        vertical-align: middle;
+        position: relative; }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info h5 {
           font-family: "Marcellus", serif; }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info img {
@@ -561,18 +564,27 @@ btn {
           font-size: 0.7em;
           margin: 20px 10px; }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info .in-basket {
+          position: absolute;
           font-size: 0.7em;
           background-color: #a0a9ae;
           color: #fff;
           border-color: #fff;
-          border-radius: 0; }
+          border-radius: 0;
+          width: 100px;
+          left: 100px;
+          margin-left: -50px;
+          bottom: 30px;
+          display: inline-block; }
           .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info .in-basket:hover {
             background-color: #fff;
             color: #a0a9ae;
             border-color: #000; }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info .under-button-text {
           font-size: 0.7em;
-          font-weight: bold; }
+          font-weight: bold;
+          position: absolute;
+          bottom: 0px;
+          left: 50px; }
         .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info .arrow-left {
           position: absolute;
           top: 45%;

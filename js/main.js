@@ -175,9 +175,9 @@ $(document).ready(function() {
             // змінна місцями 2-ох останніх обгорток
             $(watchesInfoWrapper).insertBefore($(watchesWrapper));
 
-            // зміни в стилях для динамічних 2-ох останніх обгорток
-            $(lastSelectedWatchesWrapper).children(":last").css("margin-left", "5px");
-            $(lastSelectedWatchesWrapper).children(":first").css("margin-right", "10px");
+            // зміни в стилях для динамічних 2-ох останніх обгорток (не знаю чого саме 14 але саме при такому 
+            // значенні нічого не лізе - можливо 2 обгортка більша за інші на 1 піксель)
+            $(lastSelectedWatchesWrapper).children(":first").css("margin-right", "14px");
             $(lastSelectedWatchesWrapper).children(":first").css("margin-left", "0px");
             
         }

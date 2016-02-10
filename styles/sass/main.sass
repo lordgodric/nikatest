@@ -626,24 +626,28 @@ $bgForButton: #ececec
                 .watchesWrapper
                     display: inline-block
                     margin-right: 10px
+                    
                     .imageWrapper
-                        display: inline-block
                         position: relative
+                        display: inline-block
+                        // position: relative
                         background-color: #f3f2f0
                         padding: 20px 0
                         margin-top: 15px
-                        width: 150px
+                        width: 200px
                         // для кнопки "в корзину" ввів це значення
                         .select-dial
-                            display: inline-block
+                            display: block
                             position: absolute
-                            top: 197px
+                            bottom: 30px
                             font-size: 0.8em
                             background-color: #a0a9ae
                             color: #fff
                             border-color: #fff
                             border-radius: 0
                             width: 100px
+                            left: 100px
+                            margin-left: -50px
                             &:hover
                                 background-color: #fff
                                 color: #a0a9ae
@@ -656,9 +660,10 @@ $bgForButton: #ececec
                         background-color: #a0a9ae
                         padding-top: 20px
                         margin-left: 10px
-                        width: 150px
+                        width: 200px
                         height: 265px
                         vertical-align: middle
+                        position: relative
                         h5
                             font-family: "Marcellus", serif
                         img
@@ -667,11 +672,17 @@ $bgForButton: #ececec
                             font-size: 0.7em
                             margin: 20px 10px
                         .in-basket
+                            position: absolute
                             font-size: 0.7em
                             background-color: #a0a9ae
                             color: #fff
                             border-color: #fff
                             border-radius: 0
+                            width: 100px
+                            left: 100px
+                            margin-left: -50px
+                            bottom: 30px
+                            display: inline-block
                             &:hover
                                 background-color: #fff
                                 color: #a0a9ae
@@ -679,6 +690,9 @@ $bgForButton: #ececec
                         .under-button-text
                             font-size: 0.7em
                             font-weight: bold
+                            position: absolute
+                            bottom: 0px
+                            left: 50px
                         .arrow-left
                             position: absolute
                             top: 45%
