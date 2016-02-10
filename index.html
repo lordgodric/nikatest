@@ -16,6 +16,8 @@
     <![endif]-->
     <!-- Main css -->
     <link href="styles/css/main.css" rel="stylesheet">
+    <link href="styles/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="styles/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
     <!-- Navbar centered css -->
     <link href="styles/css/navbar-centered.css" rel="stylesheet" >
     <!-- Google fonts -->
@@ -660,7 +662,7 @@
             </div>
             <div class="row">
               <div class="filter container-fluid ">
-                <div class="col-sm-6 filter-header text-center">
+                <div class="col-xs-12 col-sm-6 col-md-5 filter-header text-center">
                   <ul>
                     <li>•</li>
                     <li><a href=" " class="text-uppercase">celebrity</a></li>
@@ -675,7 +677,7 @@
                     <li>•</li>
                   </ul>
                 </div>
-                <div class="col-sm-3 filter-options ">
+                <div class="col-xs-12 col-sm-6 col-md-3 filter-options ">
                   <div class="btn-group forWhom">
                     <button type="button" class="btn btn-default dropdown-toggle choseForWhom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Для кого
@@ -729,9 +731,9 @@
                     <div class="closeArrowForInsert"></div>
                   </div>
                 </div>
-                <div class="col-sm-3 price-slider">
+                <div class="col-xs-12 col-sm-12 col-md-4 price-slider">
                   
-                  <div id="slider"></div>
+                  <input type="text" id="range" name="example_name" value="" />
                   
                 </div>
               </div>
@@ -844,13 +846,19 @@
       <!-- /.row for page-wrapper -->
     </div>
     <!-- /.page-wrapper -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Start SlidesJS Required -->
     <!-- SlidesJS Required: Link to jQuery -->
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+    <script src="js/ion.rangeSlider.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/googleMap.js"></script>
+
     <!-- End SlidesJS Required -->
     <!-- SlidesJS Required: Link to jquery.slides.js -->
     <script src="js/jquery.slides.min.js"></script>
@@ -873,7 +881,7 @@
     });
     </script>
     <!-- Чекбокси які вокористані в формі реалізовані на jQuery оскільки, стандартні чекбокси неможливо(я так думаю) зробити такими як в макеті -->
-    <script src="js/main.js"></script>
-    <script src="js/googleMap.js"></script>
+
+    
   </body>
 </html>

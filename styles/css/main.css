@@ -699,6 +699,15 @@ btn {
             text-decoration: none; }
             .page-wrapper .bottom .bottom-center .filter .filter-header ul li a:hover {
               color: black; }
+    .page-wrapper .bottom .bottom-center .filter .price-slider {
+      position: relative;
+      padding: 30px 15px; }
+      .page-wrapper .bottom .bottom-center .filter .price-slider #range {
+        display: inline-block;
+        position: absolute;
+        margin-top: -40px;
+        top: 50%;
+        height: 100%; }
     .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group {
       height: 2em; }
       .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .choseForWhom, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .choseCaseMetal, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .choseColor, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .choseInsert {

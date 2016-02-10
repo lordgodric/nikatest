@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+    
+
+    $("#range").ionRangeSlider({
+        type: "double",
+        min: 15000,
+        max: 1000000,
+        from: 57000,
+        to: 645000,
+        postfix: " P"
+    });
     
     $(".active-window-for-gold-watches").hide();
     $(".active-window-for-silver-watches").hide();
@@ -26,7 +37,6 @@ $(document).ready(function() {
         
     });
 
-
     // Чекбокс
     $(".input-checkbox").click(function(){
             // Видалимо всі обрання із елементів input-checkbox
@@ -41,10 +51,10 @@ $(document).ready(function() {
     $(".toggle").click(function(){
         $(".middle").slideToggle(400);
         if ($(".toggle-map").text() == 'Свернуть ') {                 // якщо стоїть значення згорнути то
-            $(".toggle-map").text('Развернуть ')                        // змінюємо на значення розгорнути
+            $(".toggle-map").text('Развернуть ');                       // змінюємо на значення розгорнути
             $(".hide-img").attr('src','img/down-arrowhead.png');              // і замінюємо картинку стрілки
         } else if($(".toggle-map").text() == 'Развернуть '){
-            $(".toggle-map").text('Свернуть ')
+            $(".toggle-map").text('Свернуть ');;
             $(".hide-img").attr('src','img/up-arrowhead.png');
         }
     });
@@ -160,16 +170,16 @@ $(document).ready(function() {
             var watchesWrapper = $(lastSelectedWatchesWrapper).children(":first");
 
             // змінна для останньої обгортки для додаткової інформації
-            var watchesInfoWrapper = $(lastSelectedWatchesWrapper).children(":last")
+            var watchesInfoWrapper = $(lastSelectedWatchesWrapper).children(":last");
 
             // змінна місцями 2-ох останніх обгорток
-            $(watchesInfoWrapper).insertBefore($(watchesWrapper))
+            $(watchesInfoWrapper).insertBefore($(watchesWrapper));
 
             // зміни в стилях для динамічних 2-ох останніх обгорток
-            $(lastSelectedWatchesWrapper).children(":last").css("margin-left", "0px")
-            $(lastSelectedWatchesWrapper).children(":first").css("margin-right", "15px")
-            $(lastSelectedWatchesWrapper).children(":first").css("margin-left", "0px")
-            $(lastSelectedWatchesWrapper).children(":last").css("margin-right", "0px")
+            $(lastSelectedWatchesWrapper).children(":last").css("margin-left", "0px");
+            $(lastSelectedWatchesWrapper).children(":first").css("margin-right", "15px");
+            $(lastSelectedWatchesWrapper).children(":first").css("margin-left", "0px");
+            $(lastSelectedWatchesWrapper).children(":last").css("margin-right", "0px");
         }
     });
 
@@ -192,5 +202,5 @@ $(document).ready(function() {
     $(".dropdown-menu .closeDrowpdownMenu").click(function() {
         $('.in,.open').removeClass('in open');
     });
-    
+
 });
