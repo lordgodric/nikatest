@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     
-
+    // Регуляр фільтра ціни / range slider
     $("#range").ionRangeSlider({
         type: "double",
         min: 15000,
@@ -150,6 +150,7 @@ $(document).ready(function() {
         $(".info").hide();
         $(".select-dial").hide();
 
+
         // зміна для обгортки для зображення годинників + розгортання і згортанню обгортки блоку інформації
         var selectedImageWrapper = $(this).parent().next().toggle();
 
@@ -161,7 +162,6 @@ $(document).ready(function() {
         
         var selectedWatchesWrapper = selectedImageWrapper.parent();                             // обрана обгортка для зображення та вікна інформації
         var lastSelectedWatchesWrapper = $(".watchesWrapper").last();                           // остання обгортка зі списку всих обгорток
-       
         // порівняння обранної обгортки із останньою
         // якщо вони рівні то робимо для неї щоб обгортка інформації і зображення мінялися місцями
         if (selectedWatchesWrapper.get(0) == lastSelectedWatchesWrapper.get(0)) {               
@@ -176,11 +176,13 @@ $(document).ready(function() {
             $(watchesInfoWrapper).insertBefore($(watchesWrapper));
 
             // зміни в стилях для динамічних 2-ох останніх обгорток
-            $(lastSelectedWatchesWrapper).children(":last").css("margin-left", "0px");
-            $(lastSelectedWatchesWrapper).children(":first").css("margin-right", "15px");
+            $(lastSelectedWatchesWrapper).children(":last").css("margin-left", "5px");
+            $(lastSelectedWatchesWrapper).children(":first").css("margin-right", "10px");
             $(lastSelectedWatchesWrapper).children(":first").css("margin-left", "0px");
-            $(lastSelectedWatchesWrapper).children(":last").css("margin-right", "0px");
+            
         }
+        
+        
     });
 
 

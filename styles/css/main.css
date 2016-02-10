@@ -1,9 +1,10 @@
 .dropdown-menu {
   cursor: pointer; }
 
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
-  outline: none !important;
-  box-shadow: none !important; }
+.btn, .btn-default {
+  border-color: none;
+  box-shadow: none;
+  outline: 0 none; }
 
 btn {
   padding: 0; }
@@ -144,6 +145,8 @@ btn {
       width: 100%;
       left: 0px;
       top: 0px; }
+      .page-wrapper .top .top-center .banner-wrapper .active-window-for-gold-watches img {
+        width: 100%; }
       .page-wrapper .top .top-center .banner-wrapper .active-window-for-gold-watches .active-window .header-wrapper {
         font-family: "Cinzel", serif;
         font-size: 18px; }
@@ -159,6 +162,8 @@ btn {
               text-decoration: none; }
               .page-wrapper .top .top-center .banner-wrapper .active-window-for-gold-watches .active-window .header-wrapper ul li a:hover {
                 color: #969695; }
+      .page-wrapper .top .top-center .banner-wrapper .active-window-for-gold-watches .active-window img {
+        width: 40%; }
       .page-wrapper .top .top-center .banner-wrapper .active-window-for-gold-watches .active-window .watches-list ul {
         list-style-type: none;
         padding: 1em 0; }
@@ -193,6 +198,8 @@ btn {
       width: 100%;
       left: 0px;
       top: 0px; }
+      .page-wrapper .top .top-center .banner-wrapper .active-window-for-silver-watches img {
+        width: 100%; }
       .page-wrapper .top .top-center .banner-wrapper .active-window-for-silver-watches .active-window .header-wrapper {
         font-family: "Cinzel", serif;
         font-size: 18px; }
@@ -208,6 +215,8 @@ btn {
               text-decoration: none; }
               .page-wrapper .top .top-center .banner-wrapper .active-window-for-silver-watches .active-window .header-wrapper ul li a:hover {
                 color: #969695; }
+      .page-wrapper .top .top-center .banner-wrapper .active-window-for-silver-watches .active-window img {
+        width: 40%; }
       .page-wrapper .top .top-center .banner-wrapper .active-window-for-silver-watches .active-window .watches-list ul {
         list-style-type: none;
         padding: 1em 0; }
