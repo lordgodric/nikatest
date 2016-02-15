@@ -733,6 +733,8 @@ $bgForButton: #ececec
                             width: 0
                             height: 0
                             // @extend .arrow-left
+                        &:hover
+                            color: #000
 
 
             // NOTE: розділ новин
@@ -887,8 +889,6 @@ $bgForButton: #ececec
                         margin-top: -40px
                         top: 50%
                         height: 100%
-                        // width: 200px
-
 
 
                 // NOTE: фільтр варіантів для вибору годинників
@@ -1033,22 +1033,29 @@ $bgForButton: #ececec
     // NOTE: футер
     .footer
         background-color: #fff
-        // position: relative
+        position: relative
         p
             display: inline-block
             padding-top: 10px
             left: -2em
             color: #00233f
-            // position: absolute
-            // @media screen and (min-width: 992px)
-            
+            position: absolute
+            margin-left: -133px
+            left: 50%
+            @media screen and (max-width: 600px)
+                margin-left: 0
+                left: 5%
+                position: static
 
         .letter-wrapper
-            // position: absolute
             padding-top: 0px
             display: inline-block
             cursor: pointer
-            text-align: right
+            float: right
+            @media screen and (max-width: 600px)
+                // float: right
+                display: block
+
             .dropdown
                 display: inline-block
                 em

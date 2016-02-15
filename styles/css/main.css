@@ -713,6 +713,8 @@ btn {
           border-left: 10px solid #a0a9ae;
           width: 0;
           height: 0; }
+        .page-wrapper .bottom .bottom-center .watches .watchesWrapper .info:hover {
+          color: #000; }
   .page-wrapper .bottom .bottom-center .news {
     background-color: #fff;
     padding: 20px;
@@ -949,17 +951,29 @@ btn {
               color: #fff;
               padding-left: 0; }
 .page-wrapper .footer {
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative; }
   .page-wrapper .footer p {
     display: inline-block;
     padding-top: 10px;
     left: -2em;
-    color: #00233f; }
+    color: #00233f;
+    position: absolute;
+    margin-left: -133px;
+    left: 50%; }
+    @media screen and (max-width: 600px) {
+      .page-wrapper .footer p {
+        margin-left: 0;
+        left: 5%;
+        position: static; } }
   .page-wrapper .footer .letter-wrapper {
     padding-top: 0px;
     display: inline-block;
     cursor: pointer;
-    text-align: right; }
+    float: right; }
+    @media screen and (max-width: 600px) {
+      .page-wrapper .footer .letter-wrapper {
+        display: block; } }
     .page-wrapper .footer .letter-wrapper .dropdown {
       display: inline-block; }
       .page-wrapper .footer .letter-wrapper .dropdown em {
