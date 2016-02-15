@@ -30,7 +30,6 @@ $bgForButton: #ececec
                 background-color: #fff
                 .navbar-collapse
                     .navbar-nav
-                        // font-size: 0.5em
                         position: relative
                         text-align: center
                         width: 100%
@@ -87,9 +86,8 @@ $bgForButton: #ececec
                             
                             a
                                 display: inline
-                                font-size: 80%
+                                font-size: 100%
                                 color: #013a5a
-                                // padding: 2px
                                 @media screen and (max-width: 800px)
                                     font-size: 70%
                                 
@@ -100,8 +98,12 @@ $bgForButton: #ececec
                         .center-menu
                             display: inline
                             margin: 0 auto
-                            // background-color: red
-                            
+                            .gold-watches
+                                a
+                                    padding-bottom: 40px
+                            .silver-watches
+                                a
+                                    padding-bottom: 40px                             
                                 
 
 
@@ -1034,7 +1036,7 @@ $bgForButton: #ececec
     .footer
         background-color: #fff
         position: relative
-        p
+        .copyright
             display: inline-block
             padding-top: 10px
             left: -2em
@@ -1052,9 +1054,9 @@ $bgForButton: #ececec
             display: inline-block
             cursor: pointer
             float: right
-            @media screen and (max-width: 600px)
+            // @media screen and (max-width: 600px)
                 // float: right
-                display: block
+                // display: block
 
             .dropdown
                 display: inline-block

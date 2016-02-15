@@ -14,24 +14,33 @@ $(document).ready(function() {
     $(".active-window-for-gold-watches").hide();
     $(".active-window-for-silver-watches").hide();
 
+
     // При наведенні мишки на кнопку із золотими годинниками або уже відкритого вікна з ним 
-    $(".gold-watches, .active-window-for-gold-watches").mouseover(function(){
+    $(".gold-watches, .active-window-for-gold-watches").mouseenter(function(){
         // Закриємо вікно із срібними годинниками
         $(".active-window-for-silver-watches").hide();
         // Відкриємо із золотими годинниками
         $(".active-window-for-gold-watches").show();
-        // При виведенні мишки із вікна із золотими годинниками 
-        $(".active-window-for-gold-watches").mouseout(function(event) {
+        // При виведенні мишки із пункта меню із золотими годинниками 
+        $(".center-menu>li").not(".gold-wathces").mouseleave(function(event) {
+            // Сховаємо вікно із золотими годинниками 
+            $(".active-window-for-gold-watches").hide();
+        });
+        $(".active-window-for-gold-watches").mouseleave(function(event) {
             // Сховаємо вікно із золотими годинниками 
             $(".active-window-for-gold-watches").hide();
         });
     });
     
-    // Аналогічно до золотих годинників
-    $(".silver-watches, .active-window-for-silver-watches").mouseover(function(){
+    // Аналогічно до cрібних годинників
+    $(".silver-watches, .active-window-for-silver-watches").mouseenter(function(){
         $(".active-window-for-gold-watches").hide();
         $(".active-window-for-silver-watches").show();
-        $(".active-window-for-silver-watches").mouseout(function(event) {
+        $(".active-window-for-silver-watches").mouseleave(function(event) {
+            // Сховаємо вікно із срібними годинниками 
+            $(".active-window-for-silver-watches").hide();
+        });
+        $(".center-menu>li").not(".silver-wathces").mouseleave(function(event) {
             $(".active-window-for-silver-watches").hide();
         });
         
