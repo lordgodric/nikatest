@@ -31,7 +31,7 @@
     <!-- Slidejs -->
     <link href="styles/css/slidejs.css" rel="stylesheet" >
     <!-- Google api -->
-    <script src="http://maps.googleapis.com/maps/api/js"></script> 
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
   </head>
   <body>
     <div class="page-wrapper container-fluid ">
@@ -321,568 +321,577 @@
                             <div class="form-group col-xs-12 ">
                               <label for="city"></label>
                               <p class="text-uppercase">Город</p>
-                              <div class="input-group col-xs-12">
-                                <input type="text" class="form-control input" id="city">
+                              <div class="input-group form-city">
+                                <input type="text" class="form-control form-city-input" aria-label="..." id="city">
+                                <div class="input-group-btn form-city-input-group-btn">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                  <ul class="dropdown-menu form-city-list dropdown-menu-right" role="menu">
+                                    <li><a href="#">Москва</a></li>
+                                    <li><a href="#">Санкт-Петербург</a></li>
+                                    <li><a href="#">Казань</a></li>
+                                    
+                                  </ul>
+                                  </div><!-- /btn-group -->
+                                  </div><!-- /input-group -->
+                                </div>
                               </div>
-                            </div>
+                              <div class="row">
+                                <div class="form-group col-xs-12 ">
+                                  <label for="street"></label>
+                                  <p class="text-uppercase">Улица</p>
+                                  <div class="input-group col-xs-12">
+                                    <input type="text" class="form-control input" id="street">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="form-group col-xs-12 ">
+                                  <label for="phone"></label>
+                                  <p class="text-uppercase">Телефон для связи</p>
+                                  <div class="input-group col-xs-12">
+                                    <input type="text" class="form-control input" id="phone">
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
                           </div>
-                          <div class="row">
-                            <div class="form-group col-xs-12 ">
-                              <label for="street"></label>
-                              <p class="text-uppercase">Улица</p>
-                              <div class="input-group col-xs-12">
-                                <input type="text" class="form-control input" id="street">
+                          <!-- права частина - 3-ої частини -->
+                          <div class="child-right col-xs-12 col-sm-6">
+                            <form>
+                              <div class="row">
+                                <div class="form-group col-xs-12 col-md-4">
+                                  <label for="house" class="control-label"></label>
+                                  <p class="text-uppercase">Дом</p>
+                                  <div class="input-group col-xs-12">
+                                    <input type="text" class="form-control input" id="house">
+                                  </div>
+                                </div>
+                                <div class="form-group col-xs-12 col-md-4">
+                                  <label for="shell" class="control-label"></label>
+                                  <p class="text-uppercase">Корпус</p>
+                                  <div class="input-group col-xs-12">
+                                    <input type="text" class="form-control input" id="shell">
+                                  </div>
+                                </div>
+                                <div class="form-group col-xs-12 col-md-4">
+                                  <label for="structure" class="control-label"></label>
+                                  <p class="text-uppercase">Строение</p>
+                                  <div class="input-group col-xs-12">
+                                    <input type="text" class="form-control input" id="structure">
+                                  </div>
+                                </div>
                               </div>
-                            </div>
+                              <div class="form-group col-xs-12 ">
+                                <div class="row ">
+                                  <label for="comment"></label>
+                                  <span class="text-uppercase comment-label">Ваши пожелания</span>
+                                  <div class="input-group col-xs-12">
+                                    <textarea class="form-control yourWishes" id="comment"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group col-xs-12 edit-form-group">
+                                <div class="row ">
+                                  <button type="button" class="btn btn-default btn-edit">
+                                  <span class="text-uppercase">изменить</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
                           </div>
-                          <div class="row">
-                            <div class="form-group col-xs-12 ">
-                              <label for="phone"></label>
-                              <p class="text-uppercase">Телефон для связи</p>
-                              <div class="input-group col-xs-12">
-                                <input type="text" class="form-control input" id="phone">
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      <!-- права частина - 3-ої частини -->
-                      <div class="child-right col-xs-12 col-sm-6">
-                        <form>
-                          <div class="row">
-                            <div class="form-group col-xs-12 col-md-4">
-                              <label for="house" class="control-label"></label>
-                              <p class="text-uppercase">Дом</p>
-                              <div class="input-group col-xs-12">
-                                <input type="text" class="form-control input" id="house">
-                              </div>
-                            </div>
-                            <div class="form-group col-xs-12 col-md-4">
-                              <label for="shell" class="control-label"></label>
-                              <p class="text-uppercase">Корпус</p>
-                              <div class="input-group col-xs-12">
-                                <input type="text" class="form-control input" id="shell">
-                              </div>
-                            </div>
-                            <div class="form-group col-xs-12 col-md-4">
-                              <label for="structure" class="control-label"></label>
-                              <p class="text-uppercase">Строение</p>
-                              <div class="input-group col-xs-12">
-                                <input type="text" class="form-control input" id="structure">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-12 ">
-                            <div class="row ">
-                              <label for="comment"></label>
-                              <span class="text-uppercase comment-label">Ваши пожелания</span>
-                              <div class="input-group col-xs-12">
-                                <textarea class="form-control yourWishes" id="comment"></textarea>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group col-xs-12 edit-form-group">
-                            <div class="row ">
-                              <button type="button" class="btn btn-default btn-edit">
-                              <span class="text-uppercase">изменить</span>
-                              </button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="bottom-right col-sm-6 col-xs-12">
-                      <!-- Добавив цей клас для того щоб в мобільному вигляді було симетрично -->
-                      <div class="child-left-bottom-right col-xs-12">
-                        <!-- УВАГА! оскільки у checkbox не вдалося змінити вигляд - я використав jQuery який добавляю до обраного елементу класс checked  -->
-                        <div class="row string">
-                          <p class="text-uppercase">выберите удобный для вас способ оплаты</p>
                         </div>
-                        <form>
-                          <div class="row">
-                            <div class="form-group form-group-bottom-right col-xs-10">
-                              <div class="checkboxx cash">
-                                <label class="" for="cash"></label>
-                                <p class="text-uppercase">наличными</p>
-                                <div class="input-checkbox" id="cash"></div>
-                              </div>
+                        <div class="bottom-right col-sm-6 col-xs-12">
+                          <!-- Добавив цей клас для того щоб в мобільному вигляді було симетрично -->
+                          <div class="child-left-bottom-right col-xs-12">
+                            <!-- УВАГА! оскільки у checkbox не вдалося змінити вигляд - я використав jQuery який добавляю до обраного елементу класс checked  -->
+                            <div class="row string">
+                              <p class="text-uppercase">выберите удобный для вас способ оплаты</p>
                             </div>
-                          </div>
-                          <div class="row">
-                            <div class="form-group form-group-bottom-right col-xs-12 ">
-                              <div class="checkboxx card">
-                                <label for="card"></label>
-                                <p class="text-uppercase">картой</p>
-                                <div class="input-checkbox" id="card"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="form-group form-group-bottom-right col-xs-12 ">
-                              <div class="checkboxx transfer">
-                                <label for="transfer"></label>
-                                <p class="text-uppercase">переводом</p>
-                                <div class="input-checkbox" id="transfer"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row rulles">
-                            <div class="col-xs-12  one-rulles">
-                              <a href="#">
-                                <div class="">
-                                  <div class="doc-icon"></div>
-                                  <div class="text">Правила возврата денежных средств, товаров / услуг</div>
+                            <form>
+                              <div class="row">
+                                <div class="form-group form-group-bottom-right col-xs-10">
+                                  <div class="checkboxx cash">
+                                    <label class="" for="cash"></label>
+                                    <p class="text-uppercase">наличными</p>
+                                    <div class="input-checkbox" id="cash"></div>
+                                  </div>
                                 </div>
-                              </a>
-                              <a href="#">
-                                <div class="">
-                                  <div class="doc-icon"></div>
-                                  <div class="text">Договор оферты</div>
+                              </div>
+                              <div class="row">
+                                <div class="form-group form-group-bottom-right col-xs-12 ">
+                                  <div class="checkboxx card">
+                                    <label for="card"></label>
+                                    <p class="text-uppercase">картой</p>
+                                    <div class="input-checkbox" id="card"></div>
+                                  </div>
                                 </div>
-                              </a>
-                            </div>
-                            <div class="col-xs-12  one-rulles">
-                              <a href="#">
-                                
-                              </a>
-                            </div>
+                              </div>
+                              <div class="row">
+                                <div class="form-group form-group-bottom-right col-xs-12 ">
+                                  <div class="checkboxx transfer">
+                                    <label for="transfer"></label>
+                                    <p class="text-uppercase">переводом</p>
+                                    <div class="input-checkbox" id="transfer"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row rulles">
+                                <div class="col-xs-12  one-rulles">
+                                  <a href="#">
+                                    <div class="">
+                                      <div class="doc-icon"></div>
+                                      <div class="text">Правила возврата денежных средств, товаров / услуг</div>
+                                    </div>
+                                  </a>
+                                  <a href="#">
+                                    <div class="">
+                                      <div class="doc-icon"></div>
+                                      <div class="text">Договор оферты</div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-xs-12  one-rulles">
+                                  <a href="#">
+                                    
+                                  </a>
+                                </div>
+                              </div>
+                            </form>
                           </div>
-                        </form>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- /.delivery -->
-            <!-- checkout -->
-            <div class="row">
-              <div class="checkout container-fluid ">
-                <div class="checkout-line"></div>
-                <button type="submit" class="btn btn-default btn-submit center-block">
-                <span class="text-uppercase">оформить заказ</span>
-                </button>
-              </div>
-              <!-- /.checkout -->
-            </div>
-            
-            <div class="row maps-header">
-              <div class="header-text storeNear">
-                <p class="text-uppercase col-xs-12 col-sm-4">магазины рядом</p>
-              </div>
-              <div class="yourCity col-xs-12 text-center col-sm-4">
-                <!-- Single button -->
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default dropdown-toggle choseCityBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Ваш город
-                  <span class="rightArrow"></span>
-                  </button>
-                  <ul class="dropdown-menu cityList">
-                    <li><a>Москва</a></li>
-                    <li><a>Санкт-Петербург</a></li>
-                    <li><a>Казань</a></li>
-                  </ul>
-                  <div class="favoritesCity"></div>
-                  <div class="closeArrow"></div>
-                </div>
-              </div>
-              <div class="toggle col-xs-12 text-right col-sm-4">
-                <span class="toggle-map">Свернуть </span>
-                <img src="img/up-arrowhead.png" class="hide-img" alt="arrowup">
-              </div>
-            </div>
-          </div>
-          <!-- /.top-center -->
-        </div>
-        <!-- /.top -->
-        <!-- middle -->
-        <div class="middle container-fluid">
-          <div class="col-xs-12">
-            <div class="row">
-              <div id="googleMap" style="width:100%;height:450px;"></div>
-            </div>
-          </div>
-        </div>
-        <!-- /.middle -->
-        <!-- bottom -->
-        <div class="bottom container-fluid">
-          <div class="bottom-center  col-lg-10 col-lg-push-1">
-            <div class="row">
-              <div class="header-text otheDials">
-                <p class="text-uppercase col-xs-12 col-sm-4">другие циферблаты</p>
-              </div>
-              <br>
-            </div>
-            <!-- otheDials row -->
-            <div class="watches otherDials container-fluid ">
-              <div class="row">
-                <div class="1watchesWrapper watchesWrapper">
-                  <div class="1watchesWrapperImage imageWrapper">
-                    <img src="img/1watches.png" class="oneWatches " alt="firstwatches">
-                    <button type="button" class="btn btn-default text-uppercase  select-dial col-xs-10 col-xs-push-2">выбрать <br> циферблат</button>
-                  </div>
-                  <div class="info container">
-                    <h5 class="text-uppercase ">· для Него ·</h5>
-                    <img src="img/small-jewerly.png" alt="small-jewerly" class="">
-                    <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, aspernatur.</p>
-                    <button type="button" class="btn btn-default text-uppercase col-xs-10 col-xs-push-1 in-basket">В <br> корзину</button>
-                    <p class="under-button-text">магазины рядом</p>
-                    <div class="arrow-left"></div>
-                  </div>
-                </div>
-                <div class="2watchesWrapper watchesWrapper">
-                  <div class="2watchesWrapperImage imageWrapper">
-                    <img src="img/2watches.png" class="oneWatches" alt="2watches">
-                    <button type="button" class="btn btn-default text-uppercase  select-dial col-xs-10 col-xs-push-2">выбрать <br> циферблат</button>
-                  </div>
-                  <div class="info container">
-                    <h5 class="text-uppercase">· для Него ·</h5>
-                    <img src="img/small-jewerly.png" alt="small-jewerly">
-                    <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, aspernatur.</p>
-                    <button type="button" class="btn btn-default text-uppercase col-xs-10 col-xs-push-1 in-basket">В <br>корзину</button>
-                    <p class="under-button-text">магазины рядом</p>
-                    <div class="arrow-left"></div>
-                  </div>
-                </div>
-                <div class="3watchesWrapper watchesWrapper">
-                  <div class="3watchesWrapperImage imageWrapper">
-                    <img src="img/3watches.png" class="oneWatches" alt="3watches">
-                    <button type="button" class="btn btn-default text-uppercase  select-dial col-xs-10 col-xs-push-2">выбрать <br> циферблат</button>
-                  </div>
-                  <div class="info container">
-                    <h5 class="text-uppercase">· для Нее ·</h5>
-                    <img src="img/small-jewerly.png" alt="small-jewerly">
-                    <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci.</p>
-                    <button type="button" class="btn btn-default text-uppercase col-xs-10 col-xs-push-1 in-basket">В <br>корзину</button>
-                    <p class="under-button-text">магазины рядом</p>
-                    <div class="arrow-left"></div>
-                  </div>
-                </div>
-                <div class="4watchesWrapper watchesWrapper">
-                  <div class="4watchesWrapperImage imageWrapper">
-                    <img src="img/4watches.png" class="oneWatches" alt="4watches">
-                    <button type="button" class="btn btn-default text-uppercase  select-dial col-xs-10 col-xs-push-2">выбрать <br> циферблат</button>
-                  </div>
-                  <div class="info container">
-                    <h5 class="text-uppercase">· для Нее ·</h5>
-                    <img src="img/small-jewerly.png" alt="small-jewerly">
-                    <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, natus!</p>
-                    <button type="button" class="btn btn-default text-uppercase col-xs-10 col-xs-push-1 in-basket">В <br> корзину</button>
-                    <p class="under-button-text">магазины рядом</p>
-                    <div class="arrow-left"></div>
-                  </div>
-                </div>
-                <div class="5watchesWrapper watchesWrapper ">
-                  <div class="5watchesWrapperImage imageWrapper">
-                    <img src="img/5watches.png" class="oneWatches" alt="5watches">
-                    <button type="button" class="btn btn-default text-uppercase  select-dial col-xs-10 col-xs-push-2">выбрать <br> циферблат</button>
-                  </div>
-                  <div class="info container">
-                    <h5 class="text-uppercase">· для Нее ·</h5>
-                    <img src="img/small-jewerly.png" alt="small-jewerly">
-                    <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, dolor.</p>
-                    <button type="button" class="btn btn-default text-uppercase col-xs-10 col-xs-push-1 in-basket">В <br>корзину</button>
-                    <p class="under-button-text">магазины рядом</p>
-                    <div class="arrow-right"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /.watches -->
-            <!-- news -->
-            <div class="row">
-              <div class="news container-fluid">
+                <!-- /.delivery -->
+                <!-- checkout -->
                 <div class="row">
-                  <div class="header-text specification">
-                    <p class="text-uppercase col-xs-12 col-sm-4">Спецификация</p>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 spec-watches">
-                  <img src="img/spec-watches.jpg" alt="" class="img-responsive img-center center-block">
-                </div>
-                <div class="news-text-wrapper col-xs-12 col-sm-8 ">
-                  <div class="news-text-block-wrapper col-sm-6 ">
-                    <div class="single-text-block ">
-                      <p class="news-date ">15 сентября</p>
-                      <p class="news-place text-uppercase "><strong>Lorem ipsum dolor sit amet.</strong></p>
-                      <p class="news-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem qui, accusantium laudantium.</p>
-                      <ul>
-                        <li><i></i></li>
-                        <li><strong>[457]</strong></li>
-                        <li><i></i></li>
-                        <li><strong>[11]</strong></li>
-                        <li><i></i></li>
-                        <li><strong>в закладки</strong></li>
-                        <li><i></i></li>
-                        <li><strong>ссылка</strong></li>
-                        <li><i></i></li>
-                      </ul>
-                      <div class="right-arrow-single-news"></div>
-                    </div>
-                    <div class="single-text-block ">
-                      <p class="news-date ">31.01.2014</p>
-                      <p class="news-place text-uppercase "><strong>Lorem ipsum dolor sit amet.</strong></p>
-                      <p class="news-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem qui, accusantium laudantium.</p>
-                      <ul>
-                        <li><i></i></li>
-                        <li><strong>[457]</strong></li>
-                        <li><i></i></li>
-                        <li><strong>[11]</strong></li>
-                        <li><i></i></li>
-                        <li><strong>в закладки</strong></li>
-                        <li><i></i></li>
-                        <li><strong>ссылка</strong></li>
-                        <li><i></i></li>
-                      </ul>
-                      <div class="right-arrow-single-news"></div>
-                    </div>
-                    <div class="single-text-block ">
-                      <p class="news-date ">13.01.2014</p>
-                      <p class="news-place text-uppercase "><strong>Lorem ipsum dolor sit amet.</strong></p>
-                      <p class="news-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem qui, accusantium laudantiumb.</p>
-                      <ul class="">
-                        <li><i></i></li>
-                        <li><strong>[457]</strong></li>
-                        <li><i></i></li>
-                        <li><strong>[11]</strong></li>
-                        <li><i></i></li>
-                        <li><strong>в закладки</strong></li>
-                        <li><i></i></li>
-                        <li><strong>ссылка</strong></li>
-                        <li><i></i></li>
-                      </ul>
-                      <div class="right-arrow-single-news"></div>
-                    </div>
-                  </div>
-                  <!-- <div class="news-image col-sm-6 ">
-                  </div> -->
-                  <div class="col-sm-6" style="padding: 0">
-                    <img src="img/news1.png" class="newsImage" alt="news1 image" style="width: 100%">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="filter container-fluid ">
-                <div class="col-xs-12 col-sm-6 col-md-5 filter-header text-center">
-                  <ul>
-                    <li>•</li>
-                    <li><a href=" " class="text-uppercase">celebrity</a></li>
-                    <li>•</li>
-                    <li><a href=" " class="text-uppercase ">gentelman</a></li>
-                    <li>•</li>
-                    <li><a href=" " class="text-uppercase ">lady</a></li>
-                    <li>•</li>
-                    <li><a href=" " class="text-uppercase ">ego</a></li>
-                    <li>•</li>
-                    <li><a href=" " class="text-uppercase ">viva</a></li>
-                    <li>•</li>
-                  </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 filter-options ">
-                  <div class="btn-group forWhom">
-                    <button type="button" class="btn btn-default dropdown-toggle choseForWhom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Для кого
-                    <span class="rightArrowForWhom"></span>
+                  <div class="checkout container-fluid ">
+                    <div class="checkout-line"></div>
+                    <button type="submit" class="btn btn-default btn-submit center-block">
+                    <span class="text-uppercase">оформить заказ</span>
                     </button>
-                    <ul class="dropdown-menu forWhomList">
-                      <li><a>Для нее</a></li>
-                      <li><a>Для него</a></li>
-                    </ul>
-                    <div class="alreadyChosedForWhom"></div>
-                    <div class="closeArrowForWhom"></div>
                   </div>
-                  <br />
-                  <div class="btn-group forCaseMetalbtn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle choseCaseMetal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Металл корпуса
-                    <span class="rightArrowForCaseMetal"></span>
-                    </button>
-                    <ul class="dropdown-menu forCaseMetal">
-                      <li><a>Золото</a></li>
-                      <li><a>Серебро</a></li>
-                    </ul>
-                    <div class="alreadyChosedForCaseMetal"></div>
-                    <div class="closeArrowForCaseMetal"></div>
-                  </div>
-                  <br />
-                  <div class="btn-group forColorbtn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle choseColor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Цвет
-                    <span class="rightArrowForColor"></span>
-                    </button>
-                    <ul class="dropdown-menu forColor">
-                      <li><a>Желтое</a></li>
-                      <li><a>Белое</a></li>
-                      <li><a>Красное</a></li>
-                    </ul>
-                    <div class="alreadyChosedForColor"></div>
-                    <div class="closeArrowForColor"></div>
-                  </div>
-                  <br />
-                  <div class="btn-group forInsertbtn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle choseInsert" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Вставки
-                    <span class="rightArrowForInsert"></span>
-                    </button>
-                    <ul class="dropdown-menu forInsert">
-                      <li><a>Есть</a></li>
-                      <li><a>Нет</a></li>
-                    </ul>
-                    <div class="alreadyChosedForInsert"></div>
-                    <div class="closeArrowForInsert"></div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 price-slider">
-                  
-                  <input type="text" id="range" name="example_name" value="" />
-                  
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="footer-text container-fluid">
-                <h2 class="text-uppercase text-center ">lorem ipsum</h2>
-                <p class="text-center footer-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laudantium voluptas aliquid earum reprehenderit, debitis repellendus nostrum fugiat nobis maiores velit fugit dignissimos numquam magnam id, incidunt voluptates! Iste,
-                  dolorum!Illo dolorum cumque quibusdam, fugit sequi earum magni, modi ea mollitia, facere, quod veritatis consequatur? Accusantium ea quo itaque adipisci exercitationem a recusandae provident corporis officiis, consequatur incidunt
-                reiciendis ab?</p>
-                <a href="#" class="icon-vk "></a>
-                <a href="#" class="icon-facebook"></a>
-                <a href="#" class="icon-twitter"></a>
-                <a href="#" class="icon-4"></a>
-              </div>
-              <div class="contact container-fluid ">
-                <div class="phone col-sm-4 ">
-                  <img class="center-block " src="img/logo.png " alt="footer-logo " />
-                  <p class="text-center under-logo-text ">бесплатный телефон горячей линиии</p>
-                  <p class="phone-number text-center "><a href="tel://88004447773">8-800-444-777-3</a></p>
-                </div>
-                <div class="links col-sm-8 col-xs-12 ">
-                  <div class="links-list col-xs-12 col-sm-6 col-md-1">
-                    <h5 class="text-uppercase text-left">Бренд</h5>
-                    <ul>
-                      <li><a href="#">Технологии</a></li>
-                      <li><a href="#">Достижения</a></li>
-                      <li><a href="#">История</a></li>
-                      <li><a href="#">Философия</a></li>
-                    </ul>
-                  </div>
-                  <div class="links-list col-xs-12 col-sm-6 col-md-1">
-                    <h5 class="text-uppercase  text-left">Компания</h5>
-                    <ul>
-                      <li><a href="#">О нас</a></li>
-                      <li><a href="#">Миссия</a></li>
-                      <li><a href="#">События</a></li>
-                      <li><a href="#">Карьера</a></li>
-                    </ul>
-                  </div>
-                  <div class="links-list col-xs-12 col-sm-6 col-md-1">
-                    <h5 class="text-uppercase text-left">Коллекция</h5>
-                    <ul>
-                      <li><a href="#">Lady</a></li>
-                      <li><a href="#">Gentelmens</a></li>
-                      <li><a href="#">Viva</a></li>
-                      <li><a href="#">Ego</a></li>
-                      <li><a href="#">Celebrity</a></li>
-                    </ul>
-                  </div>
-                  <div class="links-list col-xs-12 col-sm-6 col-md-1">
-                    <h5 class="text-uppercase text-left">Розница</h5>
-                    <ul>
-                      <li><a href="#">Фирменные салоны</a></li>
-                      <li><a href="#">Бренд-секции</a></li>
-                    </ul>
-                  </div>
-                  <div class="links-list col-xs-12 col-sm-6 col-md-1">
-                    <h5 class="text-uppercase text-left">Бренд</h5>
-                    <ul>
-                      <li><a href="#">Условия гарантии</a></li>
-                      <li><a href="#">Сервисные центры</a></li>
-                      <li><a href="#">Техническая информация</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="footer container">
-          <div class="footer-center col-xs-12">
-            <p class="copyright"> © Торговый дом «НИКА», 2003—2013 </p>
-            <span class="letter-wrapper">
-              <div class="dropdown">
-                <div id="dLabel" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <em>Написать</em>
-                  <span class="letter"></span>
+                  <!-- /.checkout -->
                 </div>
                 
-                <ul class="dropdown-menu" aria-labelledby="dLabel">
-                  <li>
-                    <h4 class="text-uppercase text-center">быстрый заказ</h4>
-                    <img src="img/jewerly.png" alt="jewerly " class="col-xs-12" />
-                    <p class="text-justify">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam error illo iusto consequuntur ab quo voluptatum corrupti debitis consequatur dolorem obcaecati.
-                    </p>
-                    <form class="form-inline">
-                      <div class="form-group col-xs-12" >
-                        <label for="email" class="text-uppercase">Электроная почта</label>
-                        <input type="text" class="form-control col-xs-12" id="email" placeholder="" >
-                      </div>
-                      <div class="form-group col-xs-12">
-                        <label for="phoneNumberFastOrder" class="text-uppercase">мобильный телефон</label>
-                        <input type="email" class="form-control" id="phoneNumberFastOrder" placeholder="">
-                      </div>
-                      <div class="col-xs-12">
-                        <button type="button" class="btn btn-default closeDrowpdownMenu">Закрыть <i class="closeDropDownMenuIcon"></i></button>
-                        <button type="submit" class="btn btn-default pull-right text-uppercase fast-order">Заказать</button>
-                      </div>
-                    </form>
-                  </li>
-                </ul>
+                <div class="row maps-header">
+                  <div class="header-text storeNear">
+                    <p class="text-uppercase col-xs-12 col-sm-4">магазины рядом</p>
+                  </div>
+                  <div class="yourCity col-xs-12 text-center col-sm-4">
+                    <!-- Single button -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle choseCityBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Ваш город
+                      <span class="rightArrow"></span>
+                      </button>
+                      <ul class="dropdown-menu cityList">
+                        <li><a>Москва</a></li>
+                        <li><a>Санкт-Петербург</a></li>
+                        <li><a>Казань</a></li>
+                      </ul>
+                      <div class="favoritesCity"></div>
+                      <div class="closeArrow"></div>
+                    </div>
+                  </div>
+                  <div class="toggle col-xs-12 text-right col-sm-4">
+                    <span class="toggle-map">Свернуть </span>
+                    <img src="img/up-arrowhead.png" class="hide-img" alt="arrowup">
+                  </div>
+                </div>
               </div>
-            </span>
+              <!-- /.top-center -->
+            </div>
+            <!-- /.top -->
+            <!-- middle -->
+            <div class="middle container-fluid">
+              <div class="col-xs-12">
+                <div class="row">
+                  <div id="googleMap" style="width:100%;height:450px;"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.middle -->
+            <!-- bottom -->
+            <div class="bottom container-fluid">
+              <div class="bottom-center  col-lg-10 col-lg-push-1">
+                <div class="row">
+                  <div class="header-text otheDials">
+                    <p class="text-uppercase col-xs-12 col-sm-4">другие циферблаты</p>
+                  </div>
+                  <br>
+                </div>
+                <!-- otheDials row -->
+                <div class="watches otherDials container-fluid ">
+                  <div class="row">
+                    <div class="1watchesWrapper watchesWrapper">
+                      <div class="1watchesWrapperImage imageWrapper">
+                        <img src="img/1watches.png" class="oneWatches " alt="firstwatches">
+                        <button type="button" class="btn btn-default text-uppercase  select-dial col-xs-10 col-xs-push-2">выбрать <br> циферблат</button>
+                      </div>
+                      <div class="info container">
+                        <h5 class="text-uppercase ">· для Него ·</h5>
+                        <img src="img/small-jewerly.png" alt="small-jewerly" class="">
+                        <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, aspernatur.</p>
+                        <button type="button" class="btn btn-default text-uppercase col-xs-10 col-xs-push-1 in-basket">В <br> корзину</button>
+                        <p class="under-button-text">магазины рядом</p>
+                        <div class="arrow-left"></div>
+                      </div>
+                    </div>
+                    <div class="2watchesWrapper watchesWrapper">
+                      <div class="2watchesWrapperImage imageWrapper">
+                        <img src="img/2watches.png" class="oneWatches" alt="2watches">
+                        <button type="button" class="btn btn-default text-uppercase  select-dial col-xs-10 col-xs-push-2">выбрать <br> циферблат</button>
+                      </div>
+                      <div class="info container">
+                        <h5 class="text-uppercase">· для Него ·</h5>
+                        <img src="img/small-jewerly.png" alt="small-jewerly">
+                        <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, aspernatur.</p>
+                        <button type="button" class="btn btn-default text-uppercase col-xs-10 col-xs-push-1 in-basket">В <br>корзину</button>
+                        <p class="under-button-text">магазины рядом</p>
+                        <div class="arrow-left"></div>
+                      </div>
+                    </div>
+                    <div class="3watchesWrapper watchesWrapper">
+                      <div class="3watchesWrapperImage imageWrapper">
+                        <img src="img/3watches.png" class="oneWatches" alt="3watches">
+                        <button type="button" class="btn btn-default text-uppercase  select-dial col-xs-10 col-xs-push-2">выбрать <br> циферблат</button>
+                      </div>
+                      <div class="info container">
+                        <h5 class="text-uppercase">· для Нее ·</h5>
+                        <img src="img/small-jewerly.png" alt="small-jewerly">
+                        <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci.</p>
+                        <button type="button" class="btn btn-default text-uppercase col-xs-10 col-xs-push-1 in-basket">В <br>корзину</button>
+                        <p class="under-button-text">магазины рядом</p>
+                        <div class="arrow-left"></div>
+                      </div>
+                    </div>
+                    <div class="4watchesWrapper watchesWrapper">
+                      <div class="4watchesWrapperImage imageWrapper">
+                        <img src="img/4watches.png" class="oneWatches" alt="4watches">
+                        <button type="button" class="btn btn-default text-uppercase  select-dial col-xs-10 col-xs-push-2">выбрать <br> циферблат</button>
+                      </div>
+                      <div class="info container">
+                        <h5 class="text-uppercase">· для Нее ·</h5>
+                        <img src="img/small-jewerly.png" alt="small-jewerly">
+                        <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, natus!</p>
+                        <button type="button" class="btn btn-default text-uppercase col-xs-10 col-xs-push-1 in-basket">В <br> корзину</button>
+                        <p class="under-button-text">магазины рядом</p>
+                        <div class="arrow-left"></div>
+                      </div>
+                    </div>
+                    <div class="5watchesWrapper watchesWrapper ">
+                      <div class="5watchesWrapperImage imageWrapper">
+                        <img src="img/5watches.png" class="oneWatches" alt="5watches">
+                        <button type="button" class="btn btn-default text-uppercase  select-dial col-xs-10 col-xs-push-2">выбрать <br> циферблат</button>
+                      </div>
+                      <div class="info container">
+                        <h5 class="text-uppercase">· для Нее ·</h5>
+                        <img src="img/small-jewerly.png" alt="small-jewerly">
+                        <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, dolor.</p>
+                        <button type="button" class="btn btn-default text-uppercase col-xs-10 col-xs-push-1 in-basket">В <br>корзину</button>
+                        <p class="under-button-text">магазины рядом</p>
+                        <div class="arrow-right"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.watches -->
+                <!-- news -->
+                <div class="row">
+                  <div class="news container-fluid">
+                    <div class="row">
+                      <div class="header-text specification">
+                        <p class="text-uppercase col-xs-12 col-sm-4">Спецификация</p>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 spec-watches">
+                      <img src="img/spec-watches.jpg" alt="" class="img-responsive img-center center-block">
+                    </div>
+                    <div class="news-text-wrapper col-xs-12 col-sm-8 ">
+                      <div class="news-text-block-wrapper col-sm-6 ">
+                        <div class="single-text-block ">
+                          <p class="news-date ">15 сентября</p>
+                          <p class="news-place text-uppercase "><strong>Lorem ipsum dolor sit amet.</strong></p>
+                          <p class="news-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem qui, accusantium laudantium.</p>
+                          <ul>
+                            <li><i></i></li>
+                            <li><strong>[457]</strong></li>
+                            <li><i></i></li>
+                            <li><strong>[11]</strong></li>
+                            <li><i></i></li>
+                            <li><strong>в закладки</strong></li>
+                            <li><i></i></li>
+                            <li><strong>ссылка</strong></li>
+                            <li><i></i></li>
+                          </ul>
+                          <div class="right-arrow-single-news"></div>
+                        </div>
+                        <div class="single-text-block ">
+                          <p class="news-date ">31.01.2014</p>
+                          <p class="news-place text-uppercase "><strong>Lorem ipsum dolor sit amet.</strong></p>
+                          <p class="news-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem qui, accusantium laudantium.</p>
+                          <ul>
+                            <li><i></i></li>
+                            <li><strong>[457]</strong></li>
+                            <li><i></i></li>
+                            <li><strong>[11]</strong></li>
+                            <li><i></i></li>
+                            <li><strong>в закладки</strong></li>
+                            <li><i></i></li>
+                            <li><strong>ссылка</strong></li>
+                            <li><i></i></li>
+                          </ul>
+                          <div class="right-arrow-single-news"></div>
+                        </div>
+                        <div class="single-text-block ">
+                          <p class="news-date ">13.01.2014</p>
+                          <p class="news-place text-uppercase "><strong>Lorem ipsum dolor sit amet.</strong></p>
+                          <p class="news-text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem qui, accusantium laudantiumb.</p>
+                          <ul class="">
+                            <li><i></i></li>
+                            <li><strong>[457]</strong></li>
+                            <li><i></i></li>
+                            <li><strong>[11]</strong></li>
+                            <li><i></i></li>
+                            <li><strong>в закладки</strong></li>
+                            <li><i></i></li>
+                            <li><strong>ссылка</strong></li>
+                            <li><i></i></li>
+                          </ul>
+                          <div class="right-arrow-single-news"></div>
+                        </div>
+                      </div>
+                      <!-- <div class="news-image col-sm-6 ">
+                      </div> -->
+                      <div class="col-sm-6" style="padding: 0">
+                        <img src="img/news1.png" class="newsImage" alt="news1 image" style="width: 100%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="filter container-fluid ">
+                    <div class="col-xs-12 col-sm-6 col-md-5 filter-header text-center">
+                      <ul>
+                        <li>•</li>
+                        <li><a href=" " class="text-uppercase">celebrity</a></li>
+                        <li>•</li>
+                        <li><a href=" " class="text-uppercase ">gentelman</a></li>
+                        <li>•</li>
+                        <li><a href=" " class="text-uppercase ">lady</a></li>
+                        <li>•</li>
+                        <li><a href=" " class="text-uppercase ">ego</a></li>
+                        <li>•</li>
+                        <li><a href=" " class="text-uppercase ">viva</a></li>
+                        <li>•</li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 filter-options ">
+                      <div class="btn-group forWhom">
+                        <button type="button" class="btn btn-default dropdown-toggle choseForWhom" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Для кого
+                        <span class="rightArrowForWhom"></span>
+                        </button>
+                        <ul class="dropdown-menu forWhomList">
+                          <li><a>Для нее</a></li>
+                          <li><a>Для него</a></li>
+                        </ul>
+                        <div class="alreadyChosedForWhom"></div>
+                        <div class="closeArrowForWhom"></div>
+                      </div>
+                      <br />
+                      <div class="btn-group forCaseMetalbtn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle choseCaseMetal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Металл корпуса
+                        <span class="rightArrowForCaseMetal"></span>
+                        </button>
+                        <ul class="dropdown-menu forCaseMetal">
+                          <li><a>Золото</a></li>
+                          <li><a>Серебро</a></li>
+                        </ul>
+                        <div class="alreadyChosedForCaseMetal"></div>
+                        <div class="closeArrowForCaseMetal"></div>
+                      </div>
+                      <br />
+                      <div class="btn-group forColorbtn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle choseColor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Цвет
+                        <span class="rightArrowForColor"></span>
+                        </button>
+                        <ul class="dropdown-menu forColor">
+                          <li><a>Желтое</a></li>
+                          <li><a>Белое</a></li>
+                          <li><a>Красное</a></li>
+                        </ul>
+                        <div class="alreadyChosedForColor"></div>
+                        <div class="closeArrowForColor"></div>
+                      </div>
+                      <br />
+                      <div class="btn-group forInsertbtn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle choseInsert" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Вставки
+                        <span class="rightArrowForInsert"></span>
+                        </button>
+                        <ul class="dropdown-menu forInsert">
+                          <li><a>Есть</a></li>
+                          <li><a>Нет</a></li>
+                        </ul>
+                        <div class="alreadyChosedForInsert"></div>
+                        <div class="closeArrowForInsert"></div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 price-slider">
+                      
+                      <input type="text" id="range" name="example_name" value="" />
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="footer-text container-fluid">
+                    <h2 class="text-uppercase text-center ">lorem ipsum</h2>
+                    <p class="text-center footer-p ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laudantium voluptas aliquid earum reprehenderit, debitis repellendus nostrum fugiat nobis maiores velit fugit dignissimos numquam magnam id, incidunt voluptates! Iste,
+                      dolorum!Illo dolorum cumque quibusdam, fugit sequi earum magni, modi ea mollitia, facere, quod veritatis consequatur? Accusantium ea quo itaque adipisci exercitationem a recusandae provident corporis officiis, consequatur incidunt
+                    reiciendis ab?</p>
+                    <a href="#" class="icon-vk "></a>
+                    <a href="#" class="icon-facebook"></a>
+                    <a href="#" class="icon-twitter"></a>
+                    <a href="#" class="icon-4"></a>
+                  </div>
+                  <div class="contact container-fluid ">
+                    <div class="phone col-sm-4 ">
+                      <img class="center-block " src="img/logo.png " alt="footer-logo " />
+                      <p class="text-center under-logo-text ">бесплатный телефон горячей линиии</p>
+                      <p class="phone-number text-center "><a href="tel://88004447773">8-800-444-777-3</a></p>
+                    </div>
+                    <div class="links col-sm-8 col-xs-12 ">
+                      <div class="links-list col-xs-12 col-sm-6 col-md-1">
+                        <h5 class="text-uppercase text-left">Бренд</h5>
+                        <ul>
+                          <li><a href="#">Технологии</a></li>
+                          <li><a href="#">Достижения</a></li>
+                          <li><a href="#">История</a></li>
+                          <li><a href="#">Философия</a></li>
+                        </ul>
+                      </div>
+                      <div class="links-list col-xs-12 col-sm-6 col-md-1">
+                        <h5 class="text-uppercase  text-left">Компания</h5>
+                        <ul>
+                          <li><a href="#">О нас</a></li>
+                          <li><a href="#">Миссия</a></li>
+                          <li><a href="#">События</a></li>
+                          <li><a href="#">Карьера</a></li>
+                        </ul>
+                      </div>
+                      <div class="links-list col-xs-12 col-sm-6 col-md-1">
+                        <h5 class="text-uppercase text-left">Коллекция</h5>
+                        <ul>
+                          <li><a href="#">Lady</a></li>
+                          <li><a href="#">Gentelmens</a></li>
+                          <li><a href="#">Viva</a></li>
+                          <li><a href="#">Ego</a></li>
+                          <li><a href="#">Celebrity</a></li>
+                        </ul>
+                      </div>
+                      <div class="links-list col-xs-12 col-sm-6 col-md-1">
+                        <h5 class="text-uppercase text-left">Розница</h5>
+                        <ul>
+                          <li><a href="#">Фирменные салоны</a></li>
+                          <li><a href="#">Бренд-секции</a></li>
+                        </ul>
+                      </div>
+                      <div class="links-list col-xs-12 col-sm-6 col-md-1">
+                        <h5 class="text-uppercase text-left">Бренд</h5>
+                        <ul>
+                          <li><a href="#">Условия гарантии</a></li>
+                          <li><a href="#">Сервисные центры</a></li>
+                          <li><a href="#">Техническая информация</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="footer container">
+              <div class="footer-center col-xs-12">
+                <p class="copyright"> © Торговый дом «НИКА», 2003—2013 </p>
+                <span class="letter-wrapper">
+                  <div class="dropdown">
+                    <div id="dLabel" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <em>Написать</em>
+                      <span class="letter"></span>
+                    </div>
+                    
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                      <li>
+                        <h4 class="text-uppercase text-center">быстрый заказ</h4>
+                        <img src="img/jewerly.png" alt="jewerly " class="col-xs-12" />
+                        <p class="text-justify">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam error illo iusto consequuntur ab quo voluptatum corrupti debitis consequatur dolorem obcaecati.
+                        </p>
+                        <form class="form-inline">
+                          <div class="form-group col-xs-12" >
+                            <label for="email" class="text-uppercase">Электроная почта</label>
+                            <input type="text" class="form-control col-xs-12" id="email" placeholder="" >
+                          </div>
+                          <div class="form-group col-xs-12">
+                            <label for="phoneNumberFastOrder" class="text-uppercase">мобильный телефон</label>
+                            <input type="email" class="form-control" id="phoneNumberFastOrder" placeholder="">
+                          </div>
+                          <div class="col-xs-12">
+                            <button type="button" class="btn btn-default closeDrowpdownMenu">Закрыть <i class="closeDropDownMenuIcon"></i></button>
+                            <button type="submit" class="btn btn-default pull-right text-uppercase fast-order">Заказать</button>
+                          </div>
+                        </form>
+                      </li>
+                    </ul>
+                  </div>
+                </span>
+              </div>
+            </div>
           </div>
+          <!-- /.row for page-wrapper -->
         </div>
-      </div>
-      <!-- /.row for page-wrapper -->
-    </div>
-    <!-- /.page-wrapper -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Start SlidesJS Required -->
-    <!-- SlidesJS Required: Link to jQuery -->
-    <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
-    <!-- End SlidesJS Required -->
-    <!-- IonRangeSlider js file -->
-    <script src="js/ion.rangeSlider.js"></script>
-    <!-- My JavaScript file -->
-    <script src="js/main.js"></script>
-    <!-- Google map js file -->
-    <script src="js/googleMap.js"></script>
-    <!-- SlidesJS Required: Link to jquery.slides.js -->
-    <script src="js/jquery.slides.min.js"></script>
-    <!-- End SlidesJS Required -->
-    <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
-    <script>
-    $(function() {
-    $('#slides').slidesjs({
-    width: 940,
-    height: 528,
-    navigation: false
-    });
-    });
-    </script>
-    <!-- End SlidesJS Required -->
-    <!-- Робить так щоб dropdown-menu не закривалась по кліку по ній -->
-    <script type="text/javascript">
-    $('.dropdown-menu').click(function(e) {
-    e.stopPropagation();
-    });
-    </script>
-    <!-- Чекбокси які вокористані в формі реалізовані на jQuery оскільки, стандартні чекбокси неможливо(я так думаю) зробити такими як в макеті -->
-    
-  </body>
-</html>
+        <!-- /.page-wrapper -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Start SlidesJS Required -->
+        <!-- SlidesJS Required: Link to jQuery -->
+        <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+        <!-- End SlidesJS Required -->
+        <!-- IonRangeSlider js file -->
+        <script src="js/ion.rangeSlider.js"></script>
+        <!-- My JavaScript file -->
+        <script src="js/main.js"></script>
+        <!-- Google map js file -->
+        <script src="js/googleMap.js"></script>
+        <!-- SlidesJS Required: Link to jquery.slides.js -->
+        <script src="js/jquery.slides.min.js"></script>
+        <!-- End SlidesJS Required -->
+        <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+        <script>
+        $(function() {
+        $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+        });
+        });
+        </script>
+        <!-- End SlidesJS Required -->
+        <!-- Робить так щоб dropdown-menu не закривалась по кліку по ній -->
+        <script type="text/javascript">
+        $('.dropdown-menu').click(function(e) {
+        e.stopPropagation();
+        });
+        </script>
+        <!-- Чекбокси які вокористані в формі реалізовані на jQuery оскільки, стандартні чекбокси неможливо(я так думаю) зробити такими як в макеті -->
+        
+      </body>
+    </html>

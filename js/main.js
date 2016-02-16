@@ -46,6 +46,12 @@ $(document).ready(function() {
         
     });
 
+    // Вибір міста в полі форм
+    $(".form-city-list").children().click(function(){
+        $(".form-city-input").val($(this).text());
+        $(".form-city-input-group-btn").removeClass("open");                          
+    });
+
     // Чекбокс
     $(".input-checkbox").click(function(){
             // Видалимо всі обрання із елементів input-checkbox
