@@ -855,7 +855,6 @@ btn {
         border: none; }
       .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .alreadyChosedForWhom, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .alreadyChosedForCaseMetal, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .alreadyChosedForColor, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .alreadyChosedForInsert {
         display: inline-block;
-        transform: translate(0px, 5px);
         margin: 5px 0; }
       .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .rightArrowForWhom, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .rightArrowForCaseMetal, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .rightArrowForColor, .page-wrapper .bottom .bottom-center .filter .filter-options .btn-group .rightArrowForInsert {
         display: inline-block;
