@@ -62,14 +62,14 @@ $bgForButton: #ececec
                             padding: 18px 0
                             font-family: 'Droid Serif', serif
                             letter-spacing: 2px
-                            // font-size: 110%
+                            font-size: 1em
                         .basket-link
                             font-style: italic
                             display: inline-block
                             padding: 18px 0
                             letter-spacing: 2px
                             font-family: 'Droid Serif', serif
-                            // font-size: 110%
+                            font-size: 1em
                         .dot
                             display: inline-block
                         .navbar-center
@@ -88,7 +88,7 @@ $bgForButton: #ececec
                             
                             a
                                 display: inline
-                                font-size: 90%
+                                font-size: 0.8em
                                 color: #013a5a
                                 // @media screen and (max-width: 995px)
                                 //     font-size: 70%
@@ -534,12 +534,15 @@ $bgForButton: #ececec
                             background-image: url("../../img/check-mark.png")
                             background-position: center
                             background-repeat: no-repeat
+                        
+
 
                     label
                         font-size: 9px
                         font-weight: 500
                         margin-top: 20px
                         margin-bottom: 0
+
 
             .maps-header
                 .storeNear
@@ -774,39 +777,40 @@ $bgForButton: #ececec
                         padding-bottom: 10px
                         padding-left: 0
                         list-style: none
+                        padding-top: 10px
                         li
                             display: inline-block
-                            margin-right: 10px
+                            margin-right: 7px
                             i
                                 display: inline-block
                                 margin-right: -10px
-                        // li:nth-child(1)
                             .eye
                                 background-image: url("../../img/single-news.png") 
                                 width: 17px
                                 height: 16px
-                                transform: translate(0px, 5px)
-                        li:nth-child(3)
-                            i
+                                // transform: translate(0px, 5px)
+                                margin: -5px 0px
+                            .chat
                                 background-position: 186px 0px
                                 background-image: url("../../img/single-news.png")
                                 width: 20px
                                 height: 16px
-                                transform: translate(0px, 5px)
-                        li:nth-child(5)
-                            i
+                                // transform: translate(0px, 5px)
+                                margin: -5px 0px
+                            .bookmarks
                                 background-position: 135px 0px
                                 background-image: url("../../img/single-news.png")
                                 width: 17px
                                 height: 16px
-                                transform: translate(0px, 5px)
-                        li:nth-child(7)
-                            i
+                                // transform: translate(0px, 5px)
+                                margin: -5px 0px
+                            .link
                                 background-position: 52px 0px
                                 background-image: url("../../img/single-news.png")
                                 width: 17px
                                 height: 16px
-                                transform: translate(0px, 5px)
+                                // transform: translate(0px, 5px)
+                                margin: -5px 0px
                     .news-date
                         font-size: 0.8em
                         color: #AEA9A0
@@ -835,27 +839,24 @@ $bgForButton: #ececec
                         .news-text
                             color: #545451
                         ul
-                            li:nth-child(1)
-                                i
+                            li
+                                .eye
                                     background-image: url("../../img/active-single-news.png")
-                            li:nth-child(3)
-                                i
+                                .chat
                                     background-image: url("../../img/active-single-news.png")
-                            li:nth-child(5)
-                                i
+                                .bookmarks
                                     background-image: url("../../img/active-single-news.png")
-                            li:nth-child(7)
-                                i
+                                .link
                                     background-image: url("../../img/active-single-news.png")
-                            li:last-child
-                                i
+                                .rightArrowNews
                                     background-image: url("../../img/right-arrow-single-news.png")
                                     height: 15px
                                     width: 8px
-                                    transform: translate(0px, 5px)
+                                
                                     position: absolute
                                     right: 25px
                                     bottom: 15px
+                                    margin: -5px -10px
                 .news-image
                     background-image: url("../../img/news1.png")
                     background-position: center
